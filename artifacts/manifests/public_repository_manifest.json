@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at_utc": "2026-07-23T17:13:39.742436+00:00",
+  "generated_at_utc": "2026-07-23T17:16:19.091767+00:00",
   "repository": "JoshGutierrez56/corporate-niche-dynamics",
   "purpose": "Portable public-source publication manifest",
   "self_excluded": "artifacts/manifests/public_repository_manifest.json",
@@ -23,7 +23,7 @@
     {
       "path": ".github/workflows/ci.yml",
       "bytes": 545,
-      "sha256": "02dbbc396bcecc45ebdd3dc279e9bee8f2bc1a1e595ea38519d4632258ae7122"
+      "sha256": "c11a8f5a5ba4a50dadf3a1754e70d79d4988225f2c99db74605c04dd9d98aea9"
     },
     {
       "path": ".gitignore",
