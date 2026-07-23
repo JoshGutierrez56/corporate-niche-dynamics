@@ -1,0 +1,82 @@
+{
+  "causal_claim": false,
+  "phase": "P6",
+  "portfolio_run": false,
+  "reports": [
+    {
+      "causal_claim": false,
+      "errors": [],
+      "events": {
+        "merger": 302,
+        "performance_failure": 267
+      },
+      "models_fitted": [
+        "cause_specific_ph:performance_failure",
+        "cause_specific_ph:merger"
+      ],
+      "output_dir": "data\\processed\\synthetic\\null_alpha\\p6",
+      "portfolio_run": false,
+      "return_test_run": false,
+      "rows": {
+        "coefficient_rows": 16,
+        "fold_predictions": 33686,
+        "intervals": 30285,
+        "metric_rows": 4
+      },
+      "scenario": "null_alpha",
+      "status": "PASS",
+      "warnings": []
+    },
+    {
+      "causal_claim": false,
+      "errors": [],
+      "events": {
+        "merger": 295,
+        "performance_failure": 273
+      },
+      "models_fitted": [
+        "cause_specific_ph:performance_failure",
+        "cause_specific_ph:merger"
+      ],
+      "output_dir": "data\\processed\\synthetic\\migration_alpha\\p6",
+      "portfolio_run": false,
+      "return_test_run": false,
+      "rows": {
+        "coefficient_rows": 16,
+        "fold_predictions": 33766,
+        "intervals": 30300,
+        "metric_rows": 4
+      },
+      "scenario": "migration_alpha",
+      "status": "PASS",
+      "warnings": []
+    },
+    {
+      "causal_claim": false,
+      "errors": [],
+      "events": {
+        "merger": 296,
+        "performance_failure": 260
+      },
+      "models_fitted": [
+        "cause_specific_ph:performance_failure",
+        "cause_specific_ph:merger"
+      ],
+      "output_dir": "data\\processed\\synthetic\\regime_shift\\p6",
+      "portfolio_run": false,
+      "return_test_run": false,
+      "rows": {
+        "coefficient_rows": 16,
+        "fold_predictions": 33546,
+        "intervals": 29779,
+        "metric_rows": 4
+      },
+      "scenario": "regime_shift",
+      "status": "PASS",
+      "warnings": []
+    }
+  ],
+  "return_test_run": false,
+  "schema_version": 1,
+  "status": "PASS"
+}

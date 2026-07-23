@@ -1,0 +1,57 @@
+{
+  "analysis_years": [
+    2002,
+    2018
+  ],
+  "base_migration_alpha_monthly": 0.004,
+  "calibration_null_observable_false_positive_rate": 0.0,
+  "calibration_replicates": 100,
+  "calibration_seed_start": 32000,
+  "candidate_multipliers": [
+    1.0,
+    2.0,
+    4.0,
+    6.0,
+    8.0,
+    10.0
+  ],
+  "evaluation": {
+    "median_observable_rank_ic": 0.020217144991962477,
+    "median_observable_slope": 0.01435274669278872,
+    "median_oracle_rank_ic": 0.061659761921310174,
+    "median_oracle_slope": 0.7898073067643603,
+    "multiplier": 6.0,
+    "null_observable_false_positive_rate": 0.0,
+    "observable_detection_rate": 0.88,
+    "oracle_detection_rate": 1.0,
+    "replicates": 50.0,
+    "seed_start": 42000.0
+  },
+  "evaluation_replicates": 50,
+  "evaluation_seed_start": 42000,
+  "existing_return_paths_only": true,
+  "expected_six_month_fraction_of_total_injection": 0.8175744761936437,
+  "firms": 2227,
+  "frozen_p0_p10_outputs_modified": false,
+  "generated_at_utc": "2026-07-23T13:02:12.787520+00:00",
+  "held_out_evaluation_pass": true,
+  "interpretation": "LOCKED_PROXY_POWER_CALIBRATED_FOR_NEW_SYNTHETIC_CANARY",
+  "new_synthetic_scenario_generated": false,
+  "phase": "P15E",
+  "proposed_migration_alpha_monthly": 0.024,
+  "real_data_run": false,
+  "rows": 22089,
+  "schema_version": 1,
+  "selected_candidate": "anchored_axis_innovation",
+  "selected_multiplier": 6.0,
+  "status": "GO",
+  "stop_before_new_synthetic_generation": true,
+  "thresholds": {
+    "maximum_null_false_positive_rate": 0.1,
+    "minimum_median_observable_rank_ic": 0.01,
+    "minimum_median_oracle_rank_ic": 0.04,
+    "minimum_observable_detection_rate": 0.8,
+    "minimum_oracle_detection_rate": 0.8
+  },
+  "version": "hypercube-locked-proxy-power-calibration-v1"
+}

@@ -1,0 +1,11 @@
+{
+  "errors": [],
+  "firms": 2335,
+  "frozen_p0_p10_outputs_modified": false,
+  "interpretation": "ORACLE_NOT_DETECTABLE",
+  "phase": "P11E",
+  "real_data_run": false,
+  "rows": 24227,
+  "schema_version": 1,
+  "status": "PASS"
+}

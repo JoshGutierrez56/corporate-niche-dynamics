@@ -1,0 +1,1 @@
+﻿{"config": "configs\\synthetic.yaml", "data_mode": "synthetic", "phase": "P0", "run_name": "synthetic_p0", "seed": 20260722, "status": "P0_CONFIG_VALID"}

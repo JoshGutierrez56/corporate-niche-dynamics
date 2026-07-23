@@ -1,0 +1,386 @@
+{
+  "build_brief": null,
+  "config_path": "configs/synthetic.yaml",
+  "config_sha256": "8d7e1764b7d4075b7e0285ef8db104f91ed14c281bd024bf572aa31fbd59c23d",
+  "empirical_phases_started": false,
+  "failed_assumptions": [],
+  "feature_availability_summary": {
+    "status": "not_applicable_p0"
+  },
+  "generated_at_utc": "2026-07-22T17:26:38.132140+00:00",
+  "git_commit": null,
+  "input_data": [],
+  "model_hyperparameters": {},
+  "outputs": [
+    "artifacts/manifests/p0_manifest.json",
+    "artifacts/logs/p0_pytest.txt",
+    "artifacts/logs/p0_synthetic_config.txt",
+    "artifacts/logs/p0_real_config.txt",
+    "artifacts/logs/p0_tree.txt"
+  ],
+  "packages": {
+    "PyYAML": "6.0.2",
+    "pydantic": "2.11.7",
+    "pytest": "8.4.1"
+  },
+  "phase": "P0",
+  "project": "business-niche-hypercube",
+  "project_files": [
+    {
+      "bytes": 531,
+      "path": ".gitignore",
+      "sha256": "12a0247a2b5ea084e24f6fde3b44ede3fd40107c32fcdc43daa1cf5436ddd095"
+    },
+    {
+      "bytes": 6,
+      "path": ".python-version",
+      "sha256": "9ea280e4c89d3f302c1e8b3e5e7db91c46bec0fe761356ae90f32aaf0dbe0e8b"
+    },
+    {
+      "bytes": 1,
+      "path": "artifacts/models/.gitkeep",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "bytes": 1,
+      "path": "artifacts/tables/.gitkeep",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "bytes": 1,
+      "path": "business_niche_hypercube.egg-info/dependency_links.txt",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "bytes": 1890,
+      "path": "business_niche_hypercube.egg-info/PKG-INFO",
+      "sha256": "8920c3a73318dbf946bc961ab84bf7e96e601444c6c9a5f500a39d3e78b4dcc2"
+    },
+    {
+      "bytes": 52,
+      "path": "business_niche_hypercube.egg-info/requires.txt",
+      "sha256": "3c1972e64e81a4b4400adfe9006566b4b5e169b8123d3422ecec6a8f6e57a6e8"
+    },
+    {
+      "bytes": 677,
+      "path": "business_niche_hypercube.egg-info/SOURCES.txt",
+      "sha256": "60f7651d4c00437e2b191e42f3ec976ee9153435b7f4b827b009cd1f6e3874e7"
+    },
+    {
+      "bytes": 10,
+      "path": "business_niche_hypercube.egg-info/top_level.txt",
+      "sha256": "087f7df12d0d2624533eb56ab1482d145c7d93a7c77ee1fcacd64217a2483144"
+    },
+    {
+      "bytes": 1817,
+      "path": "configs/base.yaml",
+      "sha256": "8da056a0916ea9b6127f7dba2dbb215dbd33e11d95f25bf73e1508412491e7d2"
+    },
+    {
+      "bytes": 197,
+      "path": "configs/real.yaml",
+      "sha256": "10b97c0cfc7249c7b9f32ab33b284fd426c65d86d50677b6e40f8ad155c47043"
+    },
+    {
+      "bytes": 204,
+      "path": "configs/synthetic.yaml",
+      "sha256": "8d7e1764b7d4075b7e0285ef8db104f91ed14c281bd024bf572aa31fbd59c23d"
+    },
+    {
+      "bytes": 1,
+      "path": "data/interim/.gitkeep",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "bytes": 1,
+      "path": "data/processed/.gitkeep",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "bytes": 1,
+      "path": "data/raw/.gitkeep",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "bytes": 1431,
+      "path": "docs/data_dictionary.md",
+      "sha256": "95f24cb6701348bdcc811ab56fbbb0e2e6cdf4b8d54ab0d232674ea63b91179d"
+    },
+    {
+      "bytes": 1749,
+      "path": "docs/modeling_decisions.md",
+      "sha256": "a713a0cf426e3ca44c5f3ea0a6bddc2afd8013c45e48f3d9a03a57cd94fae687"
+    },
+    {
+      "bytes": 3059,
+      "path": "docs/point_in_time_policy.md",
+      "sha256": "fab43d851203cfff3c524f1f01778a06ed8f6d6dd296e27e7ed879d15e0a3dda"
+    },
+    {
+      "bytes": 399,
+      "path": "docs/references.md",
+      "sha256": "392aeb8127e6c592b2bd534f78de2192611cf842c1b21a9d9115227408e85f28"
+    },
+    {
+      "bytes": 4492,
+      "path": "docs/research_spec.md",
+      "sha256": "ac5767234dbda8f00b3d18e75a6d6648d43e9b1f6759fa3fdede1432b6f1c5c9"
+    },
+    {
+      "bytes": 1,
+      "path": "figures/.gitkeep",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "bytes": 73,
+      "path": "hypercube/__init__.py",
+      "sha256": "1c32a5b405d707084795204fac6805e2767054e75668f5b2e6ed6defc2550b5b"
+    },
+    {
+      "bytes": 57,
+      "path": "hypercube/availability.py",
+      "sha256": "f3ade15100a5698f1f1b523a3ff40df49b59d8214e0827d1040cb598662ea35a"
+    },
+    {
+      "bytes": 46,
+      "path": "hypercube/axes.py",
+      "sha256": "06b85ffa2fb5cae12d3bfbe7c6331c562ce55763261b8fd85df6aa4a1072b6e3"
+    },
+    {
+      "bytes": 57,
+      "path": "hypercube/clustering.py",
+      "sha256": "541bae205e4fb2683ec6f4a737e55d88bc57dced2a0765fc196715104086db39"
+    },
+    {
+      "bytes": 6913,
+      "path": "hypercube/config.py",
+      "sha256": "aeef3fe08859d3a6b1263f395c55d7f6b24d8b3481c271d088c1312c199d1e0e"
+    },
+    {
+      "bytes": 61,
+      "path": "hypercube/costs.py",
+      "sha256": "0f8f668c4ddfc6b4ffcea36faf7745bf24100ffd12e194714e66a06ff774b687"
+    },
+    {
+      "bytes": 55,
+      "path": "hypercube/data.py",
+      "sha256": "5707f17746dd343950d91ffa31271d6dc97581ce751948def5ba84e0299ff8fa"
+    },
+    {
+      "bytes": 53,
+      "path": "hypercube/diagnostics.py",
+      "sha256": "95b2d6fa0e645315c9f70c734f3677ca422618da85d03c666e0888996d882130"
+    },
+    {
+      "bytes": 61,
+      "path": "hypercube/dynamics.py",
+      "sha256": "ebfe7a2fb625772e44ff57266b0425cb1d51995bb21cc329009ce31e5d8bae84"
+    },
+    {
+      "bytes": 67,
+      "path": "hypercube/labels.py",
+      "sha256": "f13a5582147ec4a87e78d57caa8dd1911fc37a8f83a302c57f233e8f2f547cbc"
+    },
+    {
+      "bytes": 58,
+      "path": "hypercube/portfolio.py",
+      "sha256": "0a11030af066a647113d816b08c6f6ffefe9893dda6dc93dc4611acf6dfad98e"
+    },
+    {
+      "bytes": 51,
+      "path": "hypercube/returns.py",
+      "sha256": "e90e734ec633ac676e43b84ca4c133315979dda7b6cb784015e493ac92cfdffa"
+    },
+    {
+      "bytes": 1320,
+      "path": "hypercube/run.py",
+      "sha256": "0ede259a130777ee90e6abc3da62b0a2a155f6f1600b1747c51665cf5535002b"
+    },
+    {
+      "bytes": 62,
+      "path": "hypercube/standardize.py",
+      "sha256": "3b64d52e39255c127fe39b7ecdc77f37958f44aaae52596afcba1026f6c87109"
+    },
+    {
+      "bytes": 59,
+      "path": "hypercube/survival.py",
+      "sha256": "da17a9ee583313ceca50c82eb18a2955aed4aa33e0257780c8b3c7f52be1d8c5"
+    },
+    {
+      "bytes": 57,
+      "path": "hypercube/universe.py",
+      "sha256": "f369f1950fd18316664a5ddc1ac3f87b49454b2a3051e3016f445cf9373023b4"
+    },
+    {
+      "bytes": 52,
+      "path": "hypercube/viability.py",
+      "sha256": "7560748eb4b0bb0c3913de6bbae48c032d32a0b187849b2e54c02153c70c1c76"
+    },
+    {
+      "bytes": 55,
+      "path": "hypercube/visualization.py",
+      "sha256": "79f5a3430c0d5eaa51e8a4f61155dcf0d9fbf236caaeed27792e7c8a8431c5a7"
+    },
+    {
+      "bytes": 377,
+      "path": "Makefile",
+      "sha256": "a97d9b67deaa12889fcb35bbed63723f32d5004e40a901a760a984636a951325"
+    },
+    {
+      "bytes": 623,
+      "path": "pyproject.toml",
+      "sha256": "e0733013b37e90131776fb13959e0e2fb02806575d3454ccc7c3de6bc149e866"
+    },
+    {
+      "bytes": 1476,
+      "path": "README.md",
+      "sha256": "0df0394bc5ce38d9dbdfa4e808292f511eb02ca7e034b4953a6ef728e6006b15"
+    },
+    {
+      "bytes": 345,
+      "path": "report.md",
+      "sha256": "81e3ee019b632599795415cbe1fbe518538cd7080e9bd60367c3c8a629a7dc78"
+    },
+    {
+      "bytes": 120,
+      "path": "requirements.txt",
+      "sha256": "586579bae03f78df466bd934789073e1f8a79e8df410c9f4fa8fe8a64f5ffaf7"
+    },
+    {
+      "bytes": 160,
+      "path": "scripts/make_synthetic.py",
+      "sha256": "146df6ed50764a33aa126306ec3b28fd34f74c4441e5823e3e13b802196b4956"
+    },
+    {
+      "bytes": 5033,
+      "path": "scripts/print_manifest.py",
+      "sha256": "8abf4c37c764170a2479616c8461f4e45136557286a503788c7fb7413e0ffeaa"
+    },
+    {
+      "bytes": 151,
+      "path": "scripts/validate_raw_inputs.py",
+      "sha256": "d6fa4ec588ac129feff4f292018a10ba131d3dde2cf7e8c3faf3ae1d4fe5fb03"
+    },
+    {
+      "bytes": 3021,
+      "path": "tests/test_smoke.py",
+      "sha256": "14e55e7a144ca55f1dd576975136deab58e6e736954645793f247e972f465e51"
+    },
+    {
+      "bytes": 35122,
+      "path": "uv.lock",
+      "sha256": "a607b7b9459eb3c2f6076aab083e42437c3c850a24096765b530260cc8f9714f"
+    }
+  ],
+  "python": {
+    "executable": "${PROJECT_ROOT}\\.venv\\Scripts\\python.exe",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "version": "3.12.10"
+  },
+  "resolved_config": {
+    "audit": {
+      "archive_completed_real_runs": true,
+      "atomic_writes": true,
+      "hash_algorithm": "sha256",
+      "record_input_hashes": true,
+      "record_package_versions": true
+    },
+    "availability": {
+      "fallback_days": 180,
+      "hierarchy": [
+        "verified_sec_filing_timestamp",
+        "verified_earnings_announcement_date",
+        "datadate_plus_180_calendar_days"
+      ],
+      "prohibit_pre_availability_use": true
+    },
+    "axes": {
+      "components": [
+        {
+          "enabled": true,
+          "implementation_phase": "P3",
+          "name": "Demand Strength and Pricing Power",
+          "slug": "demand_strength_pricing_power"
+        },
+        {
+          "enabled": true,
+          "implementation_phase": "P3",
+          "name": "Competitive Defensibility",
+          "slug": "competitive_defensibility"
+        },
+        {
+          "enabled": true,
+          "implementation_phase": "P3",
+          "name": "Innovation Intensity",
+          "slug": "innovation_intensity"
+        },
+        {
+          "enabled": true,
+          "implementation_phase": "P3",
+          "name": "Go-to-Market Efficiency",
+          "slug": "go_to_market_efficiency"
+        },
+        {
+          "enabled": true,
+          "implementation_phase": "P3",
+          "name": "Unit Economics and Profit Quality",
+          "slug": "unit_economics_profit_quality"
+        },
+        {
+          "enabled": true,
+          "implementation_phase": "P3",
+          "name": "Scalability and Capital Efficiency",
+          "slug": "scalability_capital_efficiency"
+        }
+      ],
+      "orientation": "higher_is_more_viable"
+    },
+    "data": {
+      "allow_network": false,
+      "allow_wrds": false,
+      "generate_synthetic": false,
+      "mode": "synthetic",
+      "require_existing_raw": false,
+      "scenario": "null_alpha"
+    },
+    "paths": {
+      "artifacts_dir": "artifacts",
+      "figures_dir": "figures",
+      "interim_dir": "data/interim",
+      "processed_dir": "data/processed",
+      "raw_dir": "data/raw"
+    },
+    "project": {
+      "name": "business-niche-hypercube",
+      "phase": "P0",
+      "python_minimum": "3.11",
+      "run_name": "synthetic_p0",
+      "seed": 20260722,
+      "subtitle": "Corporate Niche Dynamics and Asset Prices"
+    },
+    "universe": {
+      "exchange_codes": [
+        1,
+        2,
+        3
+      ],
+      "include_delisted_firms": true,
+      "require_positive_market_cap": true,
+      "require_positive_price": true,
+      "share_codes": [
+        10,
+        11
+      ]
+    }
+  },
+  "row_counts": {},
+  "run_name": "synthetic_p0",
+  "schema_version": 1,
+  "seed": 20260722,
+  "test_windows": [],
+  "training_windows": [],
+  "warnings": [
+    "P0 contains no data, observations, features, labels, models, or results.",
+    "GNU Make was not available on the inspected Windows host."
+  ]
+}

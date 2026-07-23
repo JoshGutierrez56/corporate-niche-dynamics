@@ -1,0 +1,13 @@
+scenario,exit_category,eligible_dated_exits,assigned_terminal_intervals,difference
+null_alpha,performance_failure,267,267,0
+null_alpha,merger,302,302,0
+null_alpha,voluntary_administrative,64,64,0
+null_alpha,other_unknown,33,33,0
+migration_alpha,performance_failure,273,273,0
+migration_alpha,merger,295,295,0
+migration_alpha,voluntary_administrative,57,57,0
+migration_alpha,other_unknown,32,32,0
+regime_shift,performance_failure,260,260,0
+regime_shift,merger,296,296,0
+regime_shift,voluntary_administrative,54,54,0
+regime_shift,other_unknown,44,44,0

@@ -1,0 +1,10 @@
+claim_id,domain,verdict,scope,primary_metric,value,evidence
+engineering,reproducibility,PASS,synthetic pipeline,P13F-P18E signed gates,6.0,artifacts/manifests/p13f_manifest.json through p18e_manifest.json
+original_signal,measurement,REJECT_ORIGINAL_SPECIFICATION,original 1x synthetic migration scenario,six-month rank IC,-0.0187246564107123,artifacts/tables/p10_report_statistics.csv
+redesigned_signal,measurement,PASS_SYNTHETIC_6X_ONLY,isolated amplified synthetic canary,six-month rank IC,0.0196808574580907,artifacts/tables/p16e_canary_metrics.csv
+redesigned_null_control,measurement,PASS,isolated synthetic null control,clustered slope p-value,0.2541048030501296,artifacts/tables/p16e_canary_metrics.csv
+implementation,portfolio,REJECT_PRIMARY_IMPLEMENTATION,conservative value-weighted SIC1-neutral 6m,annualized net return,-0.0516101549459791,artifacts/tables/p17e_primary_cost_results.csv
+taxonomy,clustering,REJECT_CURRENT_TAXONOMY,three isolated synthetic scenarios,minimum noise/unassigned rate,0.946763238263714,artifacts/tables/p18e_archetype_summary.csv
+real_market_existence,external validity,NOT_TESTED,real data,real-data runs,0.0,artifacts/manifests/p19e_final_closeout.json
+causality,causal inference,NOT_TESTED,all phases,causal designs,0.0,docs/p19e_final_closeout_preregistration.md
+project_status,closeout,COMPLETE_MIXED_NEGATIVE,full research program,open analytical phases,0.0,report.md

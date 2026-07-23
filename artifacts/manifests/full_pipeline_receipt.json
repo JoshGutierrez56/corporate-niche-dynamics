@@ -1,0 +1,26 @@
+{
+  "config": "configs\\synthetic.yaml",
+  "duration_seconds": 75.604338,
+  "finished_at_utc": "2026-07-23T04:10:45.033366+00:00",
+  "gpu_used": false,
+  "log": "${PROJECT_ROOT}\\artifacts\\logs\\full_pipeline.txt",
+  "network_used": false,
+  "phase": "P10",
+  "phase_configs": {
+    "P1": "${PROJECT_ROOT}\\artifacts\\checkpoints\\full_pipeline_configs\\p1.yaml",
+    "P10": "${PROJECT_ROOT}\\artifacts\\checkpoints\\full_pipeline_configs\\p10.yaml",
+    "P2": "${PROJECT_ROOT}\\artifacts\\checkpoints\\full_pipeline_configs\\p2.yaml",
+    "P3": "${PROJECT_ROOT}\\artifacts\\checkpoints\\full_pipeline_configs\\p3.yaml",
+    "P4": "${PROJECT_ROOT}\\artifacts\\checkpoints\\full_pipeline_configs\\p4.yaml",
+    "P5": "${PROJECT_ROOT}\\artifacts\\checkpoints\\full_pipeline_configs\\p5.yaml",
+    "P6": "${PROJECT_ROOT}\\artifacts\\checkpoints\\full_pipeline_configs\\p6.yaml",
+    "P7": "${PROJECT_ROOT}\\artifacts\\checkpoints\\full_pipeline_configs\\p7.yaml",
+    "P8": "${PROJECT_ROOT}\\artifacts\\checkpoints\\full_pipeline_configs\\p8.yaml",
+    "P9": "${PROJECT_ROOT}\\artifacts\\checkpoints\\full_pipeline_configs\\p9.yaml"
+  },
+  "real_data_run": false,
+  "schema_version": 1,
+  "started_at_utc": "2026-07-23T04:09:29.429028+00:00",
+  "status": "PASS",
+  "wrds_used": false
+}

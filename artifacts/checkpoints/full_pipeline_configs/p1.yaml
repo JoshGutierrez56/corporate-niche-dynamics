@@ -1,0 +1,294 @@
+project:
+  name: business-niche-hypercube
+  subtitle: Corporate Niche Dynamics and Asset Prices
+  phase: P1
+  run_name: synthetic_p1_full_pipeline
+  python_minimum: '3.11'
+  seed: 20260722
+paths:
+  raw_dir: data/raw/synthetic/null_alpha
+  interim_dir: data/interim
+  processed_dir: data/processed/synthetic/null_alpha
+  artifacts_dir: artifacts
+  figures_dir: figures
+data:
+  mode: synthetic
+  scenario: null_alpha
+  require_existing_raw: false
+  generate_synthetic: true
+  allow_network: false
+  allow_wrds: false
+synthetic:
+  n_firms: 3000
+  start_year: 1975
+  end_year: 2024
+  n_industries: 24
+  minimum_history_years: 3
+  regime_shift_year: 2000
+  migration_alpha_monthly: 0.004
+  migration_decay_months: 12
+  annual_state_persistence: 0.82
+availability:
+  hierarchy:
+  - verified_sec_filing_timestamp
+  - verified_earnings_announcement_date
+  - datadate_plus_180_calendar_days
+  fallback_days: 180
+  prohibit_pre_availability_use: true
+universe:
+  share_codes:
+  - 10
+  - 11
+  exchange_codes:
+  - 1
+  - 2
+  - 3
+  require_positive_price: true
+  require_positive_market_cap: true
+  include_delisted_firms: true
+  minimum_price: 1.0
+  minimum_market_cap_millions: 10.0
+  minimum_monthly_volume: 100.0
+  preserve_prior_eligible_delist_month: true
+panel:
+  allowed_link_types:
+  - LC
+  - LU
+  - LS
+  allowed_link_primaries:
+  - P
+  - C
+  max_staleness_months: 18
+  minimum_reporting_history: 1
+  fiscal_duplicate_policy: reject
+  delisting_return_rule: compound_with_ordinary_return
+  strict_post_availability_formation: true
+axes:
+  orientation: higher_is_more_viable
+  components:
+  - name: Demand Strength and Pricing Power
+    slug: demand_strength_pricing_power
+    enabled: true
+    implementation_phase: P3
+    minimum_components: 2
+    ablation_enabled: true
+  - name: Competitive Defensibility
+    slug: competitive_defensibility
+    enabled: true
+    implementation_phase: P3
+    minimum_components: 2
+    ablation_enabled: true
+  - name: Innovation Intensity
+    slug: innovation_intensity
+    enabled: true
+    implementation_phase: P3
+    minimum_components: 2
+    ablation_enabled: true
+  - name: Go-to-Market Efficiency
+    slug: go_to_market_efficiency
+    enabled: true
+    implementation_phase: P3
+    minimum_components: 2
+    ablation_enabled: true
+  - name: Unit Economics and Profit Quality
+    slug: unit_economics_profit_quality
+    enabled: true
+    implementation_phase: P3
+    minimum_components: 3
+    ablation_enabled: true
+  - name: Scalability and Capital Efficiency
+    slug: scalability_capital_efficiency
+    enabled: true
+    implementation_phase: P3
+    minimum_components: 3
+    ablation_enabled: true
+standardization:
+  winsor_lower: 0.01
+  winsor_upper: 0.99
+  minimum_peer_group_size: 20
+  relative_method: median_mad
+  peer_fallback_hierarchy:
+  - sic2
+  - sic1
+  - market
+  anchored_method: expanding_prior_calendar_years
+  minimum_anchor_observations: 100
+  score_clip: 5.0
+innovation:
+  primary_missing_policy: zero_with_indicator
+  sensitivity_missing_policy: contemporaneous_peer_median
+  stock_depreciation_rate: 0.2
+  persistence_years: 3
+  fixed_nopat_tax_rate: 0.25
+viability:
+  horizons_years:
+  - 3
+  - 5
+  validation_years: 5
+  outer_folds:
+  - start_year: 2000
+    end_year: 2004
+  - start_year: 2005
+    end_year: 2009
+  - start_year: 2010
+    end_year: 2014
+  - start_year: 2015
+    end_year: 2019
+  ridge_c_grid:
+  - 0.01
+  - 0.1
+  - 1.0
+  - 10.0
+  calibration: platt
+  cell_bins: 3
+  minimum_train_observations: 500
+  minimum_train_failures: 20
+  minimum_validation_failures: 5
+  primary_model: combined_axes_logit
+  nonlinear_model: hist_gradient_boosting
+  tree_max_iter: 100
+  tree_max_leaf_nodes: 15
+  tree_learning_rate: 0.05
+  tree_min_samples_leaf: 50
+  tree_l2_regularization: 1.0
+dynamics:
+  primary_model: combined_axes_logit
+  survival_probability_threshold: 0.95
+  probability_clip: 1.0e-06
+  cross_section_minimum: 20
+  crowding_neighbors: 10
+  successful_density_neighbors: 20
+  successful_density_minimum: 100
+  migration_ridge_alpha: 10.0
+  migration_minimum_train_observations: 1000
+  recovery_primary_horizon_years: 5
+  recovery_minimum_level_spearman: 0.1
+  recovery_minimum_velocity_spearman: 0.05
+  recovery_minimum_surprise_spearman: 0.03
+survival:
+  primary_horizon_years: 5
+  time_origin_date: '1900-01-01'
+  minimum_reporting_history: 3
+  causes:
+  - performance_failure
+  - merger
+  features:
+  - viability_log_odds
+  - velocity_log_odds
+  - acceleration_log_odds
+  - crowding_density
+  - historical_success_density
+  - log_market_cap
+  - book_leverage
+  - operating_margin
+  ties: breslow
+  outer_folds:
+  - start_year: 2010
+    end_year: 2014
+  - start_year: 2015
+    end_year: 2019
+  minimum_train_intervals: 5000
+  minimum_train_events: 20
+  minimum_test_events: 5
+  calibration: logistic_risk_score
+  ph_diagnostic_alpha: 0.01
+returns:
+  primary_surface_horizon_years: 5
+  horizons_months:
+  - 1
+  - 3
+  - 6
+  - 12
+  primary_horizon_months: 6
+  signals:
+  - viability_log_odds
+  - velocity_log_odds
+  - migration_surprise
+  primary_signal: migration_surprise
+  controls:
+  - log_market_cap
+  - book_to_market
+  - momentum_12_2
+  - operating_margin
+  - asset_growth
+  - book_leverage
+  - working_capital_assets
+  - operating_income_assets
+  - equity_to_liabilities
+  - sales_to_assets
+  - log_dollar_volume_12m
+  - realized_volatility_12m
+  - equity_beta_24m
+  factor_columns:
+  - mkt_excess
+  - smb
+  - hml
+  - rmw
+  - cma
+  - mom
+  entry_lag_months: 1
+  require_complete_path_or_delist: true
+  missing_delisting_return_policy: missing_target
+  winsor_lower: 0.01
+  winsor_upper: 0.99
+  minimum_cross_section: 30
+  minimum_fmb_months: 24
+  quantiles: 5
+  weighting_schemes:
+  - equal
+  - value
+  industry_neutral_modes:
+  - false
+  - true
+  minimum_industry_group: 10
+  overlapping_hac_rule: horizon_minus_one
+  multiple_testing_method: holm
+  synthetic_null_max_abs_primary_ic: 0.03
+  synthetic_migration_min_primary_ic: 0.0
+  synthetic_oracle_slope_lower: 0.4
+  synthetic_oracle_slope_upper: 1.3
+costs:
+  primary_horizon_months: 6
+  primary_weighting: value
+  primary_industry_neutral: true
+  primary_cost_scenario: conservative
+  scenarios:
+  - name: low
+    quoted_half_spread_multiplier: 0.5
+    fixed_slippage_bps: 5.0
+  - name: conservative
+    quoted_half_spread_multiplier: 1.0
+    fixed_slippage_bps: 10.0
+  - name: severe
+    quoted_half_spread_multiplier: 1.5
+    fixed_slippage_bps: 25.0
+  volume_unit_multiplier: 1000.0
+  trading_days_per_month: 21
+  portfolio_notional_millions_per_leg: 1.0
+  max_adv_participation: 0.1
+  max_market_cap_fraction: 0.001
+  max_position_weight: 0.1
+  max_half_spread: 0.05
+  fallback_half_spread_bps: 50.0
+  minimum_short_market_cap_millions: 25.0
+  minimum_short_adv_millions: 0.1
+  hard_borrow_market_cap_millions: 100.0
+  hard_borrow_adv_millions: 0.5
+  borrow_annual_bps: 300.0
+  hard_borrow_annual_bps: 700.0
+  delayed_execution_months: 1
+clustering:
+  representation: anchored
+  training_end_year: 2004
+  maximum_training_rows: 25000
+  minimum_cluster_size: 200
+  minimum_samples: 10
+  assignment_radius_quantile: 0.95
+  stability_repetitions: 5
+  stability_sample_fraction: 0.8
+audit:
+  hash_algorithm: sha256
+  atomic_writes: true
+  archive_completed_real_runs: true
+  record_package_versions: true
+  record_input_hashes: true

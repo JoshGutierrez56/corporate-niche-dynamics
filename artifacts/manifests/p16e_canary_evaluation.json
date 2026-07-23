@@ -1,0 +1,72 @@
+{
+  "analysis_years": [
+    2002,
+    2018
+  ],
+  "canary_root": "${HYPERCUBE_CANARY_ROOT}",
+  "frozen_p0_p10_outputs_modified": false,
+  "gates": {
+    "candidate_coverage": true,
+    "candidate_truth_alignment": true,
+    "null_not_detected": true,
+    "null_rank_ic": true,
+    "oracle_detected": true,
+    "oracle_slope_range": true,
+    "proxy_detected": true,
+    "proxy_return_rank_ic": true
+  },
+  "generated_at_utc": "2026-07-23T13:30:04.420519+00:00",
+  "injection_multiplier_vs_original": 6.0,
+  "interpretation": "ISOLATED_REGENERATED_CANARY_RECOVERED_SIGNAL_AND_NULL",
+  "isolated_canary": true,
+  "migration_alpha_monthly": 0.024,
+  "migration_metrics": {
+    "candidate_return_clustered_se": 0.004219182521436021,
+    "candidate_return_p_value": 0.002113096478738359,
+    "candidate_return_slope": 0.012984405320529463,
+    "candidate_return_spearman": 0.019680857458090797,
+    "candidate_return_t_stat": 3.0774694516202517,
+    "candidate_truth_spearman": 0.4616517535128153,
+    "coverage_vs_benchmark": 0.963145498953245,
+    "firms": 2227,
+    "oracle_return_clustered_se": 0.08452926164087841,
+    "oracle_return_p_value": 6.838963661024797e-19,
+    "oracle_return_slope": 0.7571846054502751,
+    "oracle_return_t_stat": 8.957662598156425,
+    "rows": 22083,
+    "scenario": "migration_alpha"
+  },
+  "null_metrics": {
+    "candidate_return_clustered_se": 0.004157234145580995,
+    "candidate_return_p_value": 0.25410480305012967,
+    "candidate_return_slope": 0.004742266940698433,
+    "candidate_return_spearman": 0.007926643574303475,
+    "candidate_return_t_stat": 1.1407264480734887,
+    "candidate_truth_spearman": null,
+    "coverage_vs_benchmark": 0.961602306482614,
+    "firms": 2258,
+    "oracle_return_clustered_se": null,
+    "oracle_return_p_value": null,
+    "oracle_return_slope": null,
+    "oracle_return_t_stat": null,
+    "rows": 22013,
+    "scenario": "null_alpha"
+  },
+  "p8_p10_run": false,
+  "phase": "P16E",
+  "primary_horizon_months": 6,
+  "real_data_run": false,
+  "schema_version": 1,
+  "selected_candidate": "anchored_axis_innovation",
+  "status": "PASS",
+  "thresholds": {
+    "maximum_detection_p_value": 0.05,
+    "maximum_null_abs_spearman": 0.03,
+    "maximum_oracle_slope": 1.3,
+    "minimum_coverage_ratio": 0.95,
+    "minimum_oracle_slope": 0.4,
+    "minimum_proxy_return_spearman": 0.01,
+    "minimum_truth_spearman": 0.35
+  },
+  "version": "hypercube-isolated-six-x-canary-v1"
+}

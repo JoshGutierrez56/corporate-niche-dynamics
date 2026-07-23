@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "phase": "P11E",
+  "version": "hypercube-alpha-power-diagnostic-v1",
+  "generated_at_utc": "2026-07-23T12:32:12.157472+00:00",
+  "status": "PASS",
+  "interpretation": "ORACLE_NOT_DETECTABLE",
+  "confirmatory_gate": false,
+  "frozen_p0_p10_outputs_modified": false,
+  "real_data_run": false,
+  "files": [
+    {
+      "path": "data/processed/synthetic/migration_alpha/p7/forward_return_targets.parquet",
+      "bytes": 9361253,
+      "sha256": "6b7c3cc6f4ae840d4e8d5800d97e47e1a4b29f8a07e5824985f57608dd2d042e"
+    },
+    {
+      "path": "data/raw/synthetic/migration_alpha/synthetic_truth.parquet",
+      "bytes": 5448918,
+      "sha256": "f2be82543660042717a89aa4432ced31eb5e50c202d09300fc6d1105a9b11ca5"
+    },
+    {
+      "path": "hypercube/exploratory.py",
+      "bytes": 9331,
+      "sha256": "fdc8bdf71a411b462ce5e28441885589867ba1c26795e3690b3cbcbe0bea33f9"
+    },
+    {
+      "path": "scripts/diagnose_alpha_recovery_power.py",
+      "bytes": 1696,
+      "sha256": "f672364255217a4f6a9d4e1207eadb7e132f82c7109778ab0ffa56d353d8df75"
+    },
+    {
+      "path": "scripts/validate_alpha_recovery_power.py",
+      "bytes": 1747,
+      "sha256": "56b84e58a7d7ae5081fbbb36fd812e6a68a1c76342152da474eade2567791dee"
+    },
+    {
+      "path": "tests/test_p11e_alpha_power.py",
+      "bytes": 3087,
+      "sha256": "cb462a97032328148a1fbba38e9076178629a31632ed8b5ec9fb34bd15aeb697"
+    },
+    {
+      "path": "docs/p11e_alpha_power_diagnostic.md",
+      "bytes": 1474,
+      "sha256": "219c84bdf002083a28fb5a727162c17de0766192725254e10e79def222ea07ed"
+    },
+    {
+      "path": "artifacts/manifests/p11e_alpha_power_diagnostic.json",
+      "bytes": 1631,
+      "sha256": "467a0140648d6079bc84d9ae113faeb7d134e61ffb4ba2947bc52c8f92068d84"
+    },
+    {
+      "path": "artifacts/manifests/p11e_alpha_power_validation.json",
+      "bytes": 229,
+      "sha256": "b5771ebb713a16f0fb9160ea6383c911d2c97082edac58bec61f7697ca57f53c"
+    },
+    {
+      "path": "artifacts/tables/p11e_alpha_power_by_fold.csv",
+      "bytes": 544,
+      "sha256": "45427dbda2aefe667a30d431a08e965bbaedf97ff8e92172430e5779766953dd"
+    }
+  ]
+}

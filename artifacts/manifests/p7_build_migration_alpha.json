@@ -1,0 +1,72 @@
+{
+  "aggregate_tables": [
+    "${PROJECT_ROOT}\\artifacts\\tables\\p7_fmb_summary.csv",
+    "${PROJECT_ROOT}\\artifacts\\tables\\p7_portfolio_factor_results.csv",
+    "${PROJECT_ROOT}\\artifacts\\tables\\p7_portfolio_exposures.csv",
+    "${PROJECT_ROOT}\\artifacts\\tables\\p7_subsample_results.csv",
+    "${PROJECT_ROOT}\\artifacts\\tables\\p7_target_attrition.csv"
+  ],
+  "config": "configs\\synthetic.yaml",
+  "costs_applied": false,
+  "phase": "P7",
+  "portfolio_run": true,
+  "reports": [
+    {
+      "construction": {
+        "costs_applied": false,
+        "events": 32770,
+        "fmb_tests": 12,
+        "gross_portfolios": 48,
+        "portfolio_run": true,
+        "return_test_run": true,
+        "scenario": "migration_alpha",
+        "synthetic_truth_read": false,
+        "targets": 131080,
+        "valid_targets": 131080
+      },
+      "output_dir": "data\\processed\\synthetic\\migration_alpha\\p7",
+      "reused_existing": false,
+      "scenario": "migration_alpha",
+      "validation": {
+        "costs_applied": false,
+        "errors": [],
+        "fmb_tests": 12,
+        "gross_portfolios": 48,
+        "portfolio_run": true,
+        "recovery": {
+          "expected_six_month_fraction_of_total_injection": 0.8175744761936438,
+          "gates": {
+            "oracle_slope_within_frozen_bounds": true,
+            "primary_fmb_coefficient_positive": true,
+            "primary_ic_positive": false
+          },
+          "oracle_injected_alpha_slope": 0.646211724437485,
+          "primary_fmb_coefficient": 0.0046578510721909,
+          "primary_fmb_holm_p_value": 1.0,
+          "primary_fmb_p_value": 0.2885204068795841,
+          "primary_horizon_months": 6,
+          "primary_signal": "migration_surprise",
+          "primary_spearman_ic": -0.018724656410712394,
+          "rows": 24227,
+          "scenario": "migration_alpha",
+          "scientific_status": "FAIL",
+          "truth_field_read": "injected_return_alpha"
+        },
+        "return_test_run": true,
+        "rows": {
+          "events": 32770,
+          "paths": 393240,
+          "portfolio_months": 6772,
+          "targets": 131080,
+          "valid_targets": 131080
+        },
+        "scenario": "migration_alpha",
+        "status": "PASS",
+        "warnings": []
+      }
+    }
+  ],
+  "return_test_run": true,
+  "schema_version": 1,
+  "status": "PASS"
+}

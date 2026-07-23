@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "phase": "P12E",
+  "version": "hypercube-alpha-power-calibration-v1",
+  "generated_at_utc": "2026-07-23T12:39:21.416632+00:00",
+  "status": "PASS",
+  "gate_result": "NO_GO",
+  "interpretation": "NO_CANDIDATE_PASSED_HELD_OUT_POWER_GATES",
+  "selected_multiplier": null,
+  "new_synthetic_scenario_generated": false,
+  "frozen_p0_p10_outputs_modified": false,
+  "real_data_run": false,
+  "files": [
+    {
+      "path": "data/processed/synthetic/migration_alpha/p7/forward_return_targets.parquet",
+      "bytes": 9361253,
+      "sha256": "6b7c3cc6f4ae840d4e8d5800d97e47e1a4b29f8a07e5824985f57608dd2d042e"
+    },
+    {
+      "path": "data/raw/synthetic/migration_alpha/synthetic_truth.parquet",
+      "bytes": 5448918,
+      "sha256": "f2be82543660042717a89aa4432ced31eb5e50c202d09300fc6d1105a9b11ca5"
+    },
+    {
+      "path": "hypercube/power_calibration.py",
+      "bytes": 15592,
+      "sha256": "93d84e9c8294e390d4c658de8f9e7e6a3ebc6ce2ff157ed003b8715a4015aee4"
+    },
+    {
+      "path": "scripts/calibrate_alpha_injection_power.py",
+      "bytes": 1735,
+      "sha256": "8a59b25a86392cc0df5b34d3568e008e168db03e719fbb5bf82e1d64c4db63ad"
+    },
+    {
+      "path": "scripts/validate_alpha_injection_power.py",
+      "bytes": 1760,
+      "sha256": "2d08c2e36690b4d97346cc587aa9e5149571eaa45ab43356277dfec01484c665"
+    },
+    {
+      "path": "tests/test_p12e_power_calibration.py",
+      "bytes": 3321,
+      "sha256": "9b090aa2348ec8cf22ac2c5bed402ee1e2721edcb4e262f941bc3ebfd4775d57"
+    },
+    {
+      "path": "docs/p12e_power_calibration_preregistration.md",
+      "bytes": 1965,
+      "sha256": "38b893823b7859ff8f2b842f99c2a63fd4ee734f03c057eb5c9f521b742ae448"
+    },
+    {
+      "path": "docs/p12e_power_calibration_results.md",
+      "bytes": 1450,
+      "sha256": "b977cfcc2ee279ebb26a3cb69aae68e4dc975abeccf9e82c67aadad2825ff2fa"
+    },
+    {
+      "path": "artifacts/manifests/p12e_power_calibration.json",
+      "bytes": 1280,
+      "sha256": "c355a64c301e6d0c75ec692af3242f2cc874e86b16f375d46794f6fb30e4209f"
+    },
+    {
+      "path": "artifacts/manifests/p12e_power_calibration_validation.json",
+      "bytes": 327,
+      "sha256": "a23970f5e57c7181aefbde38071f4900470a1322b3d0f3b9c0960ecaa8f48fb8"
+    },
+    {
+      "path": "artifacts/tables/p12e_power_calibration.csv",
+      "bytes": 1203,
+      "sha256": "7df5404067ca1fb2425ea1dfccfb2aa8c881b72986a59f921c6835036c1655d4"
+    }
+  ]
+}

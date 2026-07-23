@@ -1,0 +1,225 @@
+{
+  "config": "configs\\synthetic.yaml",
+  "models_fitted": [],
+  "phase": "P2",
+  "reports": [
+    {
+      "construction": {
+        "availability_confidence_counts": {
+          "high": 52084,
+          "low": 1220,
+          "medium": 8696
+        },
+        "availability_source_counts": {
+          "datadate_plus_180_calendar_days": 1220,
+          "verified_earnings_announcement_date": 8696,
+          "verified_sec_filing_timestamp": 52084
+        },
+        "ccm": {
+          "ambiguous_equal_priority": 0,
+          "eligible_link_rows": 3104,
+          "input_security_months": 750167,
+          "mapped_security_months": 750167,
+          "unmapped_security_months": 0
+        },
+        "delisting_events_in_panel": 969,
+        "delisting_formula_violations": 0,
+        "duplicate_panel_keys": 0,
+        "exit_category_counts": {
+          "merger": 439,
+          "other_unknown": 50,
+          "performance_failure": 388,
+          "voluntary_administrative": 92
+        },
+        "input_rows": {
+          "ccm_link.parquet": 3104,
+          "crsp_delist.parquet": 969,
+          "crsp_monthly.parquet": 752766,
+          "funda.parquet": 62000,
+          "sec_filing_dates.parquet": 52084
+        },
+        "invalid_rdq_dates": 0,
+        "invalid_sec_timestamps": 0,
+        "missing_delisting_returns_in_panel": 0,
+        "models_fitted": [],
+        "output_rows": {
+          "accounting_availability": 62000,
+          "firm_month_panel": 705450,
+          "universe_monthly": 750167
+        },
+        "phase": "P2",
+        "pre_availability_violations": 0,
+        "staleness_violations": 0,
+        "status": "PASS",
+        "universe_rows_before_accounting": 750167
+      },
+      "models_fitted": [],
+      "output_dir": "data\\processed\\synthetic\\null_alpha",
+      "raw_dir": "data\\raw\\synthetic\\null_alpha",
+      "scenario": "null_alpha",
+      "validation": {
+        "availability_sources": {
+          "datadate_plus_180_calendar_days": 1220,
+          "verified_earnings_announcement_date": 8696,
+          "verified_sec_filing_timestamp": 52084
+        },
+        "delisting_events": 969,
+        "errors": [],
+        "models_fitted": [],
+        "rows": {
+          "accounting_availability": 62000,
+          "firm_month_panel": 705450,
+          "universe_monthly": 750167
+        },
+        "status": "PASS",
+        "warnings": []
+      }
+    },
+    {
+      "construction": {
+        "availability_confidence_counts": {
+          "high": 51276,
+          "low": 1171,
+          "medium": 8595
+        },
+        "availability_source_counts": {
+          "datadate_plus_180_calendar_days": 1171,
+          "verified_earnings_announcement_date": 8595,
+          "verified_sec_filing_timestamp": 51276
+        },
+        "ccm": {
+          "ambiguous_equal_priority": 0,
+          "eligible_link_rows": 3120,
+          "input_security_months": 737508,
+          "mapped_security_months": 737508,
+          "unmapped_security_months": 0
+        },
+        "delisting_events_in_panel": 998,
+        "delisting_formula_violations": 0,
+        "duplicate_panel_keys": 0,
+        "exit_category_counts": {
+          "merger": 441,
+          "other_unknown": 54,
+          "performance_failure": 416,
+          "voluntary_administrative": 87
+        },
+        "input_rows": {
+          "ccm_link.parquet": 3120,
+          "crsp_delist.parquet": 999,
+          "crsp_monthly.parquet": 741472,
+          "funda.parquet": 61042,
+          "sec_filing_dates.parquet": 51276
+        },
+        "invalid_rdq_dates": 0,
+        "invalid_sec_timestamps": 0,
+        "missing_delisting_returns_in_panel": 0,
+        "models_fitted": [],
+        "output_rows": {
+          "accounting_availability": 61042,
+          "firm_month_panel": 692892,
+          "universe_monthly": 737508
+        },
+        "phase": "P2",
+        "pre_availability_violations": 0,
+        "staleness_violations": 0,
+        "status": "PASS",
+        "universe_rows_before_accounting": 737508
+      },
+      "models_fitted": [],
+      "output_dir": "data\\processed\\synthetic\\migration_alpha",
+      "raw_dir": "data\\raw\\synthetic\\migration_alpha",
+      "scenario": "migration_alpha",
+      "validation": {
+        "availability_sources": {
+          "datadate_plus_180_calendar_days": 1171,
+          "verified_earnings_announcement_date": 8595,
+          "verified_sec_filing_timestamp": 51276
+        },
+        "delisting_events": 998,
+        "errors": [],
+        "models_fitted": [],
+        "rows": {
+          "accounting_availability": 61042,
+          "firm_month_panel": 692892,
+          "universe_monthly": 737508
+        },
+        "status": "PASS",
+        "warnings": []
+      }
+    },
+    {
+      "construction": {
+        "availability_confidence_counts": {
+          "high": 50595,
+          "low": 1167,
+          "medium": 8533
+        },
+        "availability_source_counts": {
+          "datadate_plus_180_calendar_days": 1167,
+          "verified_earnings_announcement_date": 8533,
+          "verified_sec_filing_timestamp": 50595
+        },
+        "ccm": {
+          "ambiguous_equal_priority": 0,
+          "eligible_link_rows": 3109,
+          "input_security_months": 729262,
+          "mapped_security_months": 729262,
+          "unmapped_security_months": 0
+        },
+        "delisting_events_in_panel": 1013,
+        "delisting_formula_violations": 0,
+        "duplicate_panel_keys": 0,
+        "exit_category_counts": {
+          "merger": 458,
+          "other_unknown": 67,
+          "performance_failure": 399,
+          "voluntary_administrative": 89
+        },
+        "input_rows": {
+          "ccm_link.parquet": 3109,
+          "crsp_delist.parquet": 1016,
+          "crsp_monthly.parquet": 732642,
+          "funda.parquet": 60295,
+          "sec_filing_dates.parquet": 50595
+        },
+        "invalid_rdq_dates": 0,
+        "invalid_sec_timestamps": 0,
+        "missing_delisting_returns_in_panel": 0,
+        "models_fitted": [],
+        "output_rows": {
+          "accounting_availability": 60295,
+          "firm_month_panel": 684635,
+          "universe_monthly": 729262
+        },
+        "phase": "P2",
+        "pre_availability_violations": 0,
+        "staleness_violations": 0,
+        "status": "PASS",
+        "universe_rows_before_accounting": 729262
+      },
+      "models_fitted": [],
+      "output_dir": "data\\processed\\synthetic\\regime_shift",
+      "raw_dir": "data\\raw\\synthetic\\regime_shift",
+      "scenario": "regime_shift",
+      "validation": {
+        "availability_sources": {
+          "datadate_plus_180_calendar_days": 1167,
+          "verified_earnings_announcement_date": 8533,
+          "verified_sec_filing_timestamp": 50595
+        },
+        "delisting_events": 1013,
+        "errors": [],
+        "models_fitted": [],
+        "rows": {
+          "accounting_availability": 60295,
+          "firm_month_panel": 684635,
+          "universe_monthly": 729262
+        },
+        "status": "PASS",
+        "warnings": []
+      }
+    }
+  ],
+  "schema_version": 1,
+  "status": "PASS"
+}

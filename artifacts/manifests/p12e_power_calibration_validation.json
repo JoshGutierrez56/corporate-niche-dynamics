@@ -1,0 +1,12 @@
+{
+  "errors": [],
+  "frozen_p0_p10_outputs_modified": false,
+  "held_out_evaluation_pass": false,
+  "interpretation": "NO_CANDIDATE_PASSED_HELD_OUT_POWER_GATES",
+  "new_synthetic_scenario_generated": false,
+  "phase": "P12E",
+  "real_data_run": false,
+  "schema_version": 1,
+  "selected_multiplier": null,
+  "status": "PASS"
+}

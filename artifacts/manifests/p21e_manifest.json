@@ -1,0 +1,95 @@
+{
+  "files": [
+    {
+      "bytes": 21137,
+      "path": "hypercube/measurement_utility.py",
+      "sha256": "a10dcad4a6d5ae1795d8edeb7d06a2d1eae059bd854b153effef7dfc171dd351"
+    },
+    {
+      "bytes": 11989,
+      "path": "scripts/run_p21e_measurement_utility.py",
+      "sha256": "ef2d4a23950ce289c784489f8bd40609bde95c98a47bd3256541436d03b2b75f"
+    },
+    {
+      "bytes": 7645,
+      "path": "scripts/validate_p21e_measurement_utility.py",
+      "sha256": "5c83a617d0dcaf6913f26d834cf2b4dfc1fe4cdd65142f7c1d41287877bc7a50"
+    },
+    {
+      "bytes": 2891,
+      "path": "tests/test_p21e_measurement_utility.py",
+      "sha256": "c094c9beb2e674abd090c1d05e728e578fc9c5ffcb36332c2d6a09992e200b59"
+    },
+    {
+      "bytes": 5138,
+      "path": "docs/p21e_measurement_utility_protocol.md",
+      "sha256": "e031ca826ed5a552865f0cd56968cd3abc080d4505e6cb8325ac749f796bd3f1"
+    },
+    {
+      "bytes": 3578,
+      "path": "docs/p21e_measurement_utility_results.md",
+      "sha256": "1befa3028bb8b38021015613e9c27b6293567deeeac96bff4333630075857811"
+    },
+    {
+      "bytes": 3918,
+      "path": "docs/product_positioning.md",
+      "sha256": "792d00fc8dc360ff6719768a1c6048360842f281f4c5a8fc13f3c15ac144db8d"
+    },
+    {
+      "bytes": 6711,
+      "path": "artifacts/manifests/p21e_measurement_utility.json",
+      "sha256": "b20c1f85780f514fae52c9a4842a168134b0318170d6562f4033d09351955d8a"
+    },
+    {
+      "bytes": 337,
+      "path": "artifacts/manifests/p21e_measurement_utility_validation.json",
+      "sha256": "a8e9055e2dcd1ff8786b405766a741a3a3e31b1a74b009ec1381108105737603"
+    },
+    {
+      "bytes": 964859,
+      "path": "artifacts/p21e/drift_alert_events.parquet",
+      "sha256": "02b319c4f3be8894deaf91f191a163d767861d8bbf13145095e0322a09aaa595"
+    },
+    {
+      "bytes": 1090963,
+      "path": "artifacts/p21e/peer_geometry_rows.parquet",
+      "sha256": "ad8063e4dc7330707259489f39b8128f87e544bcc7307647e8a9c05d34122f42"
+    },
+    {
+      "bytes": 1592155,
+      "path": "artifacts/p21e/peer_examples.parquet",
+      "sha256": "4083ed1c12eb5e15009afd85d09e0f1f87c1ebc38469394c6659087a4dacebca"
+    },
+    {
+      "bytes": 1740,
+      "path": "artifacts/tables/p21e_drift_alert_metrics.csv",
+      "sha256": "e0efd5ad47b42a62c885c162f6b5757a732ea1f9e6a98a0c1c58b6d433a4c33f"
+    },
+    {
+      "bytes": 1863,
+      "path": "artifacts/tables/p21e_peer_geometry_metrics.csv",
+      "sha256": "2cafb2ec3da507a985c149cc8e970b060ce6f3eec8a8367f98742103d21f1de7"
+    },
+    {
+      "bytes": 1238,
+      "path": "artifacts/tables/p21e_use_case_matrix.csv",
+      "sha256": "68a84b0c3fb03c4e9e8fff3cad479f7cc2ecbdd8d6d4c8940fc53b3a568a862d"
+    },
+    {
+      "bytes": 4390,
+      "path": "artifacts/logs/p21e_pytest.txt",
+      "sha256": "fd06999eb9e2ee44eedc52fed8b4bcefc962072f2e3be308f488cc7492ff86c4"
+    }
+  ],
+  "frozen_p0_p10_outputs_modified": false,
+  "gate_result": "RESEARCH_BENCHMARK_ONLY",
+  "generated_at_utc": "2026-07-23T15:33:58.228225+00:00",
+  "new_synthetic_scenario_generated": false,
+  "phase": "P21E",
+  "real_data_run": false,
+  "schema_version": 1,
+  "selected_candidate": "competitive_crowding_state",
+  "selected_multiplier": null,
+  "status": "PASS",
+  "version": "hypercube-measurement-utility-v1"
+}

@@ -1,0 +1,80 @@
+{
+  "files": [
+    {
+      "bytes": 9361253,
+      "path": "data/processed/synthetic/migration_alpha/p7/forward_return_targets.parquet",
+      "sha256": "6b7c3cc6f4ae840d4e8d5800d97e47e1a4b29f8a07e5824985f57608dd2d042e"
+    },
+    {
+      "bytes": 5448918,
+      "path": "data/raw/synthetic/migration_alpha/synthetic_truth.parquet",
+      "sha256": "f2be82543660042717a89aa4432ced31eb5e50c202d09300fc6d1105a9b11ca5"
+    },
+    {
+      "bytes": 2059167,
+      "path": "artifacts/tables/p13f_proxy_candidates.parquet",
+      "sha256": "9653a74f993fd8c6035078786acae8dcdc213b12951098970dbed029bfde191d"
+    },
+    {
+      "bytes": 25388,
+      "path": "hypercube/power_calibration.py",
+      "sha256": "62c521a40938373a371c5448c12ec4ad4e0bdbb5cc2774748da2754a68471d4b"
+    },
+    {
+      "bytes": 1904,
+      "path": "scripts/calibrate_locked_proxy_power.py",
+      "sha256": "f5edbc7136be03006d1a60961395cb633747f89044d411e1aafac9a78dd98766"
+    },
+    {
+      "bytes": 1952,
+      "path": "scripts/validate_locked_proxy_power.py",
+      "sha256": "2a723c72daf818cb6be82e09a91ff861d5d35da3e3d3411fb5c3556e1545c25c"
+    },
+    {
+      "bytes": 2125,
+      "path": "scripts/build_post_closeout_manifest.py",
+      "sha256": "3bc6ce8678cc4f0677c3f7ee20ae281d1d89b3784f5442295578b18eeaf1d19c"
+    },
+    {
+      "bytes": 3492,
+      "path": "tests/test_p15e_locked_proxy_power.py",
+      "sha256": "7e0b908660701d85977d21006b3a2c771a3edb9d6fa1574b3636c993e64b4add"
+    },
+    {
+      "bytes": 1650,
+      "path": "docs/p15e_proxy_power_calibration_preregistration.md",
+      "sha256": "3fe14e05417acce99665a6f7d8ebdc4b15cfe507ccd22de6d3a04246f3ed5800"
+    },
+    {
+      "bytes": 1296,
+      "path": "docs/p15e_proxy_power_calibration_results.md",
+      "sha256": "230144ded171df4f1586097be3bc3fb11899160c19ccfa2f21fd5be454fce15d"
+    },
+    {
+      "bytes": 1193,
+      "path": "artifacts/tables/p15e_locked_proxy_power.csv",
+      "sha256": "866333eb8dee5e1c8a8b6f7f70932535f7decc912c807937e39d3c3175764c66"
+    },
+    {
+      "bytes": 1761,
+      "path": "artifacts/manifests/p15e_locked_proxy_power.json",
+      "sha256": "2bed94a3d237a79ce7b13ff8d07a4018ca1cce8077177606b92615eabc371605"
+    },
+    {
+      "bytes": 336,
+      "path": "artifacts/manifests/p15e_locked_proxy_power_validation.json",
+      "sha256": "51097f354c9b47b0273b3f9382b85c726d642e7c7e655681d7ab766644953f88"
+    }
+  ],
+  "frozen_p0_p10_outputs_modified": false,
+  "gate_result": "GO",
+  "generated_at_utc": "2026-07-23T13:05:38.692445+00:00",
+  "new_synthetic_scenario_generated": false,
+  "phase": "P15E",
+  "real_data_run": false,
+  "schema_version": 1,
+  "selected_candidate": "anchored_axis_innovation",
+  "selected_multiplier": 6.0,
+  "status": "PASS",
+  "version": "hypercube-locked-proxy-power-calibration-v1"
+}

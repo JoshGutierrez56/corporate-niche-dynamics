@@ -1,0 +1,206 @@
+{
+  "evaluation_years": [
+    2013,
+    2018
+  ],
+  "exit_category_read": false,
+  "injected_return_alpha_read": false,
+  "model_fit": false,
+  "neighbors": 20,
+  "output_records": [
+    {
+      "bytes": 964859,
+      "path": "artifacts/p21e/drift_alert_events.parquet",
+      "sha256": "02b319c4f3be8894deaf91f191a163d767861d8bbf13145095e0322a09aaa595"
+    },
+    {
+      "bytes": 1090963,
+      "path": "artifacts/p21e/peer_geometry_rows.parquet",
+      "sha256": "ad8063e4dc7330707259489f39b8128f87e544bcc7307647e8a9c05d34122f42"
+    },
+    {
+      "bytes": 1592155,
+      "path": "artifacts/p21e/peer_examples.parquet",
+      "sha256": "4083ed1c12eb5e15009afd85d09e0f1f87c1ebc38469394c6659087a4dacebca"
+    },
+    {
+      "bytes": 1740,
+      "path": "artifacts/tables/p21e_drift_alert_metrics.csv",
+      "sha256": "e0efd5ad47b42a62c885c162f6b5757a732ea1f9e6a98a0c1c58b6d433a4c33f"
+    },
+    {
+      "bytes": 1863,
+      "path": "artifacts/tables/p21e_peer_geometry_metrics.csv",
+      "sha256": "2cafb2ec3da507a985c149cc8e970b060ce6f3eec8a8367f98742103d21f1de7"
+    },
+    {
+      "bytes": 1238,
+      "path": "artifacts/tables/p21e_use_case_matrix.csv",
+      "sha256": "68a84b0c3fb03c4e9e8fff3cad479f7cc2ecbdd8d6d4c8940fc53b3a568a862d"
+    }
+  ],
+  "phase": "P21E",
+  "portfolio_run": false,
+  "primary_result": {
+    "gates": {
+      "peer_or_crowding_supported": true,
+      "strategic_drift_supported": false
+    },
+    "supported_use_cases": [
+      "competitive_crowding_state"
+    ],
+    "verdict": "RESEARCH_BENCHMARK_ONLY"
+  },
+  "real_data_read": false,
+  "return_data_read": false,
+  "rows": {
+    "drift_event_rows": 54544,
+    "drift_metric_rows": 12,
+    "peer_example_edges": 157320,
+    "peer_geometry_rows": 62928,
+    "peer_metric_rows": 12,
+    "use_case_rows": 8
+  },
+  "scenarios": [
+    "null_alpha",
+    "migration_alpha",
+    "regime_shift"
+  ],
+  "schema_version": 1,
+  "separate_edgar_corpus_touched": false,
+  "source_records": [
+    {
+      "bytes": 5138,
+      "path": "docs/p21e_measurement_utility_protocol.md",
+      "sha256": "e031ca826ed5a552865f0cd56968cd3abc080d4505e6cb8325ac749f796bd3f1"
+    },
+    {
+      "bytes": 685,
+      "path": "artifacts/tables/p5_recovery_metrics.csv",
+      "sha256": "405d313918109d641617f8ea979c9d014b9d8f4149224b980faf1d022c245c8e"
+    },
+    {
+      "bytes": 1702,
+      "path": "artifacts/manifests/p14f_p7_eligibility_audit.json",
+      "sha256": "54f9a247d74caeba5e0e6b3127f7dc5600e8263a9ccb4484b9139e3ea757ccdf"
+    },
+    {
+      "bytes": 3979,
+      "path": "artifacts/manifests/p20e_survival_utility.json",
+      "sha256": "1ae7cca914eb4d7f829edaa434091bd11e0ae41884ce3a8878082e821f3a5b4e"
+    },
+    {
+      "bytes": 8051012,
+      "path": "data/processed/synthetic/null_alpha/p3/axis_scores.parquet",
+      "sha256": "2582e3415ab2f8eaca1a989114981ff9f01c2e616cdd525d6d71e1569ce33dc7"
+    },
+    {
+      "bytes": 20220336,
+      "path": "data/processed/synthetic/null_alpha/p5/frontier_dynamics.parquet",
+      "sha256": "fc7457b9b053cf7c741023d39c16f425e44780069aaf55997f43163dcb49b39f"
+    },
+    {
+      "bytes": 4960624,
+      "path": "data/raw/synthetic/null_alpha/synthetic_truth.parquet",
+      "sha256": "f16cb0b73cb7ee787eb51e3a05fd93c43a4b829782083be22cc4a9e441266df4"
+    },
+    {
+      "bytes": 7926911,
+      "path": "data/processed/synthetic/migration_alpha/p3/axis_scores.parquet",
+      "sha256": "750ae33e4115c39a4b9261777b0f3000d6ef52c1f59b6a6b455cc111bbf534ad"
+    },
+    {
+      "bytes": 20249959,
+      "path": "data/processed/synthetic/migration_alpha/p5/frontier_dynamics.parquet",
+      "sha256": "be76052c5d6c263ab1e89d8805223ef7d158b726627e003f4fd2138ce12f6cd4"
+    },
+    {
+      "bytes": 5448918,
+      "path": "data/raw/synthetic/migration_alpha/synthetic_truth.parquet",
+      "sha256": "f2be82543660042717a89aa4432ced31eb5e50c202d09300fc6d1105a9b11ca5"
+    },
+    {
+      "bytes": 7827819,
+      "path": "data/processed/synthetic/regime_shift/p3/axis_scores.parquet",
+      "sha256": "6c7575a96d33e854b65ff5a53284155660f4e45660a40d768a540ac06c97f716"
+    },
+    {
+      "bytes": 19861105,
+      "path": "data/processed/synthetic/regime_shift/p5/frontier_dynamics.parquet",
+      "sha256": "85ffb45f4cbad91933a41554e4a0e69ab7e8a1d6ada266400e9a36b8149f60ca"
+    },
+    {
+      "bytes": 4830069,
+      "path": "data/raw/synthetic/regime_shift/synthetic_truth.parquet",
+      "sha256": "c8d55b29f384f0173054db2b97df6882f554427da838a045b0d64d6cd371eb69"
+    }
+  ],
+  "status": "PASS",
+  "survival_label_read": false,
+  "synthetic_truth_columns_read": [
+    "latent_axis_1",
+    "latent_axis_2",
+    "latent_axis_3",
+    "latent_axis_4",
+    "latent_axis_5",
+    "latent_axis_6",
+    "migration_surprise"
+  ],
+  "true_viability_read": false,
+  "use_case_results": {
+    "competitive_crowding_state": {
+      "coverage": 0.9333451988965026,
+      "crowding_spearman": 0.32150252727876055,
+      "gates": {
+        "coverage_at_least_0_85": true,
+        "every_scenario_spearman_at_least_0_10": true,
+        "overall_spearman_at_least_0_20": true
+      },
+      "scenario_spearman": {
+        "migration_alpha": 0.3383524809109336,
+        "null_alpha": 0.33488899388409393,
+        "regime_shift": 0.2938926326095906
+      },
+      "verdict": "SUPPORTED"
+    },
+    "strategic_drift_alerts": {
+      "benchmark_precision": 0.18640350877192982,
+      "block_precision": {
+        "2013_2015": 0.24195121951219511,
+        "2016_2018": 0.24212476837554045
+      },
+      "coverage": 0.9663024347315928,
+      "gates": {
+        "both_blocks_precision_at_least_0_20": true,
+        "coverage_at_least_0_95": true,
+        "overall_precision_at_least_0_25": false,
+        "precision_improvement_at_least_0_05": true,
+        "sign_accuracy_at_least_0_75": true
+      },
+      "overall_precision": 0.24205748865355523,
+      "overall_recall": 0.23391812865497075,
+      "overall_sign_accuracy": 0.8585476550680786,
+      "precision_improvement": 0.055653979881625404,
+      "verdict": "NOT_SUPPORTED"
+    },
+    "structural_peer_discovery": {
+      "coverage": 0.9333451988965026,
+      "gates": {
+        "coverage_at_least_0_85": true,
+        "every_scenario_recall_at_least_0_03": true,
+        "overall_recall_at_least_0_05": false,
+        "recall_lift_at_least_5x_random": false
+      },
+      "mean_recall_at_20": 0.04837751080600051,
+      "random_recall": 0.011448203056242941,
+      "recall_lift_vs_random": 4.225773299820992,
+      "scenario_recall": {
+        "migration_alpha": 0.04719706359042807,
+        "null_alpha": 0.04910433539780848,
+        "regime_shift": 0.048831106870229006
+      },
+      "verdict": "NOT_SUPPORTED"
+    }
+  },
+  "version": "hypercube-measurement-utility-v1"
+}

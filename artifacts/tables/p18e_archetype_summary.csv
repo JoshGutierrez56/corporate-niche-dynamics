@@ -1,0 +1,4 @@
+scenario,assignment_rows,fit_rows,cluster_count,noise_or_unassigned_rate,successful_stability_refits,stability_repetitions,mean_stability_ari,validation_status,validation_warning
+null_alpha,59921,25000,2,0.9467632382637139,4,5,-0.0015814913007736499,PASS,Archetype stability is weak; interpret clusters cautiously.
+migration_alpha,58894,24275,2,0.9649879444425579,4,5,-0.00046740671518957506,PASS,Archetype stability is weak; interpret clusters cautiously.
+regime_shift,58221,23892,2,0.9544150735988732,0,5,,PASS,Every bounded stability refit failed to recover two clusters.

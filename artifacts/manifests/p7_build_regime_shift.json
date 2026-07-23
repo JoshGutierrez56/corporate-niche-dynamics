@@ -1,0 +1,66 @@
+{
+  "aggregate_tables": [
+    "${PROJECT_ROOT}\\artifacts\\tables\\p7_fmb_summary.csv",
+    "${PROJECT_ROOT}\\artifacts\\tables\\p7_portfolio_factor_results.csv",
+    "${PROJECT_ROOT}\\artifacts\\tables\\p7_portfolio_exposures.csv",
+    "${PROJECT_ROOT}\\artifacts\\tables\\p7_subsample_results.csv",
+    "${PROJECT_ROOT}\\artifacts\\tables\\p7_target_attrition.csv"
+  ],
+  "config": "configs\\synthetic.yaml",
+  "costs_applied": false,
+  "phase": "P7",
+  "portfolio_run": true,
+  "reports": [
+    {
+      "construction": {
+        "costs_applied": false,
+        "events": 32305,
+        "fmb_tests": 12,
+        "gross_portfolios": 48,
+        "portfolio_run": true,
+        "return_test_run": true,
+        "scenario": "regime_shift",
+        "synthetic_truth_read": false,
+        "targets": 129220,
+        "valid_targets": 129220
+      },
+      "output_dir": "data\\processed\\synthetic\\regime_shift\\p7",
+      "reused_existing": false,
+      "scenario": "regime_shift",
+      "validation": {
+        "costs_applied": false,
+        "errors": [],
+        "fmb_tests": 12,
+        "gross_portfolios": 48,
+        "portfolio_run": true,
+        "recovery": {
+          "gates": {},
+          "primary_fmb_coefficient": 0.0014787885922271,
+          "primary_fmb_holm_p_value": 1.0,
+          "primary_fmb_p_value": 0.7565014832241227,
+          "primary_horizon_months": 6,
+          "primary_signal": "migration_surprise",
+          "primary_spearman_ic": 0.036805456722076794,
+          "rows": 23903,
+          "scenario": "regime_shift",
+          "scientific_status": "DESCRIPTIVE_ONLY",
+          "truth_field_read": "injected_return_alpha"
+        },
+        "return_test_run": true,
+        "rows": {
+          "events": 32305,
+          "paths": 387660,
+          "portfolio_months": 6820,
+          "targets": 129220,
+          "valid_targets": 129220
+        },
+        "scenario": "regime_shift",
+        "status": "PASS",
+        "warnings": []
+      }
+    }
+  ],
+  "return_test_run": true,
+  "schema_version": 1,
+  "status": "PASS"
+}

@@ -1,0 +1,80 @@
+{
+  "files": [
+    {
+      "bytes": 9361253,
+      "path": "data/processed/synthetic/migration_alpha/p7/forward_return_targets.parquet",
+      "sha256": "6b7c3cc6f4ae840d4e8d5800d97e47e1a4b29f8a07e5824985f57608dd2d042e"
+    },
+    {
+      "bytes": 5448918,
+      "path": "data/raw/synthetic/migration_alpha/synthetic_truth.parquet",
+      "sha256": "f2be82543660042717a89aa4432ced31eb5e50c202d09300fc6d1105a9b11ca5"
+    },
+    {
+      "bytes": 2059167,
+      "path": "artifacts/tables/p13f_proxy_candidates.parquet",
+      "sha256": "9653a74f993fd8c6035078786acae8dcdc213b12951098970dbed029bfde191d"
+    },
+    {
+      "bytes": 24626,
+      "path": "hypercube/proxy_redesign.py",
+      "sha256": "5bceec7b4cb0e839533ce9b3d494885a8774cdc13ca69ce8458d6c1b121e13e7"
+    },
+    {
+      "bytes": 1885,
+      "path": "scripts/audit_p7_proxy_eligibility.py",
+      "sha256": "bab9dd5ee087628812d5b7ed1a536f015c251359cc902e2a448b14c6b8398a9c"
+    },
+    {
+      "bytes": 1933,
+      "path": "scripts/validate_p7_proxy_eligibility.py",
+      "sha256": "af8c3c18053c8df908adfff79010c3d29ca1256ccad999d2ab478c1f857f3f86"
+    },
+    {
+      "bytes": 2125,
+      "path": "scripts/build_post_closeout_manifest.py",
+      "sha256": "3bc6ce8678cc4f0677c3f7ee20ae281d1d89b3784f5442295578b18eeaf1d19c"
+    },
+    {
+      "bytes": 5335,
+      "path": "tests/test_p13e_proxy_redesign.py",
+      "sha256": "7678bca98142c2c2023859e3f31cb68b1ddd957004dafaa529018840d2264b50"
+    },
+    {
+      "bytes": 1409,
+      "path": "docs/p14f_p7_eligibility_audit_corrected_preregistration.md",
+      "sha256": "4e0b68cf70659d5e793261d5a334d1ee12ae7ee6a7bf07991ffc7b0b4299c736"
+    },
+    {
+      "bytes": 858,
+      "path": "docs/p14f_p7_eligibility_audit_results.md",
+      "sha256": "f41c118fa4b9224a7cd93699c3785ffef40c903f934a51e180acd70df9aee969"
+    },
+    {
+      "bytes": 515,
+      "path": "artifacts/tables/p14f_p7_eligibility_audit.csv",
+      "sha256": "4d540d9f558a1b52d277a4b983b65ac9e8e0eafd03207a8175574cf5e8fb9c4f"
+    },
+    {
+      "bytes": 1702,
+      "path": "artifacts/manifests/p14f_p7_eligibility_audit.json",
+      "sha256": "54f9a247d74caeba5e0e6b3127f7dc5600e8263a9ccb4484b9139e3ea757ccdf"
+    },
+    {
+      "bytes": 301,
+      "path": "artifacts/manifests/p14f_p7_eligibility_validation.json",
+      "sha256": "b2167490c09153cf9ee93b217834bebb8be19b17469454ab6c41f3b784eb2e1e"
+    }
+  ],
+  "frozen_p0_p10_outputs_modified": false,
+  "gate_result": "GO",
+  "generated_at_utc": "2026-07-23T13:05:31.906390+00:00",
+  "new_synthetic_scenario_generated": false,
+  "phase": "P14F",
+  "real_data_run": false,
+  "schema_version": 1,
+  "selected_candidate": "anchored_axis_innovation",
+  "selected_multiplier": null,
+  "status": "PASS",
+  "version": "hypercube-p7-eligibility-proxy-audit-v2"
+}

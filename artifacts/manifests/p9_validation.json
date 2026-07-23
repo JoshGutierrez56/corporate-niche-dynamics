@@ -1,0 +1,65 @@
+{
+  "descriptive_only": true,
+  "phase": "P9",
+  "reports": [
+    {
+      "descriptive_only": true,
+      "errors": [],
+      "mean_stability_ari": -0.0015814913007736499,
+      "noise_or_unassigned_rate": 0.9467632382637139,
+      "output_dir": "data\\processed\\synthetic\\null_alpha\\p9",
+      "rows": {
+        "assignments": 59921,
+        "clusters": 2,
+        "fit_rows": 25000,
+        "transition_cells": 15
+      },
+      "scenario": "null_alpha",
+      "status": "PASS",
+      "synthetic_truth_read": false,
+      "warnings": [
+        "Archetype stability is weak; interpret clusters cautiously."
+      ]
+    },
+    {
+      "descriptive_only": true,
+      "errors": [],
+      "mean_stability_ari": 0.00272455886087005,
+      "noise_or_unassigned_rate": 0.9805269770126651,
+      "output_dir": "data\\processed\\synthetic\\migration_alpha\\p9",
+      "rows": {
+        "assignments": 58902,
+        "clusters": 3,
+        "fit_rows": 24279,
+        "transition_cells": 15
+      },
+      "scenario": "migration_alpha",
+      "status": "PASS",
+      "synthetic_truth_read": false,
+      "warnings": [
+        "Archetype stability is weak; interpret clusters cautiously."
+      ]
+    },
+    {
+      "descriptive_only": true,
+      "errors": [],
+      "mean_stability_ari": NaN,
+      "noise_or_unassigned_rate": 0.9544150735988732,
+      "output_dir": "data\\processed\\synthetic\\regime_shift\\p9",
+      "rows": {
+        "assignments": 58221,
+        "clusters": 2,
+        "fit_rows": 23892,
+        "transition_cells": 13
+      },
+      "scenario": "regime_shift",
+      "status": "PASS",
+      "synthetic_truth_read": false,
+      "warnings": [
+        "Every bounded stability refit failed to recover two clusters."
+      ]
+    }
+  ],
+  "schema_version": 1,
+  "status": "PASS"
+}

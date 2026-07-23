@@ -1,0 +1,16 @@
+{
+  "archetype_conclusion": "UNSTABLE_MOSTLY_NOISE",
+  "figure_files": 12,
+  "figure_registry": "${PROJECT_ROOT}\\artifacts\\tables\\p10_figure_registry.csv",
+  "figure_topics": 11,
+  "generated_at_utc": "2026-07-23T04:05:27.407214+00:00",
+  "phase": "P10",
+  "primary_implementation_conclusion": "NEGATIVE_AFTER_COSTS",
+  "primary_statistical_conclusion": "MIGRATION_SIGNAL_NOT_RECOVERED",
+  "primary_visual_scenario": "migration_alpha",
+  "real_data_run": false,
+  "report_statistics": "${PROJECT_ROOT}\\artifacts\\tables\\p10_report_statistics.csv",
+  "schema_version": 1,
+  "synthetic_only": true,
+  "version": "hypercube-final-figures-v1"
+}

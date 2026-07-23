@@ -1,0 +1,95 @@
+{
+  "files": [
+    {
+      "bytes": 8603,
+      "path": "hypercube/survival_utility.py",
+      "sha256": "9c470d12236faa9e7d0417b99367346166b1642616e941ca904a9eb8a007bfd6"
+    },
+    {
+      "bytes": 9269,
+      "path": "scripts/run_p20e_survival_utility.py",
+      "sha256": "4c8ef53cea02c2be0b69e17a1ec663d153837b97a03785ae267c0a97605470a9"
+    },
+    {
+      "bytes": 7268,
+      "path": "scripts/validate_p20e_survival_utility.py",
+      "sha256": "30a051f2480b974a0578fca981090bb0a52d48a290e845add7ef12f094c3ed9e"
+    },
+    {
+      "bytes": 2323,
+      "path": "tests/test_p20e_survival_utility.py",
+      "sha256": "a41186f94a899294df03ace9169a688466c15d4839fe0c6fed012b32b2d03b52"
+    },
+    {
+      "bytes": 3161,
+      "path": "docs/p20e_survival_utility_audit_protocol.md",
+      "sha256": "e38f03f79d35bc4ad236dc79987b44b952540d946a29fc4e1ed10d7e22428e6a"
+    },
+    {
+      "bytes": 3852,
+      "path": "docs/p20e_survival_utility_results.md",
+      "sha256": "84959a840dcb39c6d9472ca24fbc01f60e21a9cbf599d1060d6223cc2ca6a74f"
+    },
+    {
+      "bytes": 3979,
+      "path": "artifacts/manifests/p20e_survival_utility.json",
+      "sha256": "1ae7cca914eb4d7f829edaa434091bd11e0ae41884ce3a8878082e821f3a5b4e"
+    },
+    {
+      "bytes": 288,
+      "path": "artifacts/manifests/p20e_survival_utility_validation.json",
+      "sha256": "ea52fbe8f061077b3cdb5b4da1523c4a8915513f813d661f392e345b75adfd56"
+    },
+    {
+      "bytes": 7605073,
+      "path": "artifacts/p20e/survival_predictions.parquet",
+      "sha256": "cd36d53ad5500b1d3183778f4404145e8685de76014b74714ebb79ed5e968c2e"
+    },
+    {
+      "bytes": 1328,
+      "path": "artifacts/p20e/fold_definitions.csv",
+      "sha256": "79057c8ca003426f322a412b936b9daa79a79418893d367e881ecf5fb5794eca"
+    },
+    {
+      "bytes": 12668,
+      "path": "artifacts/tables/p20e_survival_fold_metrics.csv",
+      "sha256": "da406ea98c337c39e8f45ccc982e51b4a76e8250ad5b2be3d6182c3d067de9ad"
+    },
+    {
+      "bytes": 2007,
+      "path": "artifacts/tables/p20e_survival_model_summary.csv",
+      "sha256": "8e645245315e994ba4fd1ec5bbd88aaf3c83dc9352fae90153d579c2cf060b8a"
+    },
+    {
+      "bytes": 2665,
+      "path": "artifacts/tables/p20e_survival_pairwise.csv",
+      "sha256": "caa6378fb610b853a594905052cc06ba6657a02fd4a2a5ac56e387b6db8fff99"
+    },
+    {
+      "bytes": 570,
+      "path": "artifacts/tables/p20e_existing_hypercube_comparisons.csv",
+      "sha256": "e54c3063b7aae290c124af62b84380a9fe0ca29a1313b2c25c84070cd9f3a9fd"
+    },
+    {
+      "bytes": 1493,
+      "path": "artifacts/tables/p20e_p6_failure_metrics.csv",
+      "sha256": "6aa860d5730ec9f91590f6ab8740685d07568aa217f2ddd97f40cdacffc2191e"
+    },
+    {
+      "bytes": 2187,
+      "path": "artifacts/logs/p20e_pytest.txt",
+      "sha256": "c3003fc21bc9ed51773cfb629ced5ace05cb0006d8aa0fd5dba2b85491278058"
+    }
+  ],
+  "frozen_p0_p10_outputs_modified": false,
+  "gate_result": "NO_ROBUST_INCREMENTAL_UTILITY",
+  "generated_at_utc": "2026-07-23T15:12:00.100798+00:00",
+  "new_synthetic_scenario_generated": false,
+  "phase": "P20E",
+  "real_data_run": false,
+  "schema_version": 1,
+  "selected_candidate": "financial_plus_hypercube_logit",
+  "selected_multiplier": null,
+  "status": "PASS",
+  "version": "hypercube-survival-utility-v1"
+}

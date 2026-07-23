@@ -1,0 +1,75 @@
+{
+  "files": [
+    {
+      "bytes": 20699,
+      "path": "scripts/run_p19e_final_closeout.py",
+      "sha256": "854d733985464a7fbd381176ad585acd7ff2a115de2cb184cf7afcf4250e2990"
+    },
+    {
+      "bytes": 10344,
+      "path": "scripts/validate_p19e_final_closeout.py",
+      "sha256": "5354cf55d0e03a1a0d03ae09cf5d55b4dc2bede56bd649b71883b113dc1ea4ab"
+    },
+    {
+      "bytes": 2649,
+      "path": "docs/p19e_final_closeout_preregistration.md",
+      "sha256": "55e08b5243d423549dd2ec1baa0e9e653fd3484cf6fdf33da3d8c11fb61a3489"
+    },
+    {
+      "bytes": 1721,
+      "path": "docs/p19e_final_closeout_results.md",
+      "sha256": "e01c5b5a14226f37e74be65d43da3fa358341521243931393b681404df740cb9"
+    },
+    {
+      "bytes": 2258,
+      "path": "docs/archive/p10_README.md",
+      "sha256": "77b9b08fdb495682ede4e9aab187a9aa78c18cee7a3111cbcf97dbd47a7b9eae"
+    },
+    {
+      "bytes": 3450,
+      "path": "docs/archive/p10_report.md",
+      "sha256": "b80cedb5d04f8b1822fcdb3b9d708d0dd0b8e3dd5813aeff96ad6d7cd3c0710c"
+    },
+    {
+      "bytes": 2507,
+      "path": "README.md",
+      "sha256": "bce45ee211bc74d4c9df19eb8eadb5aee2b103dc16669a8d6579a26ff6c66712"
+    },
+    {
+      "bytes": 3559,
+      "path": "report.md",
+      "sha256": "628e7fae1e16765f1484c6360f1aead750631d372b338229b6f356e10d3c78e1"
+    },
+    {
+      "bytes": 18068,
+      "path": "artifacts/manifests/p19e_final_closeout.json",
+      "sha256": "ecead896aa05bcc4294e570cdbaec6b49446a93825c3d1cf52cbd854bb9f4d20"
+    },
+    {
+      "bytes": 449,
+      "path": "artifacts/manifests/p19e_final_closeout_validation.json",
+      "sha256": "31bb59e662dc687cf622a5a150fee5c6fca723e15d539522a4eaa8240853e80c"
+    },
+    {
+      "bytes": 1412,
+      "path": "artifacts/tables/p19e_claim_ledger.csv",
+      "sha256": "ca7bfc637f188cfe0309f01add28b964c393994638b2fb1223f1a2928b334f29"
+    },
+    {
+      "bytes": 4370,
+      "path": "artifacts/logs/p19e_pytest.txt",
+      "sha256": "e9ea22e0369a95263330ea69b9bfb4c52ff396003b6c2f4adc41341990e8b4e7"
+    }
+  ],
+  "frozen_p0_p10_outputs_modified": false,
+  "gate_result": "PASS",
+  "generated_at_utc": "2026-07-23T14:41:20.789770+00:00",
+  "new_synthetic_scenario_generated": false,
+  "phase": "P19E",
+  "real_data_run": false,
+  "schema_version": 1,
+  "selected_candidate": "anchored_axis_innovation",
+  "selected_multiplier": 6.0,
+  "status": "PASS",
+  "version": "hypercube-final-repository-closeout-v1"
+}

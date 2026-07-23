@@ -1,0 +1,48 @@
+{
+  "errors": [],
+  "performance_gate_applied": false,
+  "phase": "P17E",
+  "scenario_validations": [
+    {
+      "errors": [],
+      "performance_gate_applied": false,
+      "primary_result": {
+        "annualized_gross_capacity_return": 0.02485776121898061,
+        "annualized_net_return": -0.05161015494597916,
+        "annualized_net_sharpe": -0.8434139453666089,
+        "average_capacity_fill_ratio": 0.6546408238564106,
+        "average_turnover": 0.44522242487071617,
+        "net_factor_alpha_monthly": -0.004060767078330674,
+        "net_factor_alpha_p_value": 0.00243017016905996,
+        "net_maximum_drawdown": -0.5102447975706166
+      },
+      "scenario": "migration_alpha",
+      "selected_candidate": "anchored_axis_innovation",
+      "status": "PASS",
+      "summary_rows": 24,
+      "synthetic_truth_read": false
+    },
+    {
+      "errors": [],
+      "performance_gate_applied": false,
+      "primary_result": {
+        "annualized_gross_capacity_return": -0.021687891502070008,
+        "annualized_net_return": -0.08859471686439194,
+        "annualized_net_sharpe": -1.5794475941178714,
+        "average_capacity_fill_ratio": 0.5865270726225548,
+        "average_turnover": 0.3996406053167546,
+        "net_factor_alpha_monthly": -0.007418507400826943,
+        "net_factor_alpha_p_value": 3.949614821003914e-08,
+        "net_maximum_drawdown": -0.7095828285323891
+      },
+      "scenario": "null_alpha",
+      "selected_candidate": "anchored_axis_innovation",
+      "status": "PASS",
+      "summary_rows": 24,
+      "synthetic_truth_read": false
+    }
+  ],
+  "schema_version": 1,
+  "status": "PASS",
+  "synthetic_truth_read": false
+}

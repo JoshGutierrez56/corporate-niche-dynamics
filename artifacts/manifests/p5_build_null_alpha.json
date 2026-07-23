@@ -1,0 +1,81 @@
+{
+  "aggregate_tables": [
+    "${PROJECT_ROOT}\\artifacts\\tables\\p5_feature_summary.csv",
+    "${PROJECT_ROOT}\\artifacts\\tables\\p5_migration_model_diagnostics.csv"
+  ],
+  "clustering_run": false,
+  "config": "configs\\synthetic.yaml",
+  "phase": "P5",
+  "portfolio_run": false,
+  "reports": [
+    {
+      "construction": {
+        "acceleration_rows": 37070,
+        "clustering_run": false,
+        "crowding_coverage": 0.9235227723376346,
+        "frontier_crossings": {
+          "-1": 64,
+          "0": 50819,
+          "1": 65
+        },
+        "historical_success_density_coverage": 0.9239193435221622,
+        "horizon_rows": {
+          "3": 32781,
+          "5": 32781
+        },
+        "migration_surprise_rows": 48394,
+        "model_vintage_boundary_rows": 9606,
+        "portfolio_run": false,
+        "return_test_run": false,
+        "rows": 65562,
+        "scenario": "null_alpha",
+        "synthetic_truth_read": false,
+        "velocity_rows": 50948
+      },
+      "output_dir": "data\\processed\\synthetic\\null_alpha\\p5",
+      "reused_existing": false,
+      "scenario": "null_alpha",
+      "validation": {
+        "clustering_run": false,
+        "errors": [],
+        "models_fitted": [
+          "expanding_migration_ridge"
+        ],
+        "portfolio_run": false,
+        "recovery": {
+          "gates": {
+            "level": true,
+            "migration_surprise": true,
+            "velocity": true
+          },
+          "level_rows": 32781,
+          "level_spearman": 0.4894803506301873,
+          "migration_surprise_rows": 24197,
+          "migration_surprise_spearman": 0.10251651027856139,
+          "primary_horizon_years": 5,
+          "return_injection_read": false,
+          "status": "PASS",
+          "thresholds": {
+            "level": 0.1,
+            "migration_surprise": 0.03,
+            "velocity": 0.05
+          },
+          "velocity_rows": 25474,
+          "velocity_spearman": 0.37464275664246066
+        },
+        "return_test_run": false,
+        "rows": {
+          "acceleration": 37070,
+          "frontier_dynamics": 65562,
+          "migration_surprise": 48394,
+          "velocity": 50948
+        },
+        "status": "PASS",
+        "warnings": []
+      }
+    }
+  ],
+  "return_test_run": false,
+  "schema_version": 1,
+  "status": "PASS"
+}

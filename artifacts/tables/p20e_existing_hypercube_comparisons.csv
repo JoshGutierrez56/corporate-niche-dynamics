@@ -1,0 +1,5 @@
+candidate_model,benchmark_model,folds,mean_auc_improvement,median_auc_improvement,auc_wins,mean_brier_improvement,brier_wins
+combined_axes_logit,profitability_logit,24,-0.008303158065399788,-0.01188507949197165,8,-9.15249586474218e-06,12
+combined_axes_logit,distress_logit,24,-0.0016805047677083986,0.0020624983311481326,12,-5.388009615221358e-06,12
+combined_axes_logit,industry_rate,24,0.044223880568477064,0.041828037635708526,20,2.9807800029349955e-05,20
+combined_axes_logit,occupied_cell_rate,24,0.032083129594837924,0.037313232519151196,21,1.124246424189969e-05,17

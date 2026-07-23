@@ -1,0 +1,80 @@
+{
+  "costs_applied": true,
+  "phase": "P8",
+  "reports": [
+    {
+      "costs_applied": true,
+      "errors": [],
+      "output_dir": "data\\processed\\synthetic\\null_alpha\\p8",
+      "primary_result": {
+        "annualized_gross_capacity_return": 0.007283719749901333,
+        "annualized_net_return": -0.0627164782268221,
+        "annualized_net_sharpe": -1.0962972526625354,
+        "average_capacity_fill_ratio": 0.6079461049109793,
+        "average_turnover": 0.41448217634051665,
+        "net_maximum_drawdown": -0.5701315829862146
+      },
+      "rows": {
+        "capacity_assignments": 131378,
+        "executed_positions": 1568428,
+        "monthly_scenario_rows": 11736,
+        "portfolio_summaries": 72
+      },
+      "scenario": "null_alpha",
+      "scientific_status": "NULL_OR_NEGATIVE_AFTER_COSTS",
+      "status": "PASS",
+      "synthetic_truth_read": false,
+      "warnings": []
+    },
+    {
+      "costs_applied": true,
+      "errors": [],
+      "output_dir": "data\\processed\\synthetic\\migration_alpha\\p8",
+      "primary_result": {
+        "annualized_gross_capacity_return": 0.012212060595911284,
+        "annualized_net_return": -0.0661135794174058,
+        "annualized_net_sharpe": -1.227384084620736,
+        "average_capacity_fill_ratio": 0.6746843518050281,
+        "average_turnover": 0.45858107621877964,
+        "net_maximum_drawdown": -0.5646940603541967
+      },
+      "rows": {
+        "capacity_assignments": 131392,
+        "executed_positions": 1568714,
+        "monthly_scenario_rows": 11664,
+        "portfolio_summaries": 72
+      },
+      "scenario": "migration_alpha",
+      "scientific_status": "NULL_OR_NEGATIVE_AFTER_COSTS",
+      "status": "PASS",
+      "synthetic_truth_read": false,
+      "warnings": []
+    },
+    {
+      "costs_applied": true,
+      "errors": [],
+      "output_dir": "data\\processed\\synthetic\\regime_shift\\p8",
+      "primary_result": {
+        "annualized_gross_capacity_return": 0.0032339157103790815,
+        "annualized_net_return": -0.07001643229998913,
+        "annualized_net_sharpe": -1.1459428356988033,
+        "average_capacity_fill_ratio": 0.6341043467145023,
+        "average_turnover": 0.430684649914648,
+        "net_maximum_drawdown": -0.5799510732524344
+      },
+      "rows": {
+        "capacity_assignments": 129652,
+        "executed_positions": 1547626,
+        "monthly_scenario_rows": 11736,
+        "portfolio_summaries": 72
+      },
+      "scenario": "regime_shift",
+      "scientific_status": "NULL_OR_NEGATIVE_AFTER_COSTS",
+      "status": "PASS",
+      "synthetic_truth_read": false,
+      "warnings": []
+    }
+  ],
+  "schema_version": 1,
+  "status": "PASS"
+}

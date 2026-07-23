@@ -1,0 +1,1328 @@
+{
+  "build_brief": null,
+  "config_path": "configs/synthetic.yaml",
+  "config_sha256": "028853d59b77b7f4d0c9d469a22ed07a02c4271a77614b3b217a2af956b04891",
+  "downstream_empirical_phases_started": true,
+  "failed_assumptions": [],
+  "feature_availability_summary": {
+    "hierarchy": [
+      "verified_sec_filing_timestamp",
+      "verified_earnings_announcement_date",
+      "datadate_plus_180_calendar_days"
+    ],
+    "maximum_staleness_months": 18,
+    "status": "p10_full_synthetic_pipeline_figures_and_reports_constructed",
+    "strict_post_availability_formation": true
+  },
+  "generated_at_utc": "2026-07-23T12:27:36.238147+00:00",
+  "git_commit": null,
+  "input_data": [
+    {
+      "bytes": 25237,
+      "path": "data/raw/synthetic/migration_alpha/ccm_link.parquet",
+      "rows": 3120,
+      "sha256": "31feea6c77c80ce60aa773d36522105cc1c8e80653774f0b453bbb8df834beea"
+    },
+    {
+      "bytes": 18775,
+      "path": "data/raw/synthetic/migration_alpha/crsp_delist.parquet",
+      "rows": 999,
+      "sha256": "e46fafd97ed0da09202aeabc6174db90e768daf4b4788a58962898b776fcf7d0"
+    },
+    {
+      "bytes": 40826193,
+      "path": "data/raw/synthetic/migration_alpha/crsp_monthly.parquet",
+      "rows": 741472,
+      "sha256": "77f9da9255949f3b3f56b17ed49bf64ae49e6c7ccdb95fcd166d31ce59aa29ed"
+    },
+    {
+      "bytes": 4551,
+      "path": "data/raw/synthetic/migration_alpha/data_manifest.json",
+      "sha256": "048c9509ae725e83ae3d4a9e05a32b241636ac0d0ca34cbcf8185bc4eddf9e42"
+    },
+    {
+      "bytes": 47309,
+      "path": "data/raw/synthetic/migration_alpha/factor_returns.parquet",
+      "rows": 600,
+      "sha256": "4c9b0e089478184de9729f247befaa540d2f73ee5991a2c1629046e6face5dc1"
+    },
+    {
+      "bytes": 12518826,
+      "path": "data/raw/synthetic/migration_alpha/funda.parquet",
+      "rows": 61042,
+      "sha256": "ddab2428c7ca95bc46a9f71b3224e3c61e34c2128507365150c04cd6c56f0cca"
+    },
+    {
+      "bytes": 169199,
+      "path": "data/raw/synthetic/migration_alpha/sec_filing_dates.parquet",
+      "rows": 51276,
+      "sha256": "8666920e185cc09a0e0fd01c34978064cd3ec36df30d94849bc55b0b8577440f"
+    },
+    {
+      "bytes": 1274,
+      "path": "data/raw/synthetic/migration_alpha/synthetic_scenario_metadata.json",
+      "sha256": "bda14e64f3bf7251f5aa3bbee6806db6965d23d712ddc0dba1d3e24320be76e6"
+    },
+    {
+      "bytes": 5448918,
+      "path": "data/raw/synthetic/migration_alpha/synthetic_truth.parquet",
+      "rows": 61042,
+      "sha256": "f2be82543660042717a89aa4432ced31eb5e50c202d09300fc6d1105a9b11ca5"
+    },
+    {
+      "bytes": 24957,
+      "path": "data/raw/synthetic/null_alpha/ccm_link.parquet",
+      "rows": 3104,
+      "sha256": "53a2512bf622f1f4d4758d4de85fbf58062e13b4eb7ea0c21f9dd3e5cf4ac885"
+    },
+    {
+      "bytes": 18244,
+      "path": "data/raw/synthetic/null_alpha/crsp_delist.parquet",
+      "rows": 969,
+      "sha256": "375680aa95dd0890fb6c5f5c79d08fc6a9f36d8f5caf07224118581e6a3cc2a2"
+    },
+    {
+      "bytes": 41408965,
+      "path": "data/raw/synthetic/null_alpha/crsp_monthly.parquet",
+      "rows": 752766,
+      "sha256": "eb6dac80c82d9dd77d3b956861bc26f08fa9607ccb1728c2b71cb5e0f1e732f4"
+    },
+    {
+      "bytes": 4546,
+      "path": "data/raw/synthetic/null_alpha/data_manifest.json",
+      "sha256": "afe3bffb04416e2bf40a71275a48270dd8ac57ec3190736855a7ab5c81b915f7"
+    },
+    {
+      "bytes": 47308,
+      "path": "data/raw/synthetic/null_alpha/factor_returns.parquet",
+      "rows": 600,
+      "sha256": "dcfd53258991b3b456cb92f8c752d208ce76f587cde4fca63ecb6279f06e1b21"
+    },
+    {
+      "bytes": 12711702,
+      "path": "data/raw/synthetic/null_alpha/funda.parquet",
+      "rows": 62000,
+      "sha256": "b199d50728cb066b28cb1d1415d9f4db20436372471382bd7d08fd6aab61f980"
+    },
+    {
+      "bytes": 170925,
+      "path": "data/raw/synthetic/null_alpha/sec_filing_dates.parquet",
+      "rows": 52084,
+      "sha256": "4beb808ceb0ad41c278d60ea58c84449279987d339c97ebdac69a70659e67c41"
+    },
+    {
+      "bytes": 1262,
+      "path": "data/raw/synthetic/null_alpha/synthetic_scenario_metadata.json",
+      "sha256": "860bee4dd85a7d397255c82d4ab8f0aedcca17e49d534ede172f05419c6b5e9f"
+    },
+    {
+      "bytes": 4960624,
+      "path": "data/raw/synthetic/null_alpha/synthetic_truth.parquet",
+      "rows": 62000,
+      "sha256": "f16cb0b73cb7ee787eb51e3a05fd93c43a4b829782083be22cc4a9e441266df4"
+    },
+    {
+      "bytes": 25169,
+      "path": "data/raw/synthetic/regime_shift/ccm_link.parquet",
+      "rows": 3109,
+      "sha256": "297bd6568154d6752a95fee65cddacba0b8d8b247c2ae2ed41d809ddd9c55885"
+    },
+    {
+      "bytes": 18975,
+      "path": "data/raw/synthetic/regime_shift/crsp_delist.parquet",
+      "rows": 1016,
+      "sha256": "37c03432a139d7f1cf8a6d8bdf2ac2eba54d3fa8a6ecf8db52fc81569c2846da"
+    },
+    {
+      "bytes": 40362049,
+      "path": "data/raw/synthetic/regime_shift/crsp_monthly.parquet",
+      "rows": 732642,
+      "sha256": "c83bb9a16a94a3a4a9d685481bf18af07a1861c0d78af21df153f438b4b3ac41"
+    },
+    {
+      "bytes": 4549,
+      "path": "data/raw/synthetic/regime_shift/data_manifest.json",
+      "sha256": "5730affa23ac35fa2a5c63dbaff8ce35fc63ef8dcc4f82f015f2b8e42c4fd0b5"
+    },
+    {
+      "bytes": 47288,
+      "path": "data/raw/synthetic/regime_shift/factor_returns.parquet",
+      "rows": 600,
+      "sha256": "d14c2b0aa409bd040335e393dcfba1cca20b5f6820c24b4710d0a197287752fe"
+    },
+    {
+      "bytes": 12365522,
+      "path": "data/raw/synthetic/regime_shift/funda.parquet",
+      "rows": 60295,
+      "sha256": "19e06442fc902b3868c3eaddb70bb803cfbc0d5b880cc6ec510633505bece1fd"
+    },
+    {
+      "bytes": 167812,
+      "path": "data/raw/synthetic/regime_shift/sec_filing_dates.parquet",
+      "rows": 50595,
+      "sha256": "eb27e520568d56f4d99408923b10fe23f3f5417fa42bceb19aa445d6f32e53ce"
+    },
+    {
+      "bytes": 1264,
+      "path": "data/raw/synthetic/regime_shift/synthetic_scenario_metadata.json",
+      "sha256": "a6038006ecede202b417a4ba541994d9f5c92745bb6ea9f9e8c1a9b0d695aaf9"
+    },
+    {
+      "bytes": 4830069,
+      "path": "data/raw/synthetic/regime_shift/synthetic_truth.parquet",
+      "rows": 60295,
+      "sha256": "c8d55b29f384f0173054db2b97df6882f554427da838a045b0d64d6cd371eb69"
+    }
+  ],
+  "model_hyperparameters": {
+    "clustering": {
+      "assignment_radius_quantile": 0.95,
+      "maximum_training_rows": 25000,
+      "minimum_cluster_size": 200,
+      "minimum_samples": 10,
+      "representation": "anchored",
+      "stability_repetitions": 5,
+      "stability_sample_fraction": 0.8,
+      "training_end_year": 2004
+    },
+    "costs": {
+      "borrow_annual_bps": 300.0,
+      "delayed_execution_months": 1,
+      "fallback_half_spread_bps": 50.0,
+      "hard_borrow_adv_millions": 0.5,
+      "hard_borrow_annual_bps": 700.0,
+      "hard_borrow_market_cap_millions": 100.0,
+      "max_adv_participation": 0.1,
+      "max_half_spread": 0.05,
+      "max_market_cap_fraction": 0.001,
+      "max_position_weight": 0.1,
+      "minimum_short_adv_millions": 0.1,
+      "minimum_short_market_cap_millions": 25.0,
+      "portfolio_notional_millions_per_leg": 1.0,
+      "primary_cost_scenario": "conservative",
+      "primary_horizon_months": 6,
+      "primary_industry_neutral": true,
+      "primary_weighting": "value",
+      "scenarios": [
+        {
+          "fixed_slippage_bps": 5.0,
+          "name": "low",
+          "quoted_half_spread_multiplier": 0.5
+        },
+        {
+          "fixed_slippage_bps": 10.0,
+          "name": "conservative",
+          "quoted_half_spread_multiplier": 1.0
+        },
+        {
+          "fixed_slippage_bps": 25.0,
+          "name": "severe",
+          "quoted_half_spread_multiplier": 1.5
+        }
+      ],
+      "trading_days_per_month": 21,
+      "volume_unit_multiplier": 1000.0
+    },
+    "dynamics": {
+      "cross_section_minimum": 20,
+      "crowding_neighbors": 10,
+      "migration_minimum_train_observations": 1000,
+      "migration_ridge_alpha": 10.0,
+      "primary_model": "combined_axes_logit",
+      "probability_clip": 1e-06,
+      "recovery_minimum_level_spearman": 0.1,
+      "recovery_minimum_surprise_spearman": 0.03,
+      "recovery_minimum_velocity_spearman": 0.05,
+      "recovery_primary_horizon_years": 5,
+      "successful_density_minimum": 100,
+      "successful_density_neighbors": 20,
+      "survival_probability_threshold": 0.95
+    },
+    "returns": {
+      "controls": [
+        "log_market_cap",
+        "book_to_market",
+        "momentum_12_2",
+        "operating_margin",
+        "asset_growth",
+        "book_leverage",
+        "working_capital_assets",
+        "operating_income_assets",
+        "equity_to_liabilities",
+        "sales_to_assets",
+        "log_dollar_volume_12m",
+        "realized_volatility_12m",
+        "equity_beta_24m"
+      ],
+      "entry_lag_months": 1,
+      "factor_columns": [
+        "mkt_excess",
+        "smb",
+        "hml",
+        "rmw",
+        "cma",
+        "mom"
+      ],
+      "horizons_months": [
+        1,
+        3,
+        6,
+        12
+      ],
+      "industry_neutral_modes": [
+        false,
+        true
+      ],
+      "minimum_cross_section": 30,
+      "minimum_fmb_months": 24,
+      "minimum_industry_group": 10,
+      "missing_delisting_return_policy": "missing_target",
+      "multiple_testing_method": "holm",
+      "overlapping_hac_rule": "horizon_minus_one",
+      "primary_horizon_months": 6,
+      "primary_signal": "migration_surprise",
+      "primary_surface_horizon_years": 5,
+      "quantiles": 5,
+      "require_complete_path_or_delist": true,
+      "signals": [
+        "viability_log_odds",
+        "velocity_log_odds",
+        "migration_surprise"
+      ],
+      "synthetic_migration_min_primary_ic": 0.0,
+      "synthetic_null_max_abs_primary_ic": 0.03,
+      "synthetic_oracle_slope_lower": 0.4,
+      "synthetic_oracle_slope_upper": 1.3,
+      "weighting_schemes": [
+        "equal",
+        "value"
+      ],
+      "winsor_lower": 0.01,
+      "winsor_upper": 0.99
+    },
+    "survival": {
+      "calibration": "logistic_risk_score",
+      "causes": [
+        "performance_failure",
+        "merger"
+      ],
+      "features": [
+        "viability_log_odds",
+        "velocity_log_odds",
+        "acceleration_log_odds",
+        "crowding_density",
+        "historical_success_density",
+        "log_market_cap",
+        "book_leverage",
+        "operating_margin"
+      ],
+      "minimum_reporting_history": 3,
+      "minimum_test_events": 5,
+      "minimum_train_events": 20,
+      "minimum_train_intervals": 5000,
+      "outer_folds": [
+        {
+          "end_year": 2014,
+          "start_year": 2010
+        },
+        {
+          "end_year": 2019,
+          "start_year": 2015
+        }
+      ],
+      "ph_diagnostic_alpha": 0.01,
+      "primary_horizon_years": 5,
+      "ties": "breslow",
+      "time_origin_date": "1900-01-01"
+    },
+    "viability": {
+      "calibration": "platt",
+      "cell_bins": 3,
+      "horizons_years": [
+        3,
+        5
+      ],
+      "minimum_train_failures": 20,
+      "minimum_train_observations": 500,
+      "minimum_validation_failures": 5,
+      "nonlinear_model": "hist_gradient_boosting",
+      "outer_folds": [
+        {
+          "end_year": 2004,
+          "start_year": 2000
+        },
+        {
+          "end_year": 2009,
+          "start_year": 2005
+        },
+        {
+          "end_year": 2014,
+          "start_year": 2010
+        },
+        {
+          "end_year": 2019,
+          "start_year": 2015
+        }
+      ],
+      "primary_model": "combined_axes_logit",
+      "ridge_c_grid": [
+        0.01,
+        0.1,
+        1.0,
+        10.0
+      ],
+      "tree_l2_regularization": 1.0,
+      "tree_learning_rate": 0.05,
+      "tree_max_iter": 100,
+      "tree_max_leaf_nodes": 15,
+      "tree_min_samples_leaf": 50,
+      "validation_years": 5
+    }
+  },
+  "outputs": [
+    "artifacts/manifests/full_pipeline_receipt.json",
+    "artifacts/manifests/p10_build.json",
+    "artifacts/manifests/p10_validation.json",
+    "artifacts/manifests/p10_manifest.json",
+    "artifacts/tables/p10_*.csv",
+    "figures/01_*.png through figures/11_*.png",
+    "figures/11_three_axis_projection_rotating.gif",
+    "README.md",
+    "report.md",
+    "docs/reproduction_guide.md"
+  ],
+  "packages": {
+    "PyYAML": "6.0.2",
+    "joblib": "1.5.1",
+    "numpy": "2.3.1",
+    "pandas": "2.3.1",
+    "pyarrow": "20.0.0",
+    "pydantic": "2.11.7",
+    "pytest": "8.4.1",
+    "scikit-learn": "1.7.1",
+    "scipy": "1.16.0",
+    "statsmodels": "0.14.5"
+  },
+  "phase": "P10",
+  "project": "business-niche-hypercube",
+  "project_files": [
+    {
+      "bytes": 531,
+      "path": ".gitignore",
+      "sha256": "12a0247a2b5ea084e24f6fde3b44ede3fd40107c32fcdc43daa1cf5436ddd095"
+    },
+    {
+      "bytes": 6,
+      "path": ".python-version",
+      "sha256": "9ea280e4c89d3f302c1e8b3e5e7db91c46bec0fe761356ae90f32aaf0dbe0e8b"
+    },
+    {
+      "bytes": 7270,
+      "path": "artifacts/checkpoints/full_pipeline_configs/p1.yaml",
+      "sha256": "01bf91f9642e2d313fa84639d6a8b22fbb5201d8572ffaf97030ef98c23091cf"
+    },
+    {
+      "bytes": 7272,
+      "path": "artifacts/checkpoints/full_pipeline_configs/p10.yaml",
+      "sha256": "7267efd0343c90059865ad1fc167df711e0e5daeeb7cc0ddcd59049b634331d9"
+    },
+    {
+      "bytes": 7270,
+      "path": "artifacts/checkpoints/full_pipeline_configs/p2.yaml",
+      "sha256": "3a967793aa1f518da8b604daa7dd00a55e64b16717b5a293ff92a1955dca443b"
+    },
+    {
+      "bytes": 7270,
+      "path": "artifacts/checkpoints/full_pipeline_configs/p3.yaml",
+      "sha256": "4afec922f55e42b1937e8d7140e23bde2460e010248cdd2ce3aeba0d5b986868"
+    },
+    {
+      "bytes": 7270,
+      "path": "artifacts/checkpoints/full_pipeline_configs/p4.yaml",
+      "sha256": "ccf4af59d907b0c2000d7103ff7ee81e841bd693fea0116ec7dda2ba02ac63e5"
+    },
+    {
+      "bytes": 7270,
+      "path": "artifacts/checkpoints/full_pipeline_configs/p5.yaml",
+      "sha256": "c7e177260c3be9abef2e308550dbadf8d2b285323997137f87dcb6c1b9bd4ee5"
+    },
+    {
+      "bytes": 7270,
+      "path": "artifacts/checkpoints/full_pipeline_configs/p6.yaml",
+      "sha256": "8735bc10278c6261b8d815eee0c4cf088c1748e190bb5302cd24f4c15cd4b78b"
+    },
+    {
+      "bytes": 7270,
+      "path": "artifacts/checkpoints/full_pipeline_configs/p7.yaml",
+      "sha256": "0d945142df901d2ecd0d827bc18d083255639da7e9ec5692915ddac7f8f43aaa"
+    },
+    {
+      "bytes": 7270,
+      "path": "artifacts/checkpoints/full_pipeline_configs/p8.yaml",
+      "sha256": "75be921a58bd0587da975d59779d8ce078c0e3a9303bb6dfdc2019d7ff869f5d"
+    },
+    {
+      "bytes": 7270,
+      "path": "artifacts/checkpoints/full_pipeline_configs/p9.yaml",
+      "sha256": "a79c3f5409cdba4b579d99493cccc9c03400f6d1f6a5a3e20f8753e1b87e1572"
+    },
+    {
+      "bytes": 1,
+      "path": "artifacts/models/.gitkeep",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "bytes": 1,
+      "path": "artifacts/tables/.gitkeep",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "bytes": 7311,
+      "path": "configs/base.yaml",
+      "sha256": "3ff93f0af537937cea4889c85ce18967373e78757e66c7feaacc1ae40434de41"
+    },
+    {
+      "bytes": 280,
+      "path": "configs/real.yaml",
+      "sha256": "e2f55ca984fb5a05de83520a53b4289f445d298faf19a4707d82626a9156ee75"
+    },
+    {
+      "bytes": 318,
+      "path": "configs/synthetic.yaml",
+      "sha256": "028853d59b77b7f4d0c9d469a22ed07a02c4271a77614b3b217a2af956b04891"
+    },
+    {
+      "bytes": 1,
+      "path": "data/interim/.gitkeep",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "bytes": 1,
+      "path": "data/processed/.gitkeep",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "bytes": 1,
+      "path": "data/raw/.gitkeep",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "bytes": 12783,
+      "path": "docs/data_dictionary.md",
+      "sha256": "97f83fc5a57c8f548f5ac7d7cce2f1fd0aa8c7c34d0bcc01cc6bc479e0ae069e"
+    },
+    {
+      "bytes": 14888,
+      "path": "docs/modeling_decisions.md",
+      "sha256": "696626200e8df2b7fae51244a9fb22d3960a45be50cea3e17681d23101eb8914"
+    },
+    {
+      "bytes": 2814,
+      "path": "docs/p10_reproducibility_followup_2026-07-23.md",
+      "sha256": "15951e765b3500758e287c344ba6bac5583af749fa42e7e57b770d0b54c21fcd"
+    },
+    {
+      "bytes": 9862,
+      "path": "docs/point_in_time_policy.md",
+      "sha256": "0ba6361cd71fc94813ba178528f00a94f99ec42dc492902a85a676471124d369"
+    },
+    {
+      "bytes": 399,
+      "path": "docs/references.md",
+      "sha256": "392aeb8127e6c592b2bd534f78de2192611cf842c1b21a9d9115227408e85f28"
+    },
+    {
+      "bytes": 1278,
+      "path": "docs/reproduction_guide.md",
+      "sha256": "dca3e873f8da7bf08b2c2f59825a234d18b2b077a50905c7efc19854f1d6133c"
+    },
+    {
+      "bytes": 5742,
+      "path": "docs/research_spec.md",
+      "sha256": "6d59253b6e8d6c2d649b611d9e88de7cc8560c9138922e324bdc008b5f9f76d6"
+    },
+    {
+      "bytes": 1,
+      "path": "figures/.gitkeep",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "bytes": 105670,
+      "path": "figures/01_axis_distributions_and_correlation.png",
+      "sha256": "03788804b292bf313900bdb0624c6c541c63d9944079a90d9e6bbb752b6cb1d0"
+    },
+    {
+      "bytes": 494259,
+      "path": "figures/02_pca_viability_and_archetypes.png",
+      "sha256": "39c42c6d4acd04c0a551fdde38b64a0b12709447a8c2537fa381a023f770893d"
+    },
+    {
+      "bytes": 44812,
+      "path": "figures/03_calibrated_viability_curve.png",
+      "sha256": "f99e6bf7e5b01ec08ac9bf521c969f0a6956351a10f757ab1df37c317a7517c3"
+    },
+    {
+      "bytes": 33773,
+      "path": "figures/04_viability_margin_by_outcome.png",
+      "sha256": "4ce53558bd1a0f5142600a635ac31d06ff10f5b390756d207e9c71412ea13981"
+    },
+    {
+      "bytes": 128555,
+      "path": "figures/05_niche_dynamics_examples.png",
+      "sha256": "56267fe9a25b8cff6f6d9ae0fc3c738eb67926ad15b851a25850645bcfb71b37"
+    },
+    {
+      "bytes": 46430,
+      "path": "figures/06_archetype_transition_matrix.png",
+      "sha256": "ce9bd389e167b7959a5796231512ee71aa6cf460d8a721b1d3982bedde3ab9ab"
+    },
+    {
+      "bytes": 77702,
+      "path": "figures/07_anchored_state_space_evolution.png",
+      "sha256": "cb5d3220321ff546b39ba52e9fe49426a36bcba909367e4e571e733b96d09994"
+    },
+    {
+      "bytes": 81491,
+      "path": "figures/08_729_cell_occupancy_secondary.png",
+      "sha256": "2a1138e4296a8c861172d838c155236104758d293b060e1794b329b3930ceefc"
+    },
+    {
+      "bytes": 145875,
+      "path": "figures/09_return_turnover_cost_waterfall.png",
+      "sha256": "a3347d97ad460d484b76bbf52c6633f6dec7cb1a05e61da1d25e34d662d56346"
+    },
+    {
+      "bytes": 62122,
+      "path": "figures/10_drawdown_and_factor_exposures.png",
+      "sha256": "766216445741129d56b794db9e338a419a1cb7a9b4dba8f9bd7e898c4e3ad9c7"
+    },
+    {
+      "bytes": 1259511,
+      "path": "figures/11_three_axis_projection_rotating.gif",
+      "sha256": "21f34f6efe06d4ffe9247cc9d3353b5ed8191d5bdc8ddca3cfedd3c4e44252d1"
+    },
+    {
+      "bytes": 270042,
+      "path": "figures/11_three_axis_projection_static.png",
+      "sha256": "2e8eb4728fb2de3568bb7cba07803923cd1d249fb5a49f90a9d242a3712c19f2"
+    },
+    {
+      "bytes": 73,
+      "path": "hypercube/__init__.py",
+      "sha256": "1c32a5b405d707084795204fac6805e2767054e75668f5b2e6ed6defc2550b5b"
+    },
+    {
+      "bytes": 5374,
+      "path": "hypercube/availability.py",
+      "sha256": "a2ced82ec50b653446bc343b6f3b1ecbe1226d32b41a357b3e9bd5bec7194841"
+    },
+    {
+      "bytes": 43614,
+      "path": "hypercube/axes.py",
+      "sha256": "782be2ca272e06dd53a97df9eda6c85ceb1eb90175e584ca4a8ff6150c850f27"
+    },
+    {
+      "bytes": 27472,
+      "path": "hypercube/clustering.py",
+      "sha256": "51078767703d82e65c0a5fd4711f19fb62c2e934aa8d59cb359d75e2e7fc83c4"
+    },
+    {
+      "bytes": 24489,
+      "path": "hypercube/config.py",
+      "sha256": "59d77ab0ffa4c0e22f28a977f3da7a5375e787a6c2cf5eedf16e3a7a1d917924"
+    },
+    {
+      "bytes": 6344,
+      "path": "hypercube/costs.py",
+      "sha256": "fe3c719857e946962c7e0db5961ad802e0a43c6806c7b7147a29d3e93354083d"
+    },
+    {
+      "bytes": 39536,
+      "path": "hypercube/data.py",
+      "sha256": "e27ba8d6b34a31d022a45bd1d395eddcfbcf9a8449ebb2ee89ae5385495b620f"
+    },
+    {
+      "bytes": 3830,
+      "path": "hypercube/diagnostics.py",
+      "sha256": "139daddc877efcc2cee0baf3fc0118b318227639fdd5bead7ef434f20bb90607"
+    },
+    {
+      "bytes": 41781,
+      "path": "hypercube/dynamics.py",
+      "sha256": "aef9cdd692b6245488f0311c503ccace86203cbd364f31454738fff9ed05c76a"
+    },
+    {
+      "bytes": 7704,
+      "path": "hypercube/labels.py",
+      "sha256": "9a9b0359004080d783ef163b4c259ea9ed3f071bddd38a859419a5808ce57180"
+    },
+    {
+      "bytes": 38605,
+      "path": "hypercube/portfolio.py",
+      "sha256": "fd5ba25967cecaf27677bfd08abc07eff1213304c70e751d8cc7c8b10168f5f9"
+    },
+    {
+      "bytes": 55475,
+      "path": "hypercube/returns.py",
+      "sha256": "8265ccba8a7bd3d1f9c9b5b94cc283dd1d41d7be7ee8df9d42c350269ed15d78"
+    },
+    {
+      "bytes": 1360,
+      "path": "hypercube/run.py",
+      "sha256": "1f51c4ddc6e4548d1bda2d530e7a1a5fcb48501d88756697607ea7d0aff1df67"
+    },
+    {
+      "bytes": 7715,
+      "path": "hypercube/standardize.py",
+      "sha256": "7cd5d8c97518460f0dd3c846c4512263e177ecab98fb583cb901a36590a76c2f"
+    },
+    {
+      "bytes": 36660,
+      "path": "hypercube/survival.py",
+      "sha256": "d1592327725d04a3e294fe5fd99e4166e352d1137dc1dfbd04b94089cd309965"
+    },
+    {
+      "bytes": 24491,
+      "path": "hypercube/universe.py",
+      "sha256": "3b133705c58dda817039a709831c27a8eb2efa7ec44a0837b5dc208e744a4a27"
+    },
+    {
+      "bytes": 37739,
+      "path": "hypercube/viability.py",
+      "sha256": "6af472c7b4ecddae5fae054eb9a49038aaa6301d9acd27de636874ee72fb15a5"
+    },
+    {
+      "bytes": 31412,
+      "path": "hypercube/visualization.py",
+      "sha256": "04bbdc9156b9f47d127496b753ebc6f3bd907272a85529552850c19657c64134"
+    },
+    {
+      "bytes": 203,
+      "path": "Makefile",
+      "sha256": "2cd34236bf61fbd69e1d178359b9eed6d0aef7c01f1640a4ddbfb2e6274db9ab"
+    },
+    {
+      "bytes": 830,
+      "path": "pyproject.toml",
+      "sha256": "536dbfb046752642d972618fb4eb609c096ddb1f02dfa0f673335ee755d72d91"
+    },
+    {
+      "bytes": 2258,
+      "path": "README.md",
+      "sha256": "77b9b08fdb495682ede4e9aab187a9aa78c18cee7a3111cbcf97dbd47a7b9eae"
+    },
+    {
+      "bytes": 3450,
+      "path": "report.md",
+      "sha256": "b80cedb5d04f8b1822fcdb3b9d708d0dd0b8e3dd5813aeff96ad6d7cd3c0710c"
+    },
+    {
+      "bytes": 260,
+      "path": "requirements.txt",
+      "sha256": "00be5ba1c1884e30f8a854eb1e0b40c696890d26ab6dcac80cba18c7bff1bcef"
+    },
+    {
+      "bytes": 5461,
+      "path": "scripts/build_archetypes.py",
+      "sha256": "4745411d471e86b790acea16910823e654c6b22e17c8eb6e077c2d2cb62835a4"
+    },
+    {
+      "bytes": 5015,
+      "path": "scripts/build_axis_features.py",
+      "sha256": "d2933afa89dcfca3181c412a3228407b06e467f83a620a1f71dc4e48cf27426d"
+    },
+    {
+      "bytes": 6097,
+      "path": "scripts/build_cost_aware_portfolios.py",
+      "sha256": "0e282f7cf5aeda7dc7d15f64f62071265df2ebd296671fe862db22e55e24bcc6"
+    },
+    {
+      "bytes": 6589,
+      "path": "scripts/build_dynamics.py",
+      "sha256": "6fd878efb4c9dda3954e32c84531ab89dcb16cdbeffc3b29550d5f0d34226ce3"
+    },
+    {
+      "bytes": 10596,
+      "path": "scripts/build_final_report.py",
+      "sha256": "6f0f2ee816abce6cfb4f644bad0a0ed9618b2c53221e426a51d8287294cca527"
+    },
+    {
+      "bytes": 3911,
+      "path": "scripts/build_point_in_time_panel.py",
+      "sha256": "8b1bad63b9d0f22fe135015dd5827ce991536c39e1d6a6826c1947607db230ff"
+    },
+    {
+      "bytes": 5900,
+      "path": "scripts/build_return_tests.py",
+      "sha256": "20d5fcce1847939470324fe3b1dd3526feaf3811e9599c7f98665c88f156877f"
+    },
+    {
+      "bytes": 6210,
+      "path": "scripts/build_survival_models.py",
+      "sha256": "f30762a46de1ceb2bf861b7e94dc0ffb60272881583607ffdd62b5a543217e2f"
+    },
+    {
+      "bytes": 6506,
+      "path": "scripts/build_viability_models.py",
+      "sha256": "df7ddd484303671f5a4a2af542a0f70e5b090bd32dffc49d36e3a99ec1505276"
+    },
+    {
+      "bytes": 2946,
+      "path": "scripts/make_synthetic.py",
+      "sha256": "9252c068dd48f7958f35c441490ae6fef14696efaaea1a8e444068f7b00f4097"
+    },
+    {
+      "bytes": 19143,
+      "path": "scripts/print_manifest.py",
+      "sha256": "beb69c00636d176332ed3f0c728fd104f7a91af2b4a3c0fd51cdae124bf54f64"
+    },
+    {
+      "bytes": 11134,
+      "path": "scripts/run_full_pipeline.py",
+      "sha256": "0dc78b7e8544a77fb8c48d37499add9baa4b734f62de49fa1e74f12dae93e24b"
+    },
+    {
+      "bytes": 2769,
+      "path": "scripts/validate_archetypes.py",
+      "sha256": "b81e2a7630309d9aa6e1e18837ee4f985f6e895acb95526d968c4d41565d770f"
+    },
+    {
+      "bytes": 2403,
+      "path": "scripts/validate_axis_features.py",
+      "sha256": "3010813ba0986450752e5eedcdb2c2896e1fde9bda6aa98273a8d5fb00e5d504"
+    },
+    {
+      "bytes": 3011,
+      "path": "scripts/validate_cost_aware_portfolios.py",
+      "sha256": "acd5f87b431ed0407ff8eb85af30b2ffedb7edb0d08fa67eda27d4772783dee2"
+    },
+    {
+      "bytes": 4539,
+      "path": "scripts/validate_dynamics.py",
+      "sha256": "bf614de69021f303b593efb6738f2427e8d6179f2b108d5d637d3c4bfacf5410"
+    },
+    {
+      "bytes": 1700,
+      "path": "scripts/validate_final_report.py",
+      "sha256": "dd5fee8203894e7fef05503a212e50384ea9a2e8435710e54fde3ef63482408f"
+    },
+    {
+      "bytes": 2435,
+      "path": "scripts/validate_point_in_time_panel.py",
+      "sha256": "9eb65513135029855dc7a02a5dc1d2222123c722d26b83884b93264f86d86d61"
+    },
+    {
+      "bytes": 2838,
+      "path": "scripts/validate_raw_inputs.py",
+      "sha256": "57fc0491a033a421ea335c1fd0081d86aee4e1642689c3f7c52ea8368f69364d"
+    },
+    {
+      "bytes": 3475,
+      "path": "scripts/validate_return_tests.py",
+      "sha256": "38d22c1ea6f0c42ec174fe0e57453f46f46982d87a702c8c36085855dcefd80a"
+    },
+    {
+      "bytes": 3264,
+      "path": "scripts/validate_survival_models.py",
+      "sha256": "89dbe5eee0364d3214064b0a54bcd8dcb4fbe98a53aae42f4fd9cee5ee345d86"
+    },
+    {
+      "bytes": 3111,
+      "path": "scripts/validate_viability_models.py",
+      "sha256": "1f0ab448add615c539cb2a38a2643f49d95c1754236aeafb5822f6a8c7afa130"
+    },
+    {
+      "bytes": 596,
+      "path": "tests/test_full_pipeline_scaffold.py",
+      "sha256": "fa9a3ed886021f5c0475ff41b1dc33d8aca6331bacf22101ec5bf454ab7f90bb"
+    },
+    {
+      "bytes": 655,
+      "path": "tests/test_p10_visualization.py",
+      "sha256": "d0f626e4037708536cfd7292a8865a7712b814e2b5fac1d4b8833f8aabb01049"
+    },
+    {
+      "bytes": 5705,
+      "path": "tests/test_p1_data.py",
+      "sha256": "ed68f0e68b683872b8d325dd8f906c054802f864eee2f119b9957b0bb722e88a"
+    },
+    {
+      "bytes": 8993,
+      "path": "tests/test_p2_panel.py",
+      "sha256": "46f50ece1ce4376fa6641ae4ea00a50f26b25b03d74e5b765b56b79f4279df9b"
+    },
+    {
+      "bytes": 7868,
+      "path": "tests/test_p3_axes.py",
+      "sha256": "50cca1e49a014f8ab34070221ce049d25f5fe9ac0b7470ece2bb9effafde5d09"
+    },
+    {
+      "bytes": 7616,
+      "path": "tests/test_p4_viability.py",
+      "sha256": "acd54eacf55c78378e483b5479cece05cd37b346b4fc9eca12434026e4e78942"
+    },
+    {
+      "bytes": 7878,
+      "path": "tests/test_p5_dynamics.py",
+      "sha256": "49386051e2c47a09b5835db4c7b764b8f58d1a310dd192e75a7dd0afd44c92b9"
+    },
+    {
+      "bytes": 5786,
+      "path": "tests/test_p6_survival.py",
+      "sha256": "0dfb3c92923679c0c721b7da5cd74e07b6574f6e9bf8a6a4d51e4320c20de223"
+    },
+    {
+      "bytes": 3948,
+      "path": "tests/test_p7_returns.py",
+      "sha256": "bcac010473cd9ed68a6388947fb2bd8c0c7168d42b24fbd57429ec8f7a10a0ba"
+    },
+    {
+      "bytes": 1886,
+      "path": "tests/test_p8_costs.py",
+      "sha256": "fe68d50fdc3e74f2fb60811a0cbabccd796098e0d91ee5cb8d3770f455bfe573"
+    },
+    {
+      "bytes": 810,
+      "path": "tests/test_p9_clustering.py",
+      "sha256": "a042d2554d29ed6f1dced0de3625a251434ab233d0f39fd45b5d6f641a6f1530"
+    },
+    {
+      "bytes": 3781,
+      "path": "tests/test_smoke.py",
+      "sha256": "8e23299f0a7b0c1f662eead7b9810542057b117c97ae1a5f73d7fe2abd589af7"
+    },
+    {
+      "bytes": 209220,
+      "path": "uv.lock",
+      "sha256": "fa0b242bc67665fea275476ee4a04b53dc28bbb61b459b113ccb1c193bf7998c"
+    }
+  ],
+  "python": {
+    "executable": "${PROJECT_ROOT}\\.venv\\Scripts\\python.exe",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "version": "3.12.10"
+  },
+  "resolved_config": {
+    "audit": {
+      "archive_completed_real_runs": true,
+      "atomic_writes": true,
+      "hash_algorithm": "sha256",
+      "record_input_hashes": true,
+      "record_package_versions": true
+    },
+    "availability": {
+      "fallback_days": 180,
+      "hierarchy": [
+        "verified_sec_filing_timestamp",
+        "verified_earnings_announcement_date",
+        "datadate_plus_180_calendar_days"
+      ],
+      "prohibit_pre_availability_use": true
+    },
+    "axes": {
+      "components": [
+        {
+          "ablation_enabled": true,
+          "enabled": true,
+          "implementation_phase": "P3",
+          "minimum_components": 2,
+          "name": "Demand Strength and Pricing Power",
+          "slug": "demand_strength_pricing_power"
+        },
+        {
+          "ablation_enabled": true,
+          "enabled": true,
+          "implementation_phase": "P3",
+          "minimum_components": 2,
+          "name": "Competitive Defensibility",
+          "slug": "competitive_defensibility"
+        },
+        {
+          "ablation_enabled": true,
+          "enabled": true,
+          "implementation_phase": "P3",
+          "minimum_components": 2,
+          "name": "Innovation Intensity",
+          "slug": "innovation_intensity"
+        },
+        {
+          "ablation_enabled": true,
+          "enabled": true,
+          "implementation_phase": "P3",
+          "minimum_components": 2,
+          "name": "Go-to-Market Efficiency",
+          "slug": "go_to_market_efficiency"
+        },
+        {
+          "ablation_enabled": true,
+          "enabled": true,
+          "implementation_phase": "P3",
+          "minimum_components": 3,
+          "name": "Unit Economics and Profit Quality",
+          "slug": "unit_economics_profit_quality"
+        },
+        {
+          "ablation_enabled": true,
+          "enabled": true,
+          "implementation_phase": "P3",
+          "minimum_components": 3,
+          "name": "Scalability and Capital Efficiency",
+          "slug": "scalability_capital_efficiency"
+        }
+      ],
+      "orientation": "higher_is_more_viable"
+    },
+    "clustering": {
+      "assignment_radius_quantile": 0.95,
+      "maximum_training_rows": 25000,
+      "minimum_cluster_size": 200,
+      "minimum_samples": 10,
+      "representation": "anchored",
+      "stability_repetitions": 5,
+      "stability_sample_fraction": 0.8,
+      "training_end_year": 2004
+    },
+    "costs": {
+      "borrow_annual_bps": 300.0,
+      "delayed_execution_months": 1,
+      "fallback_half_spread_bps": 50.0,
+      "hard_borrow_adv_millions": 0.5,
+      "hard_borrow_annual_bps": 700.0,
+      "hard_borrow_market_cap_millions": 100.0,
+      "max_adv_participation": 0.1,
+      "max_half_spread": 0.05,
+      "max_market_cap_fraction": 0.001,
+      "max_position_weight": 0.1,
+      "minimum_short_adv_millions": 0.1,
+      "minimum_short_market_cap_millions": 25.0,
+      "portfolio_notional_millions_per_leg": 1.0,
+      "primary_cost_scenario": "conservative",
+      "primary_horizon_months": 6,
+      "primary_industry_neutral": true,
+      "primary_weighting": "value",
+      "scenarios": [
+        {
+          "fixed_slippage_bps": 5.0,
+          "name": "low",
+          "quoted_half_spread_multiplier": 0.5
+        },
+        {
+          "fixed_slippage_bps": 10.0,
+          "name": "conservative",
+          "quoted_half_spread_multiplier": 1.0
+        },
+        {
+          "fixed_slippage_bps": 25.0,
+          "name": "severe",
+          "quoted_half_spread_multiplier": 1.5
+        }
+      ],
+      "trading_days_per_month": 21,
+      "volume_unit_multiplier": 1000.0
+    },
+    "data": {
+      "allow_network": false,
+      "allow_wrds": false,
+      "generate_synthetic": false,
+      "mode": "synthetic",
+      "require_existing_raw": true,
+      "scenario": "null_alpha"
+    },
+    "dynamics": {
+      "cross_section_minimum": 20,
+      "crowding_neighbors": 10,
+      "migration_minimum_train_observations": 1000,
+      "migration_ridge_alpha": 10.0,
+      "primary_model": "combined_axes_logit",
+      "probability_clip": 1e-06,
+      "recovery_minimum_level_spearman": 0.1,
+      "recovery_minimum_surprise_spearman": 0.03,
+      "recovery_minimum_velocity_spearman": 0.05,
+      "recovery_primary_horizon_years": 5,
+      "successful_density_minimum": 100,
+      "successful_density_neighbors": 20,
+      "survival_probability_threshold": 0.95
+    },
+    "innovation": {
+      "fixed_nopat_tax_rate": 0.25,
+      "persistence_years": 3,
+      "primary_missing_policy": "zero_with_indicator",
+      "sensitivity_missing_policy": "contemporaneous_peer_median",
+      "stock_depreciation_rate": 0.2
+    },
+    "panel": {
+      "allowed_link_primaries": [
+        "P",
+        "C"
+      ],
+      "allowed_link_types": [
+        "LC",
+        "LU",
+        "LS"
+      ],
+      "delisting_return_rule": "compound_with_ordinary_return",
+      "fiscal_duplicate_policy": "reject",
+      "max_staleness_months": 18,
+      "minimum_reporting_history": 1,
+      "strict_post_availability_formation": true
+    },
+    "paths": {
+      "artifacts_dir": "artifacts",
+      "figures_dir": "figures",
+      "interim_dir": "data/interim",
+      "processed_dir": "data/processed/synthetic/null_alpha",
+      "raw_dir": "data/raw/synthetic/null_alpha"
+    },
+    "project": {
+      "name": "business-niche-hypercube",
+      "phase": "P10",
+      "python_minimum": "3.11",
+      "run_name": "synthetic_p10",
+      "seed": 20260722,
+      "subtitle": "Corporate Niche Dynamics and Asset Prices"
+    },
+    "returns": {
+      "controls": [
+        "log_market_cap",
+        "book_to_market",
+        "momentum_12_2",
+        "operating_margin",
+        "asset_growth",
+        "book_leverage",
+        "working_capital_assets",
+        "operating_income_assets",
+        "equity_to_liabilities",
+        "sales_to_assets",
+        "log_dollar_volume_12m",
+        "realized_volatility_12m",
+        "equity_beta_24m"
+      ],
+      "entry_lag_months": 1,
+      "factor_columns": [
+        "mkt_excess",
+        "smb",
+        "hml",
+        "rmw",
+        "cma",
+        "mom"
+      ],
+      "horizons_months": [
+        1,
+        3,
+        6,
+        12
+      ],
+      "industry_neutral_modes": [
+        false,
+        true
+      ],
+      "minimum_cross_section": 30,
+      "minimum_fmb_months": 24,
+      "minimum_industry_group": 10,
+      "missing_delisting_return_policy": "missing_target",
+      "multiple_testing_method": "holm",
+      "overlapping_hac_rule": "horizon_minus_one",
+      "primary_horizon_months": 6,
+      "primary_signal": "migration_surprise",
+      "primary_surface_horizon_years": 5,
+      "quantiles": 5,
+      "require_complete_path_or_delist": true,
+      "signals": [
+        "viability_log_odds",
+        "velocity_log_odds",
+        "migration_surprise"
+      ],
+      "synthetic_migration_min_primary_ic": 0.0,
+      "synthetic_null_max_abs_primary_ic": 0.03,
+      "synthetic_oracle_slope_lower": 0.4,
+      "synthetic_oracle_slope_upper": 1.3,
+      "weighting_schemes": [
+        "equal",
+        "value"
+      ],
+      "winsor_lower": 0.01,
+      "winsor_upper": 0.99
+    },
+    "standardization": {
+      "anchored_method": "expanding_prior_calendar_years",
+      "minimum_anchor_observations": 100,
+      "minimum_peer_group_size": 20,
+      "peer_fallback_hierarchy": [
+        "sic2",
+        "sic1",
+        "market"
+      ],
+      "relative_method": "median_mad",
+      "score_clip": 5.0,
+      "winsor_lower": 0.01,
+      "winsor_upper": 0.99
+    },
+    "survival": {
+      "calibration": "logistic_risk_score",
+      "causes": [
+        "performance_failure",
+        "merger"
+      ],
+      "features": [
+        "viability_log_odds",
+        "velocity_log_odds",
+        "acceleration_log_odds",
+        "crowding_density",
+        "historical_success_density",
+        "log_market_cap",
+        "book_leverage",
+        "operating_margin"
+      ],
+      "minimum_reporting_history": 3,
+      "minimum_test_events": 5,
+      "minimum_train_events": 20,
+      "minimum_train_intervals": 5000,
+      "outer_folds": [
+        {
+          "end_year": 2014,
+          "start_year": 2010
+        },
+        {
+          "end_year": 2019,
+          "start_year": 2015
+        }
+      ],
+      "ph_diagnostic_alpha": 0.01,
+      "primary_horizon_years": 5,
+      "ties": "breslow",
+      "time_origin_date": "1900-01-01"
+    },
+    "synthetic": {
+      "annual_state_persistence": 0.82,
+      "end_year": 2024,
+      "migration_alpha_monthly": 0.004,
+      "migration_decay_months": 12,
+      "minimum_history_years": 3,
+      "n_firms": 3000,
+      "n_industries": 24,
+      "regime_shift_year": 2000,
+      "start_year": 1975
+    },
+    "universe": {
+      "exchange_codes": [
+        1,
+        2,
+        3
+      ],
+      "include_delisted_firms": true,
+      "minimum_market_cap_millions": 10.0,
+      "minimum_monthly_volume": 100.0,
+      "minimum_price": 1.0,
+      "preserve_prior_eligible_delist_month": true,
+      "require_positive_market_cap": true,
+      "require_positive_price": true,
+      "share_codes": [
+        10,
+        11
+      ]
+    },
+    "viability": {
+      "calibration": "platt",
+      "cell_bins": 3,
+      "horizons_years": [
+        3,
+        5
+      ],
+      "minimum_train_failures": 20,
+      "minimum_train_observations": 500,
+      "minimum_validation_failures": 5,
+      "nonlinear_model": "hist_gradient_boosting",
+      "outer_folds": [
+        {
+          "end_year": 2004,
+          "start_year": 2000
+        },
+        {
+          "end_year": 2009,
+          "start_year": 2005
+        },
+        {
+          "end_year": 2014,
+          "start_year": 2010
+        },
+        {
+          "end_year": 2019,
+          "start_year": 2015
+        }
+      ],
+      "primary_model": "combined_axes_logit",
+      "ridge_c_grid": [
+        0.01,
+        0.1,
+        1.0,
+        10.0
+      ],
+      "tree_l2_regularization": 1.0,
+      "tree_learning_rate": 0.05,
+      "tree_max_iter": 100,
+      "tree_max_leaf_nodes": 15,
+      "tree_min_samples_leaf": 50,
+      "validation_years": 5
+    }
+  },
+  "row_counts": {
+    "data/raw/synthetic/migration_alpha/ccm_link.parquet": 3120,
+    "data/raw/synthetic/migration_alpha/crsp_delist.parquet": 999,
+    "data/raw/synthetic/migration_alpha/crsp_monthly.parquet": 741472,
+    "data/raw/synthetic/migration_alpha/factor_returns.parquet": 600,
+    "data/raw/synthetic/migration_alpha/funda.parquet": 61042,
+    "data/raw/synthetic/migration_alpha/sec_filing_dates.parquet": 51276,
+    "data/raw/synthetic/migration_alpha/synthetic_truth.parquet": 61042,
+    "data/raw/synthetic/null_alpha/ccm_link.parquet": 3104,
+    "data/raw/synthetic/null_alpha/crsp_delist.parquet": 969,
+    "data/raw/synthetic/null_alpha/crsp_monthly.parquet": 752766,
+    "data/raw/synthetic/null_alpha/factor_returns.parquet": 600,
+    "data/raw/synthetic/null_alpha/funda.parquet": 62000,
+    "data/raw/synthetic/null_alpha/sec_filing_dates.parquet": 52084,
+    "data/raw/synthetic/null_alpha/synthetic_truth.parquet": 62000,
+    "data/raw/synthetic/regime_shift/ccm_link.parquet": 3109,
+    "data/raw/synthetic/regime_shift/crsp_delist.parquet": 1016,
+    "data/raw/synthetic/regime_shift/crsp_monthly.parquet": 732642,
+    "data/raw/synthetic/regime_shift/factor_returns.parquet": 600,
+    "data/raw/synthetic/regime_shift/funda.parquet": 60295,
+    "data/raw/synthetic/regime_shift/sec_filing_dates.parquet": 50595,
+    "data/raw/synthetic/regime_shift/synthetic_truth.parquet": 60295
+  },
+  "run_name": "synthetic_p10",
+  "schema_version": 1,
+  "seed": 20260722,
+  "test_windows": [
+    {
+      "end_year": 2004,
+      "start_year": 2000
+    },
+    {
+      "end_year": 2009,
+      "start_year": 2005
+    },
+    {
+      "end_year": 2014,
+      "start_year": 2010
+    },
+    {
+      "end_year": 2019,
+      "start_year": 2015
+    }
+  ],
+  "training_windows": [
+    {
+      "horizons_months": [
+        1,
+        3,
+        6,
+        12
+      ],
+      "policy": "P5 OOS features; independent formation-month cross-sections"
+    }
+  ],
+  "warnings": [
+    "P10 inputs and outputs are synthetic and are not empirical evidence.",
+    "P10 closes a synthetic pipeline whose primary migration-alpha recovery failed; no real-data or investable result exists.",
+    "GNU Make was not available on the inspected Windows host."
+  ]
+}

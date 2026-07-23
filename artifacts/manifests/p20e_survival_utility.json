@@ -1,0 +1,128 @@
+{
+  "horizons_years": [
+    3,
+    5
+  ],
+  "model_fit": true,
+  "models": [
+    "financial_baseline_logit",
+    "financial_plus_hypercube_logit"
+  ],
+  "output_records": [
+    {
+      "bytes": 7605073,
+      "path": "artifacts/p20e/survival_predictions.parquet",
+      "sha256": "cd36d53ad5500b1d3183778f4404145e8685de76014b74714ebb79ed5e968c2e"
+    },
+    {
+      "bytes": 1328,
+      "path": "artifacts/p20e/fold_definitions.csv",
+      "sha256": "79057c8ca003426f322a412b936b9daa79a79418893d367e881ecf5fb5794eca"
+    },
+    {
+      "bytes": 12668,
+      "path": "artifacts/tables/p20e_survival_fold_metrics.csv",
+      "sha256": "da406ea98c337c39e8f45ccc982e51b4a76e8250ad5b2be3d6182c3d067de9ad"
+    },
+    {
+      "bytes": 2007,
+      "path": "artifacts/tables/p20e_survival_model_summary.csv",
+      "sha256": "8e645245315e994ba4fd1ec5bbd88aaf3c83dc9352fae90153d579c2cf060b8a"
+    },
+    {
+      "bytes": 2665,
+      "path": "artifacts/tables/p20e_survival_pairwise.csv",
+      "sha256": "caa6378fb610b853a594905052cc06ba6657a02fd4a2a5ac56e387b6db8fff99"
+    },
+    {
+      "bytes": 570,
+      "path": "artifacts/tables/p20e_existing_hypercube_comparisons.csv",
+      "sha256": "e54c3063b7aae290c124af62b84380a9fe0ca29a1313b2c25c84070cd9f3a9fd"
+    },
+    {
+      "bytes": 1493,
+      "path": "artifacts/tables/p20e_p6_failure_metrics.csv",
+      "sha256": "6aa860d5730ec9f91590f6ab8740685d07568aa217f2ddd97f40cdacffc2191e"
+    }
+  ],
+  "p6_performance_failure": {
+    "folds": 6,
+    "maximum_roc_auc": 0.6242200174716086,
+    "mean_concordance": 0.5673863792861727,
+    "mean_roc_auc": 0.5624998029940654,
+    "minimum_roc_auc": 0.5015905705459526
+  },
+  "phase": "P20E",
+  "portfolio_run": false,
+  "primary_result": {
+    "auc_wins": 13,
+    "brier_wins": 11,
+    "folds": 24,
+    "gates": {
+      "all_scenario_horizon_cells_positive": false,
+      "auc_wins_at_least_16_of_24": false,
+      "mean_auc_improvement_at_least_0_01": false,
+      "mean_brier_improvement_positive": false
+    },
+    "mean_auc_improvement": -0.002732346328636832,
+    "mean_brier_improvement": -4.1095458758923465e-06,
+    "median_auc_improvement": 0.0010850206560674702,
+    "positive_scenario_horizon_cells": 2,
+    "scenario_horizon_cells": 6,
+    "verdict": "NO_ROBUST_INCREMENTAL_UTILITY"
+  },
+  "real_data_read": false,
+  "return_data_read": false,
+  "rows": {
+    "comparison_rows": 24,
+    "fold_rows": 24,
+    "metric_rows": 48,
+    "predictions": 376196
+  },
+  "scenarios": [
+    "null_alpha",
+    "migration_alpha",
+    "regime_shift"
+  ],
+  "schema_version": 1,
+  "source_records": [
+    {
+      "bytes": 44487,
+      "path": "artifacts/tables/p4_fold_metrics.csv",
+      "sha256": "e841f90bcff83edff6399ca1e9c99e2f6db6d90075fc7fa11776ea511c4a5b0e"
+    },
+    {
+      "bytes": 2650,
+      "path": "artifacts/tables/p6_fold_metrics.csv",
+      "sha256": "e0eed6f78e18757a0c6ff823286b1c03502d7243a410d50124c8b41cf15b8155"
+    },
+    {
+      "bytes": 2025,
+      "path": "artifacts/manifests/p4_validation.json",
+      "sha256": "3fca97984d9d5b732b961bd1b204ab9bff6187bedd95f856f2bcd7cfbd1bed3c"
+    },
+    {
+      "bytes": 2020,
+      "path": "artifacts/manifests/p6_validation.json",
+      "sha256": "8f8cde6062b67e3a3189d06111ecf6bb30389454b16d2b46a48df61fc21bf01f"
+    },
+    {
+      "bytes": 13632002,
+      "path": "data/processed/synthetic/null_alpha/p4/model_matrix.parquet",
+      "sha256": "823f688037cf8dd323ed910c4fcdabc4724500d62ee9ac8f7dc36c3468f3bd02"
+    },
+    {
+      "bytes": 13386604,
+      "path": "data/processed/synthetic/migration_alpha/p4/model_matrix.parquet",
+      "sha256": "dc82262c752d5ced2f9b0455a13ad1a9898ec1083f07605bda386b1728e856e9"
+    },
+    {
+      "bytes": 13223655,
+      "path": "data/processed/synthetic/regime_shift/p4/model_matrix.parquet",
+      "sha256": "d1f9321c5aab29758fd95b5e4c6ddb3d6f198ff9bf0313d2744efc4db19bbd6f"
+    }
+  ],
+  "status": "PASS",
+  "synthetic_truth_read": false,
+  "version": "hypercube-survival-utility-v1"
+}

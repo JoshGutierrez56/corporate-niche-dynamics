@@ -1,0 +1,60 @@
+{
+  "files": [
+    {
+      "bytes": 11613,
+      "path": "scripts/run_p18e_isolated_archetype_canary.py",
+      "sha256": "013a724a00f8caadfc725e7debefca2ba901a73f553f3252e143ee6732fde485"
+    },
+    {
+      "bytes": 6965,
+      "path": "scripts/validate_p18e_isolated_archetype_canary.py",
+      "sha256": "c9f8011113917f32f51784c8d5e6e6787b9808c083226b4e3f08a64d212437ab"
+    },
+    {
+      "bytes": 3019,
+      "path": "docs/p18e_isolated_archetype_canary_preregistration.md",
+      "sha256": "cdf024d0651df69989ad7512b9db4ff73091833d0a551e7274fdb7f04c46f7d4"
+    },
+    {
+      "bytes": 3298,
+      "path": "docs/p18e_isolated_archetype_canary_results.md",
+      "sha256": "726d549c5337bb500ac5db57eeb1bc18d0886886a10743afb15ff052f90ee6f8"
+    },
+    {
+      "bytes": 19008,
+      "path": "artifacts/manifests/p18e_archetype_canary.json",
+      "sha256": "a9387df7dac453a3c1eee663e925913d4ed8375988631ba5f5d6a147c8170be8"
+    },
+    {
+      "bytes": 2030,
+      "path": "artifacts/manifests/p18e_archetype_canary_validation.json",
+      "sha256": "b94310d727d67e0bb1f9dd54734df0b87afd0b4631070f2fa01148fc09a52e56"
+    },
+    {
+      "bytes": 575,
+      "path": "artifacts/tables/p18e_archetype_summary.csv",
+      "sha256": "0971077fa4490cd3f69833a4a4733d41d24d8e1e85b1e3fd32e13ce480590beb"
+    },
+    {
+      "bytes": 6874,
+      "path": "artifacts/tables/p18e_archetype_profiles.csv",
+      "sha256": "ad43661d167322d614871d083d85a2d8813fe84d8e3dcc2bc43312aade02c162"
+    },
+    {
+      "bytes": 4370,
+      "path": "artifacts/logs/p18e_pytest.txt",
+      "sha256": "13d89196a044c4ae141b8f74320d3c8189a9faf14cfeaea3a0eefe3cb2449ffb"
+    }
+  ],
+  "frozen_p0_p10_outputs_modified": false,
+  "gate_result": "PASS",
+  "generated_at_utc": "2026-07-23T14:15:50.634027+00:00",
+  "new_synthetic_scenario_generated": false,
+  "phase": "P18E",
+  "real_data_run": false,
+  "schema_version": 1,
+  "selected_candidate": null,
+  "selected_multiplier": 6.0,
+  "status": "PASS",
+  "version": "hypercube-isolated-descriptive-archetype-canary-v1"
+}

@@ -1,0 +1,1 @@
+{"input_files": 0, "path": "${PROJECT_ROOT}\\artifacts\\manifests\\p0_manifest.json", "project_files": 49, "status": "P0_MANIFEST_WRITTEN"}

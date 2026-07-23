@@ -1,0 +1,65 @@
+{
+  "models_fitted": [],
+  "phase": "P2",
+  "reports": [
+    {
+      "availability_sources": {
+        "datadate_plus_180_calendar_days": 1220,
+        "verified_earnings_announcement_date": 8696,
+        "verified_sec_filing_timestamp": 52084
+      },
+      "delisting_events": 969,
+      "errors": [],
+      "models_fitted": [],
+      "output_dir": "data\\processed\\synthetic\\null_alpha",
+      "rows": {
+        "accounting_availability": 62000,
+        "firm_month_panel": 705450,
+        "universe_monthly": 750167
+      },
+      "scenario": "null_alpha",
+      "status": "PASS",
+      "warnings": []
+    },
+    {
+      "availability_sources": {
+        "datadate_plus_180_calendar_days": 1171,
+        "verified_earnings_announcement_date": 8595,
+        "verified_sec_filing_timestamp": 51276
+      },
+      "delisting_events": 998,
+      "errors": [],
+      "models_fitted": [],
+      "output_dir": "data\\processed\\synthetic\\migration_alpha",
+      "rows": {
+        "accounting_availability": 61042,
+        "firm_month_panel": 692892,
+        "universe_monthly": 737508
+      },
+      "scenario": "migration_alpha",
+      "status": "PASS",
+      "warnings": []
+    },
+    {
+      "availability_sources": {
+        "datadate_plus_180_calendar_days": 1167,
+        "verified_earnings_announcement_date": 8533,
+        "verified_sec_filing_timestamp": 50595
+      },
+      "delisting_events": 1013,
+      "errors": [],
+      "models_fitted": [],
+      "output_dir": "data\\processed\\synthetic\\regime_shift",
+      "rows": {
+        "accounting_availability": 60295,
+        "firm_month_panel": 684635,
+        "universe_monthly": 729262
+      },
+      "scenario": "regime_shift",
+      "status": "PASS",
+      "warnings": []
+    }
+  ],
+  "schema_version": 1,
+  "status": "PASS"
+}

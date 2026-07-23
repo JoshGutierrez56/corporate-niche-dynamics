@@ -1,0 +1,81 @@
+{
+  "aggregate_tables": [
+    "${PROJECT_ROOT}\\artifacts\\tables\\p5_feature_summary.csv",
+    "${PROJECT_ROOT}\\artifacts\\tables\\p5_migration_model_diagnostics.csv"
+  ],
+  "clustering_run": false,
+  "config": "configs\\synthetic.yaml",
+  "phase": "P5",
+  "portfolio_run": false,
+  "reports": [
+    {
+      "construction": {
+        "acceleration_rows": 37162,
+        "clustering_run": false,
+        "crowding_coverage": 0.9241074153188892,
+        "frontier_crossings": {
+          "-1": 927,
+          "0": 49258,
+          "1": 793
+        },
+        "historical_success_density_coverage": 0.9246261824839792,
+        "horizon_rows": {
+          "3": 32770,
+          "5": 32770
+        },
+        "migration_surprise_rows": 48454,
+        "model_vintage_boundary_rows": 9622,
+        "portfolio_run": false,
+        "return_test_run": false,
+        "rows": 65540,
+        "scenario": "migration_alpha",
+        "synthetic_truth_read": false,
+        "velocity_rows": 50978
+      },
+      "output_dir": "data\\processed\\synthetic\\migration_alpha\\p5",
+      "reused_existing": false,
+      "scenario": "migration_alpha",
+      "validation": {
+        "clustering_run": false,
+        "errors": [],
+        "models_fitted": [
+          "expanding_migration_ridge"
+        ],
+        "portfolio_run": false,
+        "recovery": {
+          "gates": {
+            "level": true,
+            "migration_surprise": true,
+            "velocity": true
+          },
+          "level_rows": 32770,
+          "level_spearman": 0.511181638925731,
+          "migration_surprise_rows": 24227,
+          "migration_surprise_spearman": 0.20439343433213916,
+          "primary_horizon_years": 5,
+          "return_injection_read": false,
+          "status": "PASS",
+          "thresholds": {
+            "level": 0.1,
+            "migration_surprise": 0.03,
+            "velocity": 0.05
+          },
+          "velocity_rows": 25489,
+          "velocity_spearman": 0.4341919354530195
+        },
+        "return_test_run": false,
+        "rows": {
+          "acceleration": 37162,
+          "frontier_dynamics": 65540,
+          "migration_surprise": 48454,
+          "velocity": 50978
+        },
+        "status": "PASS",
+        "warnings": []
+      }
+    }
+  ],
+  "return_test_run": false,
+  "schema_version": 1,
+  "status": "PASS"
+}

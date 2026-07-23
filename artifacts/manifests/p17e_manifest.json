@@ -1,0 +1,65 @@
+{
+  "files": [
+    {
+      "bytes": 55535,
+      "path": "hypercube/returns.py",
+      "sha256": "6d1f69bdfa7e68954f5fc2f92c5ba7d149b9a8f3547aff50407ce232968c523d"
+    },
+    {
+      "bytes": 20642,
+      "path": "hypercube/canary_costs.py",
+      "sha256": "cd4078bcbbbc9df0aa72e79fe76073c195ecb6447ef57e7e07f606dbe1b67aa1"
+    },
+    {
+      "bytes": 4967,
+      "path": "scripts/run_p17e_isolated_cost_canary.py",
+      "sha256": "2ffca44815386f062531fb4a0f9fafc7e9c46a7e99aff0215c0a4c806ac3bf94"
+    },
+    {
+      "bytes": 1841,
+      "path": "scripts/validate_p17e_isolated_cost_canary.py",
+      "sha256": "4efddb4977f29c90b2a2a15355603a420383a2996c38b8ba187282f8fd1c0d87"
+    },
+    {
+      "bytes": 1917,
+      "path": "tests/test_p17e_canary_costs.py",
+      "sha256": "f402c326ef3f77ca342375b4afe26c902e6e9433a55dc33f8735e30aa773f56e"
+    },
+    {
+      "bytes": 2491,
+      "path": "docs/p17e_isolated_cost_canary_preregistration.md",
+      "sha256": "63311b7d7b997d926905a604dc63c9e34cefc80ddfea07e5240c6f4324fad6b6"
+    },
+    {
+      "bytes": 2160,
+      "path": "docs/p17e_isolated_cost_canary_results.md",
+      "sha256": "4f525e8fad058b33547a10d10be7f7f943ecaa6e7bb0909e67b2897e5c4274da"
+    },
+    {
+      "bytes": 14856,
+      "path": "artifacts/manifests/p17e_cost_canary.json",
+      "sha256": "7faf9d2f9366b8d05d6308bf927a8e65cba34ebb778df5994da1763dd40c35eb"
+    },
+    {
+      "bytes": 1657,
+      "path": "artifacts/manifests/p17e_cost_canary_validation.json",
+      "sha256": "e0b9b01748f7618fee0643b3c952d1fb07403e3583f67a1415a272a6b226913d"
+    },
+    {
+      "bytes": 556,
+      "path": "artifacts/tables/p17e_primary_cost_results.csv",
+      "sha256": "4f28ccd2c6274aed1d054fec70f2ff85596a99d5909c678eac45a023c7a6b250"
+    }
+  ],
+  "frozen_p0_p10_outputs_modified": false,
+  "gate_result": "PASS",
+  "generated_at_utc": "2026-07-23T13:58:07.124560+00:00",
+  "new_synthetic_scenario_generated": false,
+  "phase": "P17E",
+  "real_data_run": false,
+  "schema_version": 1,
+  "selected_candidate": "anchored_axis_innovation",
+  "selected_multiplier": 6.0,
+  "status": "PASS",
+  "version": "hypercube-isolated-locked-proxy-cost-canary-v1"
+}

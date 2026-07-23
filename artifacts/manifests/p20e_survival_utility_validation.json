@@ -1,0 +1,12 @@
+{
+  "comparison_rows_checked": 24,
+  "errors": [],
+  "metric_rows_checked": 48,
+  "output_records_checked": 7,
+  "phase": "P20E",
+  "prediction_rows": 376196,
+  "primary_verdict": "NO_ROBUST_INCREMENTAL_UTILITY",
+  "schema_version": 1,
+  "source_records_checked": 7,
+  "status": "PASS"
+}

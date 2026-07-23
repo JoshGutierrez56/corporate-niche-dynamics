@@ -1,0 +1,28 @@
+{
+  "benchmark_column": "migration_surprise",
+  "candidate_artifact_sha256": "9653a74f993fd8c6035078786acae8dcdc213b12951098970dbed029bfde191d",
+  "candidate_columns": [
+    "anchored_axis_innovation",
+    "blended_axis_innovation",
+    "relative_axis_innovation"
+  ],
+  "firms": 2470,
+  "frozen_p0_p10_outputs_modified": false,
+  "generated_at_utc": "2026-07-23T12:53:34.593235+00:00",
+  "injected_alpha_read": false,
+  "maximum_year": 2018,
+  "minimum_axis_count": 4,
+  "minimum_prior_years": 2,
+  "minimum_train_transitions": 1000,
+  "minimum_year": 1999,
+  "new_synthetic_scenario_generated": false,
+  "phase": "P13F",
+  "primary_horizon_years": 5,
+  "real_data_run": false,
+  "return_outcomes_read": false,
+  "rows": 32770,
+  "schema_version": 1,
+  "status": "BUILT",
+  "synthetic_truth_read": false,
+  "version": "hypercube-migration-proxy-redesign-v2"
+}

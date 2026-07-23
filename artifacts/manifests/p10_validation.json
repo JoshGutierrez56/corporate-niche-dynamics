@@ -1,0 +1,11 @@
+{
+  "errors": [],
+  "figure_files": 12,
+  "figure_topics": 11,
+  "phase": "P10",
+  "real_data_run": false,
+  "scientific_status": "SIGNAL_RECOVERY_FAILED",
+  "statistics_rows": 3,
+  "status": "PASS",
+  "synthetic_only": true
+}

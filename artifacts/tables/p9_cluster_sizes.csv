@@ -1,0 +1,21 @@
+scenario,archetype,sample_role,is_noise_or_unassigned,observations,firms,first_year,last_year,mean_assignment_confidence
+null_alpha,Archetype A,out_of_sample,False,2037,1050,2005,2023,0.2218721160004934
+null_alpha,Archetype A,training_period,False,625,535,1975,2004,0.3317157496088877
+null_alpha,Archetype B,out_of_sample,False,269,258,2005,2023,0.4113990883161701
+null_alpha,Archetype B,training_period,False,259,259,1977,2004,0.979887274847638
+null_alpha,Noise / Unassigned,out_of_sample,True,32332,2588,2005,2023,0.0
+null_alpha,Noise / Unassigned,training_period,True,24399,1828,1977,2004,0.0
+migration_alpha,Archetype A,out_of_sample,False,296,271,2005,2023,0.3164637224051707
+migration_alpha,Archetype A,training_period,False,238,238,1977,2004,0.9942783356511384
+migration_alpha,Archetype B,out_of_sample,False,138,137,2005,2023,0.3523020694377271
+migration_alpha,Archetype B,training_period,False,235,235,1980,2004,0.9879606555750085
+migration_alpha,Archetype C,out_of_sample,False,25,25,2005,2017,0.2801488178881201
+migration_alpha,Archetype C,training_period,False,215,156,1975,2004,0.997784157844678
+migration_alpha,Noise / Unassigned,out_of_sample,True,34164,2591,2005,2023,0.0
+migration_alpha,Noise / Unassigned,training_period,True,23591,1847,1977,2004,0.0
+regime_shift,Archetype A,out_of_sample,False,1439,986,2005,2023,0.2177203472641358
+regime_shift,Archetype A,training_period,False,680,600,1975,2004,0.7870906223574007
+regime_shift,Archetype B,out_of_sample,False,284,277,2005,2023,0.3306222968367726
+regime_shift,Archetype B,training_period,False,251,251,1978,2004,0.9993523846922232
+regime_shift,Noise / Unassigned,out_of_sample,True,32606,2560,2005,2023,0.0
+regime_shift,Noise / Unassigned,training_period,True,22961,1813,1977,2004,0.0

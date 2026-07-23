@@ -1,0 +1,17 @@
+extends: base.yaml
+
+project:
+  phase: P10
+  run_name: real_p10
+
+paths:
+  raw_dir: data/raw/real
+  processed_dir: data/processed/real
+
+data:
+  mode: real
+  scenario: not_applicable
+  require_existing_raw: true
+  generate_synthetic: false
+  allow_network: false
+  allow_wrds: false

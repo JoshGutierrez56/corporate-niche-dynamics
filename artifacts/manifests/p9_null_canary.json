@@ -1,0 +1,55 @@
+{
+  "aggregate_tables": [
+    "${PROJECT_ROOT}\\artifacts\\tables\\p9_cluster_sizes.csv",
+    "${PROJECT_ROOT}\\artifacts\\tables\\p9_archetype_profiles.csv",
+    "${PROJECT_ROOT}\\artifacts\\tables\\p9_transition_matrix.csv",
+    "${PROJECT_ROOT}\\artifacts\\tables\\p9_cluster_persistence.csv",
+    "${PROJECT_ROOT}\\artifacts\\tables\\p9_cluster_stability.csv"
+  ],
+  "descriptive_only": true,
+  "phase": "P9",
+  "reports": [
+    {
+      "construction": {
+        "assignment_rows": 59921,
+        "cluster_count": 2,
+        "descriptive_only": true,
+        "fit_rows": 25000,
+        "labels_are_neutral": true,
+        "noise_or_unassigned_rate": 0.9467632382637139,
+        "phase": "P9",
+        "representation": "anchored",
+        "return_models_refit": false,
+        "scenario": "null_alpha",
+        "schema_version": 1,
+        "synthetic_truth_read": false,
+        "training_end_year": 2004,
+        "version": "hypercube-descriptive-archetypes-v1"
+      },
+      "output_dir": "data\\processed\\synthetic\\null_alpha\\p9",
+      "reused_existing": false,
+      "scenario": "null_alpha",
+      "validation": {
+        "descriptive_only": true,
+        "errors": [],
+        "mean_stability_ari": -0.0015814913007736499,
+        "noise_or_unassigned_rate": 0.9467632382637139,
+        "rows": {
+          "assignments": 59921,
+          "clusters": 2,
+          "fit_rows": 25000,
+          "transition_cells": 15
+        },
+        "scenario": "null_alpha",
+        "status": "PASS",
+        "synthetic_truth_read": false,
+        "warnings": [
+          "Archetype stability is weak; interpret clusters cautiously."
+        ]
+      }
+    }
+  ],
+  "return_models_refit": false,
+  "schema_version": 1,
+  "status": "PASS"
+}

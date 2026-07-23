@@ -1,0 +1,69 @@
+{
+  "canary_root": "${HYPERCUBE_CANARY_ROOT}",
+  "coefficient_rows": {
+    "migration_alpha": 60,
+    "null_alpha": 60
+  },
+  "generated_at_utc": "2026-07-23T13:30:04.301302+00:00",
+  "migration_candidate_sha256": "ea36bfa46ec3ecd277e2646c051271b8091a53876208a66ccb771e5fbbb7612b",
+  "null_candidate_sha256": "8cfca6f1068431d4e079be86c4430777dc36bc360cc66be8a18073ee7fe9697b",
+  "phase": "P16E",
+  "return_outcomes_read": false,
+  "scenario_receipts": {
+    "migration_alpha": {
+      "benchmark_column": "migration_surprise",
+      "candidate_columns": [
+        "anchored_axis_innovation",
+        "blended_axis_innovation",
+        "relative_axis_innovation"
+      ],
+      "firms": 2470,
+      "frozen_p0_p10_outputs_modified": false,
+      "injected_alpha_read": false,
+      "maximum_year": 2018,
+      "minimum_axis_count": 4,
+      "minimum_prior_years": 2,
+      "minimum_train_transitions": 1000,
+      "minimum_year": 1999,
+      "new_synthetic_scenario_generated": false,
+      "phase": "P13F",
+      "primary_horizon_years": 5,
+      "real_data_run": false,
+      "return_outcomes_read": false,
+      "rows": 32763,
+      "schema_version": 1,
+      "status": "BUILT",
+      "synthetic_truth_read": false,
+      "version": "hypercube-migration-proxy-redesign-v2"
+    },
+    "null_alpha": {
+      "benchmark_column": "migration_surprise",
+      "candidate_columns": [
+        "anchored_axis_innovation",
+        "blended_axis_innovation",
+        "relative_axis_innovation"
+      ],
+      "firms": 2504,
+      "frozen_p0_p10_outputs_modified": false,
+      "injected_alpha_read": false,
+      "maximum_year": 2018,
+      "minimum_axis_count": 4,
+      "minimum_prior_years": 2,
+      "minimum_train_transitions": 1000,
+      "minimum_year": 1999,
+      "new_synthetic_scenario_generated": false,
+      "phase": "P13F",
+      "primary_horizon_years": 5,
+      "real_data_run": false,
+      "return_outcomes_read": false,
+      "rows": 32781,
+      "schema_version": 1,
+      "status": "BUILT",
+      "synthetic_truth_read": false,
+      "version": "hypercube-migration-proxy-redesign-v2"
+    }
+  },
+  "schema_version": 1,
+  "status": "BUILT",
+  "synthetic_truth_read": false
+}

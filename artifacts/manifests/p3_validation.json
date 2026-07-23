@@ -1,0 +1,98 @@
+{
+  "models_fitted": [],
+  "phase": "P3",
+  "reports": [
+    {
+      "errors": [],
+      "models_fitted": [],
+      "nonmissing_axes": {
+        "anchored_competitive_defensibility": 59718,
+        "anchored_competitive_defensibility_hhi_reversed": 59718,
+        "anchored_demand_strength_pricing_power": 53769,
+        "anchored_go_to_market_efficiency": 56721,
+        "anchored_innovation_intensity": 59718,
+        "anchored_innovation_intensity_peer_imputed": 59718,
+        "anchored_scalability_capital_efficiency": 56721,
+        "anchored_unit_economics_profit_quality": 56721,
+        "relative_competitive_defensibility": 59920,
+        "relative_competitive_defensibility_hhi_reversed": 59920,
+        "relative_demand_strength_pricing_power": 53969,
+        "relative_go_to_market_efficiency": 56922,
+        "relative_innovation_intensity": 59920,
+        "relative_innovation_intensity_peer_imputed": 59900,
+        "relative_scalability_capital_efficiency": 56922,
+        "relative_unit_economics_profit_quality": 56922
+      },
+      "output_dir": "data\\processed\\synthetic\\null_alpha\\p3",
+      "rows": {
+        "axis_scores": 59921,
+        "component_features": 59921
+      },
+      "scenario": "null_alpha",
+      "status": "PASS",
+      "warnings": []
+    },
+    {
+      "errors": [],
+      "models_fitted": [],
+      "nonmissing_axes": {
+        "anchored_competitive_defensibility": 58718,
+        "anchored_competitive_defensibility_hhi_reversed": 58718,
+        "anchored_demand_strength_pricing_power": 52776,
+        "anchored_go_to_market_efficiency": 55721,
+        "anchored_innovation_intensity": 58718,
+        "anchored_innovation_intensity_peer_imputed": 58718,
+        "anchored_scalability_capital_efficiency": 55721,
+        "anchored_unit_economics_profit_quality": 55721,
+        "relative_competitive_defensibility": 58902,
+        "relative_competitive_defensibility_hhi_reversed": 58902,
+        "relative_demand_strength_pricing_power": 52951,
+        "relative_go_to_market_efficiency": 55900,
+        "relative_innovation_intensity": 58902,
+        "relative_innovation_intensity_peer_imputed": 58880,
+        "relative_scalability_capital_efficiency": 55900,
+        "relative_unit_economics_profit_quality": 55900
+      },
+      "output_dir": "data\\processed\\synthetic\\migration_alpha\\p3",
+      "rows": {
+        "axis_scores": 58902,
+        "component_features": 58902
+      },
+      "scenario": "migration_alpha",
+      "status": "PASS",
+      "warnings": []
+    },
+    {
+      "errors": [],
+      "models_fitted": [],
+      "nonmissing_axes": {
+        "anchored_competitive_defensibility": 58042,
+        "anchored_competitive_defensibility_hhi_reversed": 58042,
+        "anchored_demand_strength_pricing_power": 52102,
+        "anchored_go_to_market_efficiency": 55047,
+        "anchored_innovation_intensity": 58042,
+        "anchored_innovation_intensity_peer_imputed": 58042,
+        "anchored_scalability_capital_efficiency": 55047,
+        "anchored_unit_economics_profit_quality": 55047,
+        "relative_competitive_defensibility": 58219,
+        "relative_competitive_defensibility_hhi_reversed": 58219,
+        "relative_demand_strength_pricing_power": 52272,
+        "relative_go_to_market_efficiency": 55206,
+        "relative_innovation_intensity": 58219,
+        "relative_innovation_intensity_peer_imputed": 58219,
+        "relative_scalability_capital_efficiency": 55206,
+        "relative_unit_economics_profit_quality": 55206
+      },
+      "output_dir": "data\\processed\\synthetic\\regime_shift\\p3",
+      "rows": {
+        "axis_scores": 58221,
+        "component_features": 58221
+      },
+      "scenario": "regime_shift",
+      "status": "PASS",
+      "warnings": []
+    }
+  ],
+  "schema_version": 1,
+  "status": "PASS"
+}

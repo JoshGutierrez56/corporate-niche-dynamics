@@ -1,0 +1,74 @@
+﻿business-niche-hypercube
+├── artifacts
+│   ├── logs
+│   │   ├── .gitkeep
+│   │   ├── p0_manifest.txt
+│   │   ├── p0_pytest.txt
+│   │   ├── p0_real_config.txt
+│   │   ├── p0_synthetic_config.txt
+│   │   └── p0_tree.txt
+│   ├── manifests
+│   │   ├── .gitkeep
+│   │   └── p0_manifest.json
+│   ├── models
+│   │   └── .gitkeep
+│   └── tables
+│       └── .gitkeep
+├── business_niche_hypercube.egg-info
+│   ├── dependency_links.txt
+│   ├── PKG-INFO
+│   ├── requires.txt
+│   ├── SOURCES.txt
+│   └── top_level.txt
+├── configs
+│   ├── base.yaml
+│   ├── real.yaml
+│   └── synthetic.yaml
+├── data
+│   ├── interim
+│   │   └── .gitkeep
+│   ├── processed
+│   │   └── .gitkeep
+│   └── raw
+│       └── .gitkeep
+├── docs
+│   ├── data_dictionary.md
+│   ├── modeling_decisions.md
+│   ├── point_in_time_policy.md
+│   ├── references.md
+│   └── research_spec.md
+├── figures
+│   └── .gitkeep
+├── hypercube
+│   ├── __init__.py
+│   ├── availability.py
+│   ├── axes.py
+│   ├── clustering.py
+│   ├── config.py
+│   ├── costs.py
+│   ├── data.py
+│   ├── diagnostics.py
+│   ├── dynamics.py
+│   ├── labels.py
+│   ├── portfolio.py
+│   ├── returns.py
+│   ├── run.py
+│   ├── standardize.py
+│   ├── survival.py
+│   ├── universe.py
+│   ├── viability.py
+│   └── visualization.py
+├── scripts
+│   ├── make_synthetic.py
+│   ├── print_manifest.py
+│   └── validate_raw_inputs.py
+├── tests
+│   └── test_smoke.py
+├── .gitignore
+├── .python-version
+├── Makefile
+├── pyproject.toml
+├── README.md
+├── report.md
+├── requirements.txt
+└── uv.lock

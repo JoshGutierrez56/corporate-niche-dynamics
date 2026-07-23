@@ -1,0 +1,13 @@
+{
+  "drift_event_rows_checked": 54544,
+  "drift_metric_rows_checked": 12,
+  "errors": [],
+  "output_records_checked": 6,
+  "peer_geometry_rows_checked": 62928,
+  "peer_metric_rows_checked": 12,
+  "phase": "P21E",
+  "primary_verdict": "RESEARCH_BENCHMARK_ONLY",
+  "schema_version": 1,
+  "source_records_checked": 13,
+  "status": "PASS"
+}

@@ -1,0 +1,3 @@
+......................................................                   [100%]
+- generated xml file: ${PROJECT_ROOT}\artifacts\logs\p6_pytest.xml -
+54 passed in 13.80s

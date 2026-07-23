@@ -1,0 +1,11 @@
+{
+  "errors": [],
+  "frozen_p0_p10_outputs_modified": false,
+  "gate_result": "PASS",
+  "isolated_canary": true,
+  "phase": "P16E",
+  "real_data_run": false,
+  "schema_version": 1,
+  "selected_candidate": "anchored_axis_innovation",
+  "status": "PASS"
+}

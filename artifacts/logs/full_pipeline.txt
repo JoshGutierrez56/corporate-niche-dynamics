@@ -1,0 +1,107 @@
+
+===== P1_VALIDATE =====
+command: ${PROJECT_ROOT}\.venv\Scripts\python.exe scripts/validate_raw_inputs.py --config ${PROJECT_ROOT}\artifacts\checkpoints\full_pipeline_configs\p1.yaml --all-scenarios --report artifacts/manifests/p1_validation.json
+exit_code: 0
+{"errors": [], "models_fitted": [], "raw_dir": "data\\raw\\synthetic\\null_alpha", "row_counts": {"ccm_link.parquet": 3104, "crsp_delist.parquet": 969, "crsp_monthly.parquet": 752766, "factor_returns.parquet": 600, "funda.parquet": 62000, "sec_filing_dates.parquet": 52084, "synthetic_truth.parquet": 62000}, "scenario": "null_alpha", "status": "PASS", "warnings": []}
+{"errors": [], "models_fitted": [], "raw_dir": "data\\raw\\synthetic\\migration_alpha", "row_counts": {"ccm_link.parquet": 3120, "crsp_delist.parquet": 999, "crsp_monthly.parquet": 741472, "factor_returns.parquet": 600, "funda.parquet": 61042, "sec_filing_dates.parquet": 51276, "synthetic_truth.parquet": 61042}, "scenario": "migration_alpha", "status": "PASS", "warnings": []}
+{"errors": [], "models_fitted": [], "raw_dir": "data\\raw\\synthetic\\regime_shift", "row_counts": {"ccm_link.parquet": 3109, "crsp_delist.parquet": 1016, "crsp_monthly.parquet": 732642, "factor_returns.parquet": 600, "funda.parquet": 60295, "sec_filing_dates.parquet": 50595, "synthetic_truth.parquet": 60295}, "scenario": "regime_shift", "status": "PASS", "warnings": []}
+
+===== P2_VALIDATE =====
+command: ${PROJECT_ROOT}\.venv\Scripts\python.exe scripts/validate_point_in_time_panel.py --config ${PROJECT_ROOT}\artifacts\checkpoints\full_pipeline_configs\p2.yaml --all-scenarios --report artifacts/manifests/p2_validation.json
+exit_code: 0
+{"availability_sources": {"datadate_plus_180_calendar_days": 1220, "verified_earnings_announcement_date": 8696, "verified_sec_filing_timestamp": 52084}, "delisting_events": 969, "errors": [], "models_fitted": [], "output_dir": "data\\processed\\synthetic\\null_alpha", "rows": {"accounting_availability": 62000, "firm_month_panel": 705450, "universe_monthly": 750167}, "scenario": "null_alpha", "status": "PASS", "warnings": []}
+{"availability_sources": {"datadate_plus_180_calendar_days": 1171, "verified_earnings_announcement_date": 8595, "verified_sec_filing_timestamp": 51276}, "delisting_events": 998, "errors": [], "models_fitted": [], "output_dir": "data\\processed\\synthetic\\migration_alpha", "rows": {"accounting_availability": 61042, "firm_month_panel": 692892, "universe_monthly": 737508}, "scenario": "migration_alpha", "status": "PASS", "warnings": []}
+{"availability_sources": {"datadate_plus_180_calendar_days": 1167, "verified_earnings_announcement_date": 8533, "verified_sec_filing_timestamp": 50595}, "delisting_events": 1013, "errors": [], "models_fitted": [], "output_dir": "data\\processed\\synthetic\\regime_shift", "rows": {"accounting_availability": 60295, "firm_month_panel": 684635, "universe_monthly": 729262}, "scenario": "regime_shift", "status": "PASS", "warnings": []}
+
+===== P3_VALIDATE =====
+command: ${PROJECT_ROOT}\.venv\Scripts\python.exe scripts/validate_axis_features.py --config ${PROJECT_ROOT}\artifacts\checkpoints\full_pipeline_configs\p3.yaml --all-scenarios --report artifacts/manifests/p3_validation.json
+exit_code: 0
+{"errors": [], "models_fitted": [], "nonmissing_axes": {"anchored_competitive_defensibility": 59718, "anchored_competitive_defensibility_hhi_reversed": 59718, "anchored_demand_strength_pricing_power": 53769, "anchored_go_to_market_efficiency": 56721, "anchored_innovation_intensity": 59718, "anchored_innovation_intensity_peer_imputed": 59718, "anchored_scalability_capital_efficiency": 56721, "anchored_unit_economics_profit_quality": 56721, "relative_competitive_defensibility": 59920, "relative_competitive_defensibility_hhi_reversed": 59920, "relative_demand_strength_pricing_power": 53969, "relative_go_to_market_efficiency": 56922, "relative_innovation_intensity": 59920, "relative_innovation_intensity_peer_imputed": 59900, "relative_scalability_capital_efficiency": 56922, "relative_unit_economics_profit_quality": 56922}, "output_dir": "data\\processed\\synthetic\\null_alpha\\p3", "rows": {"axis_scores": 59921, "component_features": 59921}, "scenario": "null_alpha", "status": "PASS", "warnings": []}
+{"errors": [], "models_fitted": [], "nonmissing_axes": {"anchored_competitive_defensibility": 58718, "anchored_competitive_defensibility_hhi_reversed": 58718, "anchored_demand_strength_pricing_power": 52776, "anchored_go_to_market_efficiency": 55721, "anchored_innovation_intensity": 58718, "anchored_innovation_intensity_peer_imputed": 58718, "anchored_scalability_capital_efficiency": 55721, "anchored_unit_economics_profit_quality": 55721, "relative_competitive_defensibility": 58902, "relative_competitive_defensibility_hhi_reversed": 58902, "relative_demand_strength_pricing_power": 52951, "relative_go_to_market_efficiency": 55900, "relative_innovation_intensity": 58902, "relative_innovation_intensity_peer_imputed": 58880, "relative_scalability_capital_efficiency": 55900, "relative_unit_economics_profit_quality": 55900}, "output_dir": "data\\processed\\synthetic\\migration_alpha\\p3", "rows": {"axis_scores": 58902, "component_features": 58902}, "scenario": "migration_alpha", "status": "PASS", "warnings": []}
+{"errors": [], "models_fitted": [], "nonmissing_axes": {"anchored_competitive_defensibility": 58042, "anchored_competitive_defensibility_hhi_reversed": 58042, "anchored_demand_strength_pricing_power": 52102, "anchored_go_to_market_efficiency": 55047, "anchored_innovation_intensity": 58042, "anchored_innovation_intensity_peer_imputed": 58042, "anchored_scalability_capital_efficiency": 55047, "anchored_unit_economics_profit_quality": 55047, "relative_competitive_defensibility": 58219, "relative_competitive_defensibility_hhi_reversed": 58219, "relative_demand_strength_pricing_power": 52272, "relative_go_to_market_efficiency": 55206, "relative_innovation_intensity": 58219, "relative_innovation_intensity_peer_imputed": 58219, "relative_scalability_capital_efficiency": 55206, "relative_unit_economics_profit_quality": 55206}, "output_dir": "data\\processed\\synthetic\\regime_shift\\p3", "rows": {"axis_scores": 58221, "component_features": 58221}, "scenario": "regime_shift", "status": "PASS", "warnings": []}
+
+===== P4_VALIDATE =====
+command: ${PROJECT_ROOT}\.venv\Scripts\python.exe scripts/validate_viability_models.py --config ${PROJECT_ROOT}\artifacts\checkpoints\full_pipeline_configs\p4.yaml --all-scenarios --report artifacts/manifests/p4_validation.json
+exit_code: 0
+{"errors": [], "models_fitted": ["profitability_logit", "distress_logit", "industry_rate", "occupied_cell_rate", "relative_axes_logit", "combined_axes_logit", "hist_gradient_boosting"], "output_dir": "data\\processed\\synthetic\\null_alpha\\p4", "portfolio_run": false, "return_test_run": false, "rows": {"labels": 119842, "metric_rows": 56, "observed_labels": 99614, "oos_predictions": 440818}, "scenario": "null_alpha", "status": "PASS", "warnings": []}
+{"errors": [], "models_fitted": ["profitability_logit", "distress_logit", "industry_rate", "occupied_cell_rate", "relative_axes_logit", "combined_axes_logit", "hist_gradient_boosting"], "output_dir": "data\\processed\\synthetic\\migration_alpha\\p4", "portfolio_run": false, "return_test_run": false, "rows": {"labels": 117804, "metric_rows": 56, "observed_labels": 98019, "oos_predictions": 441651}, "scenario": "migration_alpha", "status": "PASS", "warnings": []}
+{"errors": [], "models_fitted": ["profitability_logit", "distress_logit", "industry_rate", "occupied_cell_rate", "relative_axes_logit", "combined_axes_logit", "hist_gradient_boosting"], "output_dir": "data\\processed\\synthetic\\regime_shift\\p4", "portfolio_run": false, "return_test_run": false, "rows": {"labels": 116442, "metric_rows": 56, "observed_labels": 96441, "oos_predictions": 434217}, "scenario": "regime_shift", "status": "PASS", "warnings": []}
+
+===== P5_VALIDATE =====
+command: ${PROJECT_ROOT}\.venv\Scripts\python.exe scripts/validate_dynamics.py --config ${PROJECT_ROOT}\artifacts\checkpoints\full_pipeline_configs\p5.yaml --all-scenarios --report artifacts/manifests/p5_validation.json
+exit_code: 0
+{"clustering_run": false, "errors": [], "models_fitted": ["expanding_migration_ridge"], "portfolio_run": false, "recovery": {"gates": {"level": true, "migration_surprise": true, "velocity": true}, "level_rows": 32781, "level_spearman": 0.4894803506301873, "migration_surprise_rows": 24197, "migration_surprise_spearman": 0.10251651027856139, "primary_horizon_years": 5, "return_injection_read": false, "status": "PASS", "thresholds": {"level": 0.1, "migration_surprise": 0.03, "velocity": 0.05}, "velocity_rows": 25474, "velocity_spearman": 0.37464275664246066}, "return_test_run": false, "rows": {"acceleration": 37070, "frontier_dynamics": 65562, "migration_surprise": 48394, "velocity": 50948}, "scenario": "null_alpha", "status": "PASS", "warnings": []}
+{"clustering_run": false, "errors": [], "models_fitted": ["expanding_migration_ridge"], "portfolio_run": false, "recovery": {"gates": {"level": true, "migration_surprise": true, "velocity": true}, "level_rows": 32770, "level_spearman": 0.511181638925731, "migration_surprise_rows": 24227, "migration_surprise_spearman": 0.20439343433213916, "primary_horizon_years": 5, "return_injection_read": false, "status": "PASS", "thresholds": {"level": 0.1, "migration_surprise": 0.03, "velocity": 0.05}, "velocity_rows": 25489, "velocity_spearman": 0.4341919354530195}, "return_test_run": false, "rows": {"acceleration": 37162, "frontier_dynamics": 65540, "migration_surprise": 48454, "velocity": 50978}, "scenario": "migration_alpha", "status": "PASS", "warnings": []}
+{"clustering_run": false, "errors": [], "models_fitted": ["expanding_migration_ridge"], "portfolio_run": false, "recovery": {"gates": {"level": true, "migration_surprise": true, "velocity": true}, "level_rows": 32305, "level_spearman": 0.20270215741264436, "migration_surprise_rows": 23903, "migration_surprise_spearman": 0.17620243608432895, "primary_horizon_years": 5, "return_injection_read": false, "status": "PASS", "thresholds": {"level": 0.1, "migration_surprise": 0.03, "velocity": 0.05}, "velocity_rows": 25119, "velocity_spearman": 0.28881347067941565}, "return_test_run": false, "rows": {"acceleration": 36602, "frontier_dynamics": 64610, "migration_surprise": 47806, "velocity": 50238}, "scenario": "regime_shift", "status": "PASS", "warnings": []}
+
+===== P6_VALIDATE =====
+command: ${PROJECT_ROOT}\.venv\Scripts\python.exe scripts/validate_survival_models.py --config ${PROJECT_ROOT}\artifacts\checkpoints\full_pipeline_configs\p6.yaml --all-scenarios --report artifacts/manifests/p6_validation.json
+exit_code: 0
+{"causal_claim": false, "errors": [], "events": {"merger": 302, "performance_failure": 267}, "models_fitted": ["cause_specific_ph:performance_failure", "cause_specific_ph:merger"], "portfolio_run": false, "return_test_run": false, "rows": {"coefficient_rows": 16, "fold_predictions": 33686, "intervals": 30285, "metric_rows": 4}, "scenario": "null_alpha", "status": "PASS", "warnings": []}
+{"causal_claim": false, "errors": [], "events": {"merger": 295, "performance_failure": 273}, "models_fitted": ["cause_specific_ph:performance_failure", "cause_specific_ph:merger"], "portfolio_run": false, "return_test_run": false, "rows": {"coefficient_rows": 16, "fold_predictions": 33766, "intervals": 30300, "metric_rows": 4}, "scenario": "migration_alpha", "status": "PASS", "warnings": []}
+{"causal_claim": false, "errors": [], "events": {"merger": 296, "performance_failure": 260}, "models_fitted": ["cause_specific_ph:performance_failure", "cause_specific_ph:merger"], "portfolio_run": false, "return_test_run": false, "rows": {"coefficient_rows": 16, "fold_predictions": 33546, "intervals": 29779, "metric_rows": 4}, "scenario": "regime_shift", "status": "PASS", "warnings": []}
+
+===== P7_VALIDATE =====
+command: ${PROJECT_ROOT}\.venv\Scripts\python.exe scripts/validate_return_tests.py --config ${PROJECT_ROOT}\artifacts\checkpoints\full_pipeline_configs\p7.yaml --all-scenarios --report artifacts/manifests/p7_validation.json
+exit_code: 0
+{"costs_applied": false, "errors": [], "fmb_tests": 12, "gross_portfolios": 48, "portfolio_run": true, "recovery": {"gates": {"absolute_ic_below_frozen_bound": true, "primary_holm_not_significant": true}, "primary_fmb_coefficient": 0.0011107587606861, "primary_fmb_holm_p_value": 1.0, "primary_fmb_p_value": 0.7607439425611933, "primary_horizon_months": 6, "primary_signal": "migration_surprise", "primary_spearman_ic": -0.00838561490267066, "rows": 24195, "scenario": "null_alpha", "scientific_status": "PASS", "truth_field_read": "injected_return_alpha"}, "return_test_run": true, "rows": {"events": 32781, "paths": 393372, "portfolio_months": 6808, "targets": 131124, "valid_targets": 131116}, "scenario": "null_alpha", "status": "PASS", "warnings": []}
+{"costs_applied": false, "errors": [], "fmb_tests": 12, "gross_portfolios": 48, "portfolio_run": true, "recovery": {"expected_six_month_fraction_of_total_injection": 0.8175744761936438, "gates": {"oracle_slope_within_frozen_bounds": true, "primary_fmb_coefficient_positive": true, "primary_ic_positive": false}, "oracle_injected_alpha_slope": 0.646211724437485, "primary_fmb_coefficient": 0.0046578510721909, "primary_fmb_holm_p_value": 1.0, "primary_fmb_p_value": 0.2885204068795841, "primary_horizon_months": 6, "primary_signal": "migration_surprise", "primary_spearman_ic": -0.018724656410712394, "rows": 24227, "scenario": "migration_alpha", "scientific_status": "FAIL", "truth_field_read": "injected_return_alpha"}, "return_test_run": true, "rows": {"events": 32770, "paths": 393240, "portfolio_months": 6772, "targets": 131080, "valid_targets": 131080}, "scenario": "migration_alpha", "status": "PASS", "warnings": []}
+{"costs_applied": false, "errors": [], "fmb_tests": 12, "gross_portfolios": 48, "portfolio_run": true, "recovery": {"gates": {}, "primary_fmb_coefficient": 0.0014787885922271, "primary_fmb_holm_p_value": 1.0, "primary_fmb_p_value": 0.7565014832241227, "primary_horizon_months": 6, "primary_signal": "migration_surprise", "primary_spearman_ic": 0.036805456722076794, "rows": 23903, "scenario": "regime_shift", "scientific_status": "DESCRIPTIVE_ONLY", "truth_field_read": "injected_return_alpha"}, "return_test_run": true, "rows": {"events": 32305, "paths": 387660, "portfolio_months": 6820, "targets": 129220, "valid_targets": 129220}, "scenario": "regime_shift", "status": "PASS", "warnings": []}
+
+===== P8_VALIDATE =====
+command: ${PROJECT_ROOT}\.venv\Scripts\python.exe scripts/validate_cost_aware_portfolios.py --config ${PROJECT_ROOT}\artifacts\checkpoints\full_pipeline_configs\p8.yaml --all-scenarios --report artifacts/manifests/p8_validation.json
+exit_code: 0
+{"costs_applied": true, "errors": [], "primary_result": {"annualized_gross_capacity_return": 0.007283719749901333, "annualized_net_return": -0.0627164782268221, "annualized_net_sharpe": -1.0962972526625354, "average_capacity_fill_ratio": 0.6079461049109793, "average_turnover": 0.41448217634051665, "net_maximum_drawdown": -0.5701315829862146}, "rows": {"capacity_assignments": 131378, "executed_positions": 1568428, "monthly_scenario_rows": 11736, "portfolio_summaries": 72}, "scenario": "null_alpha", "scientific_status": "NULL_OR_NEGATIVE_AFTER_COSTS", "status": "PASS", "synthetic_truth_read": false, "warnings": []}
+{"costs_applied": true, "errors": [], "primary_result": {"annualized_gross_capacity_return": 0.012212060595911284, "annualized_net_return": -0.0661135794174058, "annualized_net_sharpe": -1.227384084620736, "average_capacity_fill_ratio": 0.6746843518050281, "average_turnover": 0.45858107621877964, "net_maximum_drawdown": -0.5646940603541967}, "rows": {"capacity_assignments": 131392, "executed_positions": 1568714, "monthly_scenario_rows": 11664, "portfolio_summaries": 72}, "scenario": "migration_alpha", "scientific_status": "NULL_OR_NEGATIVE_AFTER_COSTS", "status": "PASS", "synthetic_truth_read": false, "warnings": []}
+{"costs_applied": true, "errors": [], "primary_result": {"annualized_gross_capacity_return": 0.0032339157103790815, "annualized_net_return": -0.07001643229998913, "annualized_net_sharpe": -1.1459428356988033, "average_capacity_fill_ratio": 0.6341043467145023, "average_turnover": 0.430684649914648, "net_maximum_drawdown": -0.5799510732524344}, "rows": {"capacity_assignments": 129652, "executed_positions": 1547626, "monthly_scenario_rows": 11736, "portfolio_summaries": 72}, "scenario": "regime_shift", "scientific_status": "NULL_OR_NEGATIVE_AFTER_COSTS", "status": "PASS", "synthetic_truth_read": false, "warnings": []}
+
+===== P9_VALIDATE =====
+command: ${PROJECT_ROOT}\.venv\Scripts\python.exe scripts/validate_archetypes.py --config ${PROJECT_ROOT}\artifacts\checkpoints\full_pipeline_configs\p9.yaml --all-scenarios --report artifacts/manifests/p9_validation.json
+exit_code: 0
+{"descriptive_only": true, "errors": [], "mean_stability_ari": -0.0015814913007736499, "noise_or_unassigned_rate": 0.9467632382637139, "rows": {"assignments": 59921, "clusters": 2, "fit_rows": 25000, "transition_cells": 15}, "scenario": "null_alpha", "status": "PASS", "synthetic_truth_read": false, "warnings": ["Archetype stability is weak; interpret clusters cautiously."]}
+{"descriptive_only": true, "errors": [], "mean_stability_ari": 0.00272455886087005, "noise_or_unassigned_rate": 0.9805269770126651, "rows": {"assignments": 58902, "clusters": 3, "fit_rows": 24279, "transition_cells": 15}, "scenario": "migration_alpha", "status": "PASS", "synthetic_truth_read": false, "warnings": ["Archetype stability is weak; interpret clusters cautiously."]}
+{"descriptive_only": true, "errors": [], "mean_stability_ari": NaN, "noise_or_unassigned_rate": 0.9544150735988732, "rows": {"assignments": 58221, "clusters": 2, "fit_rows": 23892, "transition_cells": 13}, "scenario": "regime_shift", "status": "PASS", "synthetic_truth_read": false, "warnings": ["Every bounded stability refit failed to recover two clusters."]}
+
+===== P10_VALIDATE =====
+command: ${PROJECT_ROOT}\.venv\Scripts\python.exe scripts/validate_final_report.py --config ${PROJECT_ROOT}\artifacts\checkpoints\full_pipeline_configs\p10.yaml --report artifacts/manifests/p10_validation.json
+exit_code: 0
+{"errors": [], "figure_files": 12, "figure_topics": 11, "phase": "P10", "real_data_run": false, "scientific_status": "SIGNAL_RECOVERY_FAILED", "statistics_rows": 3, "status": "PASS", "synthetic_only": true}
+
+===== PYTEST =====
+command: ${PROJECT_ROOT}\.venv\Scripts\python.exe -m pytest -q
+exit_code: 0
+...............................................................          [100%]
+============================== warnings summary ===============================
+.venv\Lib\site-packages\matplotlib\_fontconfig_pattern.py:64
+  ${PROJECT_ROOT}\.venv\Lib\site-packages\matplotlib\_fontconfig_pattern.py:64: PyparsingDeprecationWarning: 'oneOf' deprecated - use 'one_of'
+    prop = Group((name + Suppress("=") + comma_separated(value)) | oneOf(_CONSTANTS))
+
+.venv\Lib\site-packages\matplotlib\_fontconfig_pattern.py:85
+.venv\Lib\site-packages\matplotlib\_fontconfig_pattern.py:85
+.venv\Lib\site-packages\matplotlib\_fontconfig_pattern.py:85
+.venv\Lib\site-packages\matplotlib\_fontconfig_pattern.py:85
+.venv\Lib\site-packages\matplotlib\_fontconfig_pattern.py:85
+.venv\Lib\site-packages\matplotlib\_fontconfig_pattern.py:85
+  ${PROJECT_ROOT}\.venv\Lib\site-packages\matplotlib\_fontconfig_pattern.py:85: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'
+    parse = parser.parseString(pattern)
+
+.venv\Lib\site-packages\matplotlib\_fontconfig_pattern.py:89
+.venv\Lib\site-packages\matplotlib\_fontconfig_pattern.py:89
+.venv\Lib\site-packages\matplotlib\_fontconfig_pattern.py:89
+.venv\Lib\site-packages\matplotlib\_fontconfig_pattern.py:89
+.venv\Lib\site-packages\matplotlib\_fontconfig_pattern.py:89
+.venv\Lib\site-packages\matplotlib\_fontconfig_pattern.py:89
+  ${PROJECT_ROOT}\.venv\Lib\site-packages\matplotlib\_fontconfig_pattern.py:89: PyparsingDeprecationWarning: 'resetCache' deprecated - use 'reset_cache'
+    parser.resetCache()
+
+.venv\Lib\site-packages\matplotlib\_mathtext.py:45
+  ${PROJECT_ROOT}\.venv\Lib\site-packages\matplotlib\_mathtext.py:45: PyparsingDeprecationWarning: 'enablePackrat' deprecated - use 'enable_packrat'
+    ParserElement.enablePackrat()
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+63 passed, 14 warnings in 13.04s
+
+===== P10_MANIFEST =====
+command: ${PROJECT_ROOT}\.venv\Scripts\python.exe scripts/print_manifest.py --config ${PROJECT_ROOT}\artifacts\checkpoints\full_pipeline_configs\p10.yaml --output artifacts/manifests/p10_manifest.json
+exit_code: 0
+{"input_files": 27, "path": "${PROJECT_ROOT}\\artifacts\\manifests\\p10_manifest.json", "project_files": 96, "status": "P10_MANIFEST_WRITTEN"}

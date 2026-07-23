@@ -1,0 +1,7 @@
+signal,factor,beta
+migration_surprise,beta_mkt_excess,0.0572734264137633
+migration_surprise,beta_smb,0.1305761332309257
+migration_surprise,beta_hml,-0.0343127645839001
+migration_surprise,beta_rmw,-0.1857591761631599
+migration_surprise,beta_cma,0.0058416315842751
+migration_surprise,beta_mom,-0.0140929889285057

@@ -1,0 +1,469 @@
+{
+  "aggregate_tables": [
+    "${PROJECT_ROOT}\\artifacts\\tables\\p4_fold_metrics.csv",
+    "${PROJECT_ROOT}\\artifacts\\tables\\p4_benchmark_comparisons.csv",
+    "${PROJECT_ROOT}\\artifacts\\tables\\p4_label_summary.csv",
+    "${PROJECT_ROOT}\\artifacts\\tables\\p4_hyperparameter_trials.csv"
+  ],
+  "config": "configs\\synthetic.yaml",
+  "phase": "P4",
+  "portfolio_run": false,
+  "reports": [
+    {
+      "construction": {
+        "failures": {
+          "3": 1103,
+          "5": 1750
+        },
+        "horizons_years": [
+          3,
+          5
+        ],
+        "models_fitted": [
+          "profitability_logit",
+          "distress_logit",
+          "industry_rate",
+          "occupied_cell_rate",
+          "relative_axes_logit",
+          "combined_axes_logit",
+          "hist_gradient_boosting"
+        ],
+        "outer_folds": [
+          {
+            "fold": 1,
+            "horizon_years": 3,
+            "purge_years": 3,
+            "test_end_year": 2004,
+            "test_start_year": 2000,
+            "train_end_year": 1988,
+            "train_start_year": 1975,
+            "validation_end_year": 1996,
+            "validation_start_year": 1992
+          },
+          {
+            "fold": 2,
+            "horizon_years": 3,
+            "purge_years": 3,
+            "test_end_year": 2009,
+            "test_start_year": 2005,
+            "train_end_year": 1993,
+            "train_start_year": 1975,
+            "validation_end_year": 2001,
+            "validation_start_year": 1997
+          },
+          {
+            "fold": 3,
+            "horizon_years": 3,
+            "purge_years": 3,
+            "test_end_year": 2014,
+            "test_start_year": 2010,
+            "train_end_year": 1998,
+            "train_start_year": 1975,
+            "validation_end_year": 2006,
+            "validation_start_year": 2002
+          },
+          {
+            "fold": 4,
+            "horizon_years": 3,
+            "purge_years": 3,
+            "test_end_year": 2019,
+            "test_start_year": 2015,
+            "train_end_year": 2003,
+            "train_start_year": 1975,
+            "validation_end_year": 2011,
+            "validation_start_year": 2007
+          },
+          {
+            "fold": 1,
+            "horizon_years": 5,
+            "purge_years": 5,
+            "test_end_year": 2004,
+            "test_start_year": 2000,
+            "train_end_year": 1984,
+            "train_start_year": 1975,
+            "validation_end_year": 1994,
+            "validation_start_year": 1990
+          },
+          {
+            "fold": 2,
+            "horizon_years": 5,
+            "purge_years": 5,
+            "test_end_year": 2009,
+            "test_start_year": 2005,
+            "train_end_year": 1989,
+            "train_start_year": 1975,
+            "validation_end_year": 1999,
+            "validation_start_year": 1995
+          },
+          {
+            "fold": 3,
+            "horizon_years": 5,
+            "purge_years": 5,
+            "test_end_year": 2014,
+            "test_start_year": 2010,
+            "train_end_year": 1994,
+            "train_start_year": 1975,
+            "validation_end_year": 2004,
+            "validation_start_year": 2000
+          },
+          {
+            "fold": 4,
+            "horizon_years": 5,
+            "purge_years": 5,
+            "test_end_year": 2019,
+            "test_start_year": 2015,
+            "train_end_year": 1999,
+            "train_start_year": 1975,
+            "validation_end_year": 2009,
+            "validation_start_year": 2005
+          }
+        ],
+        "phase": "P4",
+        "portfolio_run": false,
+        "return_test_run": false,
+        "rows": {
+          "events": 59921,
+          "labels": 119842,
+          "model_matrix": 119842,
+          "observed_labels": 99614,
+          "oos_predictions": 440818
+        },
+        "scenario": "null_alpha",
+        "sklearn_version": "1.7.1",
+        "status": "PASS",
+        "synthetic_truth_read": false,
+        "version": "hypercube-viability-v1"
+      },
+      "output_dir": "data\\processed\\synthetic\\null_alpha\\p4",
+      "reused_existing": true,
+      "scenario": "null_alpha",
+      "validation": {
+        "errors": [],
+        "models_fitted": [
+          "profitability_logit",
+          "distress_logit",
+          "industry_rate",
+          "occupied_cell_rate",
+          "relative_axes_logit",
+          "combined_axes_logit",
+          "hist_gradient_boosting"
+        ],
+        "portfolio_run": false,
+        "return_test_run": false,
+        "rows": {
+          "labels": 119842,
+          "metric_rows": 56,
+          "observed_labels": 99614,
+          "oos_predictions": 440818
+        },
+        "status": "PASS",
+        "warnings": []
+      }
+    },
+    {
+      "construction": {
+        "failures": {
+          "3": 1200,
+          "5": 1904
+        },
+        "horizons_years": [
+          3,
+          5
+        ],
+        "models_fitted": [
+          "profitability_logit",
+          "distress_logit",
+          "industry_rate",
+          "occupied_cell_rate",
+          "relative_axes_logit",
+          "combined_axes_logit",
+          "hist_gradient_boosting"
+        ],
+        "outer_folds": [
+          {
+            "fold": 1,
+            "horizon_years": 3,
+            "purge_years": 3,
+            "test_end_year": 2004,
+            "test_start_year": 2000,
+            "train_end_year": 1988,
+            "train_start_year": 1975,
+            "validation_end_year": 1996,
+            "validation_start_year": 1992
+          },
+          {
+            "fold": 2,
+            "horizon_years": 3,
+            "purge_years": 3,
+            "test_end_year": 2009,
+            "test_start_year": 2005,
+            "train_end_year": 1993,
+            "train_start_year": 1975,
+            "validation_end_year": 2001,
+            "validation_start_year": 1997
+          },
+          {
+            "fold": 3,
+            "horizon_years": 3,
+            "purge_years": 3,
+            "test_end_year": 2014,
+            "test_start_year": 2010,
+            "train_end_year": 1998,
+            "train_start_year": 1975,
+            "validation_end_year": 2006,
+            "validation_start_year": 2002
+          },
+          {
+            "fold": 4,
+            "horizon_years": 3,
+            "purge_years": 3,
+            "test_end_year": 2019,
+            "test_start_year": 2015,
+            "train_end_year": 2003,
+            "train_start_year": 1975,
+            "validation_end_year": 2011,
+            "validation_start_year": 2007
+          },
+          {
+            "fold": 1,
+            "horizon_years": 5,
+            "purge_years": 5,
+            "test_end_year": 2004,
+            "test_start_year": 2000,
+            "train_end_year": 1984,
+            "train_start_year": 1975,
+            "validation_end_year": 1994,
+            "validation_start_year": 1990
+          },
+          {
+            "fold": 2,
+            "horizon_years": 5,
+            "purge_years": 5,
+            "test_end_year": 2009,
+            "test_start_year": 2005,
+            "train_end_year": 1989,
+            "train_start_year": 1975,
+            "validation_end_year": 1999,
+            "validation_start_year": 1995
+          },
+          {
+            "fold": 3,
+            "horizon_years": 5,
+            "purge_years": 5,
+            "test_end_year": 2014,
+            "test_start_year": 2010,
+            "train_end_year": 1994,
+            "train_start_year": 1975,
+            "validation_end_year": 2004,
+            "validation_start_year": 2000
+          },
+          {
+            "fold": 4,
+            "horizon_years": 5,
+            "purge_years": 5,
+            "test_end_year": 2019,
+            "test_start_year": 2015,
+            "train_end_year": 1999,
+            "train_start_year": 1975,
+            "validation_end_year": 2009,
+            "validation_start_year": 2005
+          }
+        ],
+        "phase": "P4",
+        "portfolio_run": false,
+        "return_test_run": false,
+        "rows": {
+          "events": 58902,
+          "labels": 117804,
+          "model_matrix": 117804,
+          "observed_labels": 98019,
+          "oos_predictions": 441651
+        },
+        "scenario": "migration_alpha",
+        "sklearn_version": "1.7.1",
+        "status": "PASS",
+        "synthetic_truth_read": false,
+        "version": "hypercube-viability-v1"
+      },
+      "output_dir": "data\\processed\\synthetic\\migration_alpha\\p4",
+      "reused_existing": true,
+      "scenario": "migration_alpha",
+      "validation": {
+        "errors": [],
+        "models_fitted": [
+          "profitability_logit",
+          "distress_logit",
+          "industry_rate",
+          "occupied_cell_rate",
+          "relative_axes_logit",
+          "combined_axes_logit",
+          "hist_gradient_boosting"
+        ],
+        "portfolio_run": false,
+        "return_test_run": false,
+        "rows": {
+          "labels": 117804,
+          "metric_rows": 56,
+          "observed_labels": 98019,
+          "oos_predictions": 441651
+        },
+        "status": "PASS",
+        "warnings": []
+      }
+    },
+    {
+      "construction": {
+        "failures": {
+          "3": 1127,
+          "5": 1773
+        },
+        "horizons_years": [
+          3,
+          5
+        ],
+        "models_fitted": [
+          "profitability_logit",
+          "distress_logit",
+          "industry_rate",
+          "occupied_cell_rate",
+          "relative_axes_logit",
+          "combined_axes_logit",
+          "hist_gradient_boosting"
+        ],
+        "outer_folds": [
+          {
+            "fold": 1,
+            "horizon_years": 3,
+            "purge_years": 3,
+            "test_end_year": 2004,
+            "test_start_year": 2000,
+            "train_end_year": 1988,
+            "train_start_year": 1975,
+            "validation_end_year": 1996,
+            "validation_start_year": 1992
+          },
+          {
+            "fold": 2,
+            "horizon_years": 3,
+            "purge_years": 3,
+            "test_end_year": 2009,
+            "test_start_year": 2005,
+            "train_end_year": 1993,
+            "train_start_year": 1975,
+            "validation_end_year": 2001,
+            "validation_start_year": 1997
+          },
+          {
+            "fold": 3,
+            "horizon_years": 3,
+            "purge_years": 3,
+            "test_end_year": 2014,
+            "test_start_year": 2010,
+            "train_end_year": 1998,
+            "train_start_year": 1975,
+            "validation_end_year": 2006,
+            "validation_start_year": 2002
+          },
+          {
+            "fold": 4,
+            "horizon_years": 3,
+            "purge_years": 3,
+            "test_end_year": 2019,
+            "test_start_year": 2015,
+            "train_end_year": 2003,
+            "train_start_year": 1975,
+            "validation_end_year": 2011,
+            "validation_start_year": 2007
+          },
+          {
+            "fold": 1,
+            "horizon_years": 5,
+            "purge_years": 5,
+            "test_end_year": 2004,
+            "test_start_year": 2000,
+            "train_end_year": 1984,
+            "train_start_year": 1975,
+            "validation_end_year": 1994,
+            "validation_start_year": 1990
+          },
+          {
+            "fold": 2,
+            "horizon_years": 5,
+            "purge_years": 5,
+            "test_end_year": 2009,
+            "test_start_year": 2005,
+            "train_end_year": 1989,
+            "train_start_year": 1975,
+            "validation_end_year": 1999,
+            "validation_start_year": 1995
+          },
+          {
+            "fold": 3,
+            "horizon_years": 5,
+            "purge_years": 5,
+            "test_end_year": 2014,
+            "test_start_year": 2010,
+            "train_end_year": 1994,
+            "train_start_year": 1975,
+            "validation_end_year": 2004,
+            "validation_start_year": 2000
+          },
+          {
+            "fold": 4,
+            "horizon_years": 5,
+            "purge_years": 5,
+            "test_end_year": 2019,
+            "test_start_year": 2015,
+            "train_end_year": 1999,
+            "train_start_year": 1975,
+            "validation_end_year": 2009,
+            "validation_start_year": 2005
+          }
+        ],
+        "phase": "P4",
+        "portfolio_run": false,
+        "return_test_run": false,
+        "rows": {
+          "events": 58221,
+          "labels": 116442,
+          "model_matrix": 116442,
+          "observed_labels": 96441,
+          "oos_predictions": 434217
+        },
+        "scenario": "regime_shift",
+        "sklearn_version": "1.7.1",
+        "status": "PASS",
+        "synthetic_truth_read": false,
+        "version": "hypercube-viability-v1"
+      },
+      "output_dir": "data\\processed\\synthetic\\regime_shift\\p4",
+      "reused_existing": true,
+      "scenario": "regime_shift",
+      "validation": {
+        "errors": [],
+        "models_fitted": [
+          "profitability_logit",
+          "distress_logit",
+          "industry_rate",
+          "occupied_cell_rate",
+          "relative_axes_logit",
+          "combined_axes_logit",
+          "hist_gradient_boosting"
+        ],
+        "portfolio_run": false,
+        "return_test_run": false,
+        "rows": {
+          "labels": 116442,
+          "metric_rows": 56,
+          "observed_labels": 96441,
+          "oos_predictions": 434217
+        },
+        "status": "PASS",
+        "warnings": []
+      }
+    }
+  ],
+  "return_test_run": false,
+  "schema_version": 1,
+  "status": "PASS"
+}

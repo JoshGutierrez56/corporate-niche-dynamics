@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use or discuss this research, please cite it as follows."
+title: "Corporate Niche Dynamics: An Auditable Research Framework for Competitive Crowding and Strategic Change"
+type: software
+authors:
+  - family-names: Gutierrez
+    given-names: Josh
+repository-code: "https://github.com/JoshGutierrez56/corporate-niche-dynamics"
+url: "https://github.com/JoshGutierrez56/corporate-niche-dynamics"
+version: 0.1.0
+date-released: 2026-07-23
+license: LicenseRef-Proprietary
+keywords:
+  - corporate strategy
+  - competitive crowding
+  - point-in-time finance
+  - synthetic benchmark
+  - reproducible research
+abstract: >-
+  An auditable synthetic research framework that maps firms into a
+  six-dimensional business-model space and evaluates competitive crowding,
+  strategic drift, survival, returns, implementation costs, and structural
+  peer geometry under preregistered temporal validation.

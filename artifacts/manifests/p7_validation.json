@@ -1,0 +1,115 @@
+{
+  "costs_applied": false,
+  "phase": "P7",
+  "portfolio_run": true,
+  "reports": [
+    {
+      "costs_applied": false,
+      "errors": [],
+      "fmb_tests": 12,
+      "gross_portfolios": 48,
+      "output_dir": "data\\processed\\synthetic\\null_alpha\\p7",
+      "portfolio_run": true,
+      "recovery": {
+        "gates": {
+          "absolute_ic_below_frozen_bound": true,
+          "primary_holm_not_significant": true
+        },
+        "primary_fmb_coefficient": 0.0011107587606861,
+        "primary_fmb_holm_p_value": 1.0,
+        "primary_fmb_p_value": 0.7607439425611933,
+        "primary_horizon_months": 6,
+        "primary_signal": "migration_surprise",
+        "primary_spearman_ic": -0.00838561490267066,
+        "rows": 24195,
+        "scenario": "null_alpha",
+        "scientific_status": "PASS",
+        "truth_field_read": "injected_return_alpha"
+      },
+      "return_test_run": true,
+      "rows": {
+        "events": 32781,
+        "paths": 393372,
+        "portfolio_months": 6808,
+        "targets": 131124,
+        "valid_targets": 131116
+      },
+      "scenario": "null_alpha",
+      "status": "PASS",
+      "warnings": []
+    },
+    {
+      "costs_applied": false,
+      "errors": [],
+      "fmb_tests": 12,
+      "gross_portfolios": 48,
+      "output_dir": "data\\processed\\synthetic\\migration_alpha\\p7",
+      "portfolio_run": true,
+      "recovery": {
+        "expected_six_month_fraction_of_total_injection": 0.8175744761936438,
+        "gates": {
+          "oracle_slope_within_frozen_bounds": true,
+          "primary_fmb_coefficient_positive": true,
+          "primary_ic_positive": false
+        },
+        "oracle_injected_alpha_slope": 0.646211724437485,
+        "primary_fmb_coefficient": 0.0046578510721909,
+        "primary_fmb_holm_p_value": 1.0,
+        "primary_fmb_p_value": 0.2885204068795841,
+        "primary_horizon_months": 6,
+        "primary_signal": "migration_surprise",
+        "primary_spearman_ic": -0.018724656410712394,
+        "rows": 24227,
+        "scenario": "migration_alpha",
+        "scientific_status": "FAIL",
+        "truth_field_read": "injected_return_alpha"
+      },
+      "return_test_run": true,
+      "rows": {
+        "events": 32770,
+        "paths": 393240,
+        "portfolio_months": 6772,
+        "targets": 131080,
+        "valid_targets": 131080
+      },
+      "scenario": "migration_alpha",
+      "status": "PASS",
+      "warnings": []
+    },
+    {
+      "costs_applied": false,
+      "errors": [],
+      "fmb_tests": 12,
+      "gross_portfolios": 48,
+      "output_dir": "data\\processed\\synthetic\\regime_shift\\p7",
+      "portfolio_run": true,
+      "recovery": {
+        "gates": {},
+        "primary_fmb_coefficient": 0.0014787885922271,
+        "primary_fmb_holm_p_value": 1.0,
+        "primary_fmb_p_value": 0.7565014832241227,
+        "primary_horizon_months": 6,
+        "primary_signal": "migration_surprise",
+        "primary_spearman_ic": 0.036805456722076794,
+        "rows": 23903,
+        "scenario": "regime_shift",
+        "scientific_status": "DESCRIPTIVE_ONLY",
+        "truth_field_read": "injected_return_alpha"
+      },
+      "return_test_run": true,
+      "rows": {
+        "events": 32305,
+        "paths": 387660,
+        "portfolio_months": 6820,
+        "targets": 129220,
+        "valid_targets": 129220
+      },
+      "scenario": "regime_shift",
+      "status": "PASS",
+      "warnings": []
+    }
+  ],
+  "return_test_run": true,
+  "schema_version": 1,
+  "status": "PASS"
+}

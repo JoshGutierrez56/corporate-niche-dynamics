@@ -1,0 +1,17 @@
+extends: base.yaml
+
+project:
+  phase: P10
+  run_name: synthetic_p10
+
+paths:
+  raw_dir: data/raw/synthetic/null_alpha
+  processed_dir: data/processed/synthetic/null_alpha
+
+data:
+  mode: synthetic
+  scenario: null_alpha
+  require_existing_raw: true
+  generate_synthetic: false
+  allow_network: false
+  allow_wrds: false

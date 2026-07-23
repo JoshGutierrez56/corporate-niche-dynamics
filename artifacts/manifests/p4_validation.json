@@ -1,0 +1,81 @@
+{
+  "phase": "P4",
+  "portfolio_run": false,
+  "reports": [
+    {
+      "errors": [],
+      "models_fitted": [
+        "profitability_logit",
+        "distress_logit",
+        "industry_rate",
+        "occupied_cell_rate",
+        "relative_axes_logit",
+        "combined_axes_logit",
+        "hist_gradient_boosting"
+      ],
+      "output_dir": "data\\processed\\synthetic\\null_alpha\\p4",
+      "portfolio_run": false,
+      "return_test_run": false,
+      "rows": {
+        "labels": 119842,
+        "metric_rows": 56,
+        "observed_labels": 99614,
+        "oos_predictions": 440818
+      },
+      "scenario": "null_alpha",
+      "status": "PASS",
+      "warnings": []
+    },
+    {
+      "errors": [],
+      "models_fitted": [
+        "profitability_logit",
+        "distress_logit",
+        "industry_rate",
+        "occupied_cell_rate",
+        "relative_axes_logit",
+        "combined_axes_logit",
+        "hist_gradient_boosting"
+      ],
+      "output_dir": "data\\processed\\synthetic\\migration_alpha\\p4",
+      "portfolio_run": false,
+      "return_test_run": false,
+      "rows": {
+        "labels": 117804,
+        "metric_rows": 56,
+        "observed_labels": 98019,
+        "oos_predictions": 441651
+      },
+      "scenario": "migration_alpha",
+      "status": "PASS",
+      "warnings": []
+    },
+    {
+      "errors": [],
+      "models_fitted": [
+        "profitability_logit",
+        "distress_logit",
+        "industry_rate",
+        "occupied_cell_rate",
+        "relative_axes_logit",
+        "combined_axes_logit",
+        "hist_gradient_boosting"
+      ],
+      "output_dir": "data\\processed\\synthetic\\regime_shift\\p4",
+      "portfolio_run": false,
+      "return_test_run": false,
+      "rows": {
+        "labels": 116442,
+        "metric_rows": 56,
+        "observed_labels": 96441,
+        "oos_predictions": 434217
+      },
+      "scenario": "regime_shift",
+      "status": "PASS",
+      "warnings": []
+    }
+  ],
+  "return_test_run": false,
+  "schema_version": 1,
+  "status": "PASS"
+}

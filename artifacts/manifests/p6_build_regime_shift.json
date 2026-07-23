@@ -1,0 +1,116 @@
+{
+  "aggregate_tables": [
+    "${PROJECT_ROOT}\\artifacts\\tables\\p6_cause_coefficients.csv",
+    "${PROJECT_ROOT}\\artifacts\\tables\\p6_ph_diagnostics.csv",
+    "${PROJECT_ROOT}\\artifacts\\tables\\p6_fold_metrics.csv",
+    "${PROJECT_ROOT}\\artifacts\\tables\\p6_subgroup_metrics.csv",
+    "${PROJECT_ROOT}\\artifacts\\tables\\p6_exit_reconciliation.csv",
+    "${PROJECT_ROOT}\\artifacts\\tables\\p6_interval_missingness.csv"
+  ],
+  "causal_claim": false,
+  "config": "configs\\synthetic.yaml",
+  "phase": "P6",
+  "portfolio_run": false,
+  "reports": [
+    {
+      "construction": {
+        "causal_claim": false,
+        "events": {
+          "merger": 296,
+          "performance_failure": 260
+        },
+        "fold_model_receipts": [
+          {
+            "artifact": "performance_failure_fold1.joblib",
+            "cause": "performance_failure",
+            "fold": 1,
+            "train_max_stop_date": "2009-12-15T00:00:00",
+            "warnings": []
+          },
+          {
+            "artifact": "merger_fold1.joblib",
+            "cause": "merger",
+            "fold": 1,
+            "train_max_stop_date": "2009-12-15T00:00:00",
+            "warnings": []
+          },
+          {
+            "artifact": "performance_failure_fold2.joblib",
+            "cause": "performance_failure",
+            "fold": 2,
+            "train_max_stop_date": "2014-12-15T00:00:00",
+            "warnings": []
+          },
+          {
+            "artifact": "merger_fold2.joblib",
+            "cause": "merger",
+            "fold": 2,
+            "train_max_stop_date": "2014-12-15T00:00:00",
+            "warnings": []
+          }
+        ],
+        "full_model_receipts": [
+          {
+            "artifact": "performance_failure_full.joblib",
+            "cause": "performance_failure",
+            "covariance_kind": "issuer_clustered_sandwich",
+            "events": 260,
+            "warnings": []
+          },
+          {
+            "artifact": "merger_full.joblib",
+            "cause": "merger",
+            "covariance_kind": "issuer_clustered_sandwich",
+            "events": 296,
+            "warnings": []
+          }
+        ],
+        "interval_start": "2000-02-29T00:00:00",
+        "interval_stop": "2024-12-31T00:00:00",
+        "intervals": 29779,
+        "issuers": 2297,
+        "portfolio_run": false,
+        "reconciliation_difference": 0,
+        "return_test_run": false,
+        "scenario": "regime_shift",
+        "synthetic_truth_read": false,
+        "terminal_reason_counts": {
+          "administrative_right_censor": 1643,
+          "covariate_update": 27482,
+          "merger": 296,
+          "other_unknown": 44,
+          "performance_failure": 260,
+          "voluntary_administrative": 54
+        }
+      },
+      "output_dir": "data\\processed\\synthetic\\regime_shift\\p6",
+      "reused_existing": false,
+      "scenario": "regime_shift",
+      "validation": {
+        "causal_claim": false,
+        "errors": [],
+        "events": {
+          "merger": 296,
+          "performance_failure": 260
+        },
+        "models_fitted": [
+          "cause_specific_ph:performance_failure",
+          "cause_specific_ph:merger"
+        ],
+        "portfolio_run": false,
+        "return_test_run": false,
+        "rows": {
+          "coefficient_rows": 16,
+          "fold_predictions": 33546,
+          "intervals": 29779,
+          "metric_rows": 4
+        },
+        "status": "PASS",
+        "warnings": []
+      }
+    }
+  ],
+  "return_test_run": false,
+  "schema_version": 1,
+  "status": "PASS"
+}

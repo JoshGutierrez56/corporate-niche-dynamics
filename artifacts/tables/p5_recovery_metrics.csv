@@ -1,0 +1,4 @@
+scenario,primary_horizon_years,level_spearman,level_rows,velocity_spearman,velocity_rows,migration_surprise_spearman,migration_surprise_rows,status,return_injection_read,thresholds_level,thresholds_velocity,thresholds_migration_surprise,gates_level,gates_velocity,gates_migration_surprise
+null_alpha,5,0.4894803506301873,32781,0.37464275664246066,25474,0.10251651027856139,24197,PASS,False,0.1,0.05,0.03,True,True,True
+migration_alpha,5,0.511181638925731,32770,0.4341919354530195,25489,0.20439343433213916,24227,PASS,False,0.1,0.05,0.03,True,True,True
+regime_shift,5,0.20270215741264436,32305,0.28881347067941565,25119,0.17620243608432895,23903,PASS,False,0.1,0.05,0.03,True,True,True

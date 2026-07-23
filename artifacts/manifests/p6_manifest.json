@@ -1,0 +1,910 @@
+{
+  "build_brief": null,
+  "config_path": "configs/synthetic.yaml",
+  "config_sha256": "bfaf4262af473fa67154b2f0f6ba0468f346ab9633c4a8b7cf2089519586556c",
+  "downstream_empirical_phases_started": false,
+  "failed_assumptions": [],
+  "feature_availability_summary": {
+    "hierarchy": [
+      "verified_sec_filing_timestamp",
+      "verified_earnings_announcement_date",
+      "datadate_plus_180_calendar_days"
+    ],
+    "maximum_staleness_months": 18,
+    "status": "p6_competing_exit_intervals_and_time_split_models_constructed",
+    "strict_post_availability_formation": true
+  },
+  "generated_at_utc": "2026-07-23T02:54:41.370743+00:00",
+  "git_commit": null,
+  "input_data": [
+    {
+      "bytes": 25237,
+      "path": "data/raw/synthetic/migration_alpha/ccm_link.parquet",
+      "rows": 3120,
+      "sha256": "31feea6c77c80ce60aa773d36522105cc1c8e80653774f0b453bbb8df834beea"
+    },
+    {
+      "bytes": 18775,
+      "path": "data/raw/synthetic/migration_alpha/crsp_delist.parquet",
+      "rows": 999,
+      "sha256": "e46fafd97ed0da09202aeabc6174db90e768daf4b4788a58962898b776fcf7d0"
+    },
+    {
+      "bytes": 40826193,
+      "path": "data/raw/synthetic/migration_alpha/crsp_monthly.parquet",
+      "rows": 741472,
+      "sha256": "77f9da9255949f3b3f56b17ed49bf64ae49e6c7ccdb95fcd166d31ce59aa29ed"
+    },
+    {
+      "bytes": 4551,
+      "path": "data/raw/synthetic/migration_alpha/data_manifest.json",
+      "sha256": "048c9509ae725e83ae3d4a9e05a32b241636ac0d0ca34cbcf8185bc4eddf9e42"
+    },
+    {
+      "bytes": 47309,
+      "path": "data/raw/synthetic/migration_alpha/factor_returns.parquet",
+      "rows": 600,
+      "sha256": "4c9b0e089478184de9729f247befaa540d2f73ee5991a2c1629046e6face5dc1"
+    },
+    {
+      "bytes": 12518826,
+      "path": "data/raw/synthetic/migration_alpha/funda.parquet",
+      "rows": 61042,
+      "sha256": "ddab2428c7ca95bc46a9f71b3224e3c61e34c2128507365150c04cd6c56f0cca"
+    },
+    {
+      "bytes": 169199,
+      "path": "data/raw/synthetic/migration_alpha/sec_filing_dates.parquet",
+      "rows": 51276,
+      "sha256": "8666920e185cc09a0e0fd01c34978064cd3ec36df30d94849bc55b0b8577440f"
+    },
+    {
+      "bytes": 1274,
+      "path": "data/raw/synthetic/migration_alpha/synthetic_scenario_metadata.json",
+      "sha256": "bda14e64f3bf7251f5aa3bbee6806db6965d23d712ddc0dba1d3e24320be76e6"
+    },
+    {
+      "bytes": 5448918,
+      "path": "data/raw/synthetic/migration_alpha/synthetic_truth.parquet",
+      "rows": 61042,
+      "sha256": "f2be82543660042717a89aa4432ced31eb5e50c202d09300fc6d1105a9b11ca5"
+    },
+    {
+      "bytes": 24957,
+      "path": "data/raw/synthetic/null_alpha/ccm_link.parquet",
+      "rows": 3104,
+      "sha256": "53a2512bf622f1f4d4758d4de85fbf58062e13b4eb7ea0c21f9dd3e5cf4ac885"
+    },
+    {
+      "bytes": 18244,
+      "path": "data/raw/synthetic/null_alpha/crsp_delist.parquet",
+      "rows": 969,
+      "sha256": "375680aa95dd0890fb6c5f5c79d08fc6a9f36d8f5caf07224118581e6a3cc2a2"
+    },
+    {
+      "bytes": 41408965,
+      "path": "data/raw/synthetic/null_alpha/crsp_monthly.parquet",
+      "rows": 752766,
+      "sha256": "eb6dac80c82d9dd77d3b956861bc26f08fa9607ccb1728c2b71cb5e0f1e732f4"
+    },
+    {
+      "bytes": 4546,
+      "path": "data/raw/synthetic/null_alpha/data_manifest.json",
+      "sha256": "afe3bffb04416e2bf40a71275a48270dd8ac57ec3190736855a7ab5c81b915f7"
+    },
+    {
+      "bytes": 47308,
+      "path": "data/raw/synthetic/null_alpha/factor_returns.parquet",
+      "rows": 600,
+      "sha256": "dcfd53258991b3b456cb92f8c752d208ce76f587cde4fca63ecb6279f06e1b21"
+    },
+    {
+      "bytes": 12711702,
+      "path": "data/raw/synthetic/null_alpha/funda.parquet",
+      "rows": 62000,
+      "sha256": "b199d50728cb066b28cb1d1415d9f4db20436372471382bd7d08fd6aab61f980"
+    },
+    {
+      "bytes": 170925,
+      "path": "data/raw/synthetic/null_alpha/sec_filing_dates.parquet",
+      "rows": 52084,
+      "sha256": "4beb808ceb0ad41c278d60ea58c84449279987d339c97ebdac69a70659e67c41"
+    },
+    {
+      "bytes": 1262,
+      "path": "data/raw/synthetic/null_alpha/synthetic_scenario_metadata.json",
+      "sha256": "860bee4dd85a7d397255c82d4ab8f0aedcca17e49d534ede172f05419c6b5e9f"
+    },
+    {
+      "bytes": 4960624,
+      "path": "data/raw/synthetic/null_alpha/synthetic_truth.parquet",
+      "rows": 62000,
+      "sha256": "f16cb0b73cb7ee787eb51e3a05fd93c43a4b829782083be22cc4a9e441266df4"
+    },
+    {
+      "bytes": 25169,
+      "path": "data/raw/synthetic/regime_shift/ccm_link.parquet",
+      "rows": 3109,
+      "sha256": "297bd6568154d6752a95fee65cddacba0b8d8b247c2ae2ed41d809ddd9c55885"
+    },
+    {
+      "bytes": 18975,
+      "path": "data/raw/synthetic/regime_shift/crsp_delist.parquet",
+      "rows": 1016,
+      "sha256": "37c03432a139d7f1cf8a6d8bdf2ac2eba54d3fa8a6ecf8db52fc81569c2846da"
+    },
+    {
+      "bytes": 40362049,
+      "path": "data/raw/synthetic/regime_shift/crsp_monthly.parquet",
+      "rows": 732642,
+      "sha256": "c83bb9a16a94a3a4a9d685481bf18af07a1861c0d78af21df153f438b4b3ac41"
+    },
+    {
+      "bytes": 4549,
+      "path": "data/raw/synthetic/regime_shift/data_manifest.json",
+      "sha256": "5730affa23ac35fa2a5c63dbaff8ce35fc63ef8dcc4f82f015f2b8e42c4fd0b5"
+    },
+    {
+      "bytes": 47288,
+      "path": "data/raw/synthetic/regime_shift/factor_returns.parquet",
+      "rows": 600,
+      "sha256": "d14c2b0aa409bd040335e393dcfba1cca20b5f6820c24b4710d0a197287752fe"
+    },
+    {
+      "bytes": 12365522,
+      "path": "data/raw/synthetic/regime_shift/funda.parquet",
+      "rows": 60295,
+      "sha256": "19e06442fc902b3868c3eaddb70bb803cfbc0d5b880cc6ec510633505bece1fd"
+    },
+    {
+      "bytes": 167812,
+      "path": "data/raw/synthetic/regime_shift/sec_filing_dates.parquet",
+      "rows": 50595,
+      "sha256": "eb27e520568d56f4d99408923b10fe23f3f5417fa42bceb19aa445d6f32e53ce"
+    },
+    {
+      "bytes": 1264,
+      "path": "data/raw/synthetic/regime_shift/synthetic_scenario_metadata.json",
+      "sha256": "a6038006ecede202b417a4ba541994d9f5c92745bb6ea9f9e8c1a9b0d695aaf9"
+    },
+    {
+      "bytes": 4830069,
+      "path": "data/raw/synthetic/regime_shift/synthetic_truth.parquet",
+      "rows": 60295,
+      "sha256": "c8d55b29f384f0173054db2b97df6882f554427da838a045b0d64d6cd371eb69"
+    }
+  ],
+  "model_hyperparameters": {
+    "dynamics": {
+      "cross_section_minimum": 20,
+      "crowding_neighbors": 10,
+      "migration_minimum_train_observations": 1000,
+      "migration_ridge_alpha": 10.0,
+      "primary_model": "combined_axes_logit",
+      "probability_clip": 1e-06,
+      "recovery_minimum_level_spearman": 0.1,
+      "recovery_minimum_surprise_spearman": 0.03,
+      "recovery_minimum_velocity_spearman": 0.05,
+      "recovery_primary_horizon_years": 5,
+      "successful_density_minimum": 100,
+      "successful_density_neighbors": 20,
+      "survival_probability_threshold": 0.95
+    },
+    "survival": {
+      "calibration": "logistic_risk_score",
+      "causes": [
+        "performance_failure",
+        "merger"
+      ],
+      "features": [
+        "viability_log_odds",
+        "velocity_log_odds",
+        "acceleration_log_odds",
+        "crowding_density",
+        "historical_success_density",
+        "log_market_cap",
+        "book_leverage",
+        "operating_margin"
+      ],
+      "minimum_reporting_history": 3,
+      "minimum_test_events": 5,
+      "minimum_train_events": 20,
+      "minimum_train_intervals": 5000,
+      "outer_folds": [
+        {
+          "end_year": 2014,
+          "start_year": 2010
+        },
+        {
+          "end_year": 2019,
+          "start_year": 2015
+        }
+      ],
+      "ph_diagnostic_alpha": 0.01,
+      "primary_horizon_years": 5,
+      "ties": "breslow",
+      "time_origin_date": "1900-01-01"
+    },
+    "viability": {
+      "calibration": "platt",
+      "cell_bins": 3,
+      "horizons_years": [
+        3,
+        5
+      ],
+      "minimum_train_failures": 20,
+      "minimum_train_observations": 500,
+      "minimum_validation_failures": 5,
+      "nonlinear_model": "hist_gradient_boosting",
+      "outer_folds": [
+        {
+          "end_year": 2004,
+          "start_year": 2000
+        },
+        {
+          "end_year": 2009,
+          "start_year": 2005
+        },
+        {
+          "end_year": 2014,
+          "start_year": 2010
+        },
+        {
+          "end_year": 2019,
+          "start_year": 2015
+        }
+      ],
+      "primary_model": "combined_axes_logit",
+      "ridge_c_grid": [
+        0.01,
+        0.1,
+        1.0,
+        10.0
+      ],
+      "tree_l2_regularization": 1.0,
+      "tree_learning_rate": 0.05,
+      "tree_max_iter": 100,
+      "tree_max_leaf_nodes": 15,
+      "tree_min_samples_leaf": 50,
+      "validation_years": 5
+    }
+  },
+  "outputs": [
+    "artifacts/manifests/p6_build.json",
+    "artifacts/manifests/p6_validation.json",
+    "artifacts/manifests/p6_manifest.json",
+    "artifacts/tables/p6_*.csv",
+    "data/processed/synthetic/<scenario>/p6/survival_intervals.parquet",
+    "data/processed/synthetic/<scenario>/p6/fold_predictions.parquet",
+    "data/processed/synthetic/<scenario>/p6/cause_coefficients.csv",
+    "data/processed/synthetic/<scenario>/p6/ph_diagnostics.csv",
+    "data/processed/synthetic/<scenario>/p6/models/*.joblib"
+  ],
+  "packages": {
+    "PyYAML": "6.0.2",
+    "joblib": "1.5.1",
+    "numpy": "2.3.1",
+    "pandas": "2.3.1",
+    "pyarrow": "20.0.0",
+    "pydantic": "2.11.7",
+    "pytest": "8.4.1",
+    "scikit-learn": "1.7.1",
+    "scipy": "1.16.0",
+    "statsmodels": "0.14.5"
+  },
+  "phase": "P6",
+  "project": "business-niche-hypercube",
+  "project_files": [
+    {
+      "bytes": 531,
+      "path": ".gitignore",
+      "sha256": "12a0247a2b5ea084e24f6fde3b44ede3fd40107c32fcdc43daa1cf5436ddd095"
+    },
+    {
+      "bytes": 6,
+      "path": ".python-version",
+      "sha256": "9ea280e4c89d3f302c1e8b3e5e7db91c46bec0fe761356ae90f32aaf0dbe0e8b"
+    },
+    {
+      "bytes": 1,
+      "path": "artifacts/models/.gitkeep",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "bytes": 1,
+      "path": "artifacts/tables/.gitkeep",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "bytes": 4985,
+      "path": "configs/base.yaml",
+      "sha256": "8f8614e9d31477e6c8608bf36bb21c90a9772438b66f62bfcd425c4b1ece2111"
+    },
+    {
+      "bytes": 278,
+      "path": "configs/real.yaml",
+      "sha256": "005c7cd1000f4375a758c9d49d1a1cf69cf040897448773724cc302a08a13c1a"
+    },
+    {
+      "bytes": 316,
+      "path": "configs/synthetic.yaml",
+      "sha256": "bfaf4262af473fa67154b2f0f6ba0468f346ab9633c4a8b7cf2089519586556c"
+    },
+    {
+      "bytes": 1,
+      "path": "data/interim/.gitkeep",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "bytes": 1,
+      "path": "data/processed/.gitkeep",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "bytes": 1,
+      "path": "data/raw/.gitkeep",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "bytes": 9200,
+      "path": "docs/data_dictionary.md",
+      "sha256": "9a25791176067d47df01286ec8c07cc64ba56782cd4495a44ebace77caed00f3"
+    },
+    {
+      "bytes": 10431,
+      "path": "docs/modeling_decisions.md",
+      "sha256": "4423fccc4cacd2ee057a362df26aa5b42cb68b112be5738b4193782e98deca60"
+    },
+    {
+      "bytes": 8113,
+      "path": "docs/point_in_time_policy.md",
+      "sha256": "7a20ad4073774b9001654337295a50e8da78717c7fc549b0b7e1f3fe8768557a"
+    },
+    {
+      "bytes": 399,
+      "path": "docs/references.md",
+      "sha256": "392aeb8127e6c592b2bd534f78de2192611cf842c1b21a9d9115227408e85f28"
+    },
+    {
+      "bytes": 5447,
+      "path": "docs/research_spec.md",
+      "sha256": "a181e98a761e13ec75bc7011bb72e1cee27547f68fee86314afecaa17f57628c"
+    },
+    {
+      "bytes": 1,
+      "path": "figures/.gitkeep",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "bytes": 73,
+      "path": "hypercube/__init__.py",
+      "sha256": "1c32a5b405d707084795204fac6805e2767054e75668f5b2e6ed6defc2550b5b"
+    },
+    {
+      "bytes": 5374,
+      "path": "hypercube/availability.py",
+      "sha256": "a2ced82ec50b653446bc343b6f3b1ecbe1226d32b41a357b3e9bd5bec7194841"
+    },
+    {
+      "bytes": 43614,
+      "path": "hypercube/axes.py",
+      "sha256": "782be2ca272e06dd53a97df9eda6c85ceb1eb90175e584ca4a8ff6150c850f27"
+    },
+    {
+      "bytes": 57,
+      "path": "hypercube/clustering.py",
+      "sha256": "541bae205e4fb2683ec6f4a737e55d88bc57dced2a0765fc196715104086db39"
+    },
+    {
+      "bytes": 17509,
+      "path": "hypercube/config.py",
+      "sha256": "5cafee58e75961182d19bfb22d62638195aafaf9e2d8adbdc2087b70729cd346"
+    },
+    {
+      "bytes": 61,
+      "path": "hypercube/costs.py",
+      "sha256": "0f8f668c4ddfc6b4ffcea36faf7745bf24100ffd12e194714e66a06ff774b687"
+    },
+    {
+      "bytes": 39536,
+      "path": "hypercube/data.py",
+      "sha256": "e27ba8d6b34a31d022a45bd1d395eddcfbcf9a8449ebb2ee89ae5385495b620f"
+    },
+    {
+      "bytes": 3830,
+      "path": "hypercube/diagnostics.py",
+      "sha256": "139daddc877efcc2cee0baf3fc0118b318227639fdd5bead7ef434f20bb90607"
+    },
+    {
+      "bytes": 41781,
+      "path": "hypercube/dynamics.py",
+      "sha256": "aef9cdd692b6245488f0311c503ccace86203cbd364f31454738fff9ed05c76a"
+    },
+    {
+      "bytes": 7704,
+      "path": "hypercube/labels.py",
+      "sha256": "9a9b0359004080d783ef163b4c259ea9ed3f071bddd38a859419a5808ce57180"
+    },
+    {
+      "bytes": 58,
+      "path": "hypercube/portfolio.py",
+      "sha256": "0a11030af066a647113d816b08c6f6ffefe9893dda6dc93dc4611acf6dfad98e"
+    },
+    {
+      "bytes": 51,
+      "path": "hypercube/returns.py",
+      "sha256": "e90e734ec633ac676e43b84ca4c133315979dda7b6cb784015e493ac92cfdffa"
+    },
+    {
+      "bytes": 1360,
+      "path": "hypercube/run.py",
+      "sha256": "1f51c4ddc6e4548d1bda2d530e7a1a5fcb48501d88756697607ea7d0aff1df67"
+    },
+    {
+      "bytes": 7715,
+      "path": "hypercube/standardize.py",
+      "sha256": "7cd5d8c97518460f0dd3c846c4512263e177ecab98fb583cb901a36590a76c2f"
+    },
+    {
+      "bytes": 36660,
+      "path": "hypercube/survival.py",
+      "sha256": "d1592327725d04a3e294fe5fd99e4166e352d1137dc1dfbd04b94089cd309965"
+    },
+    {
+      "bytes": 24491,
+      "path": "hypercube/universe.py",
+      "sha256": "3b133705c58dda817039a709831c27a8eb2efa7ec44a0837b5dc208e744a4a27"
+    },
+    {
+      "bytes": 37739,
+      "path": "hypercube/viability.py",
+      "sha256": "6af472c7b4ecddae5fae054eb9a49038aaa6301d9acd27de636874ee72fb15a5"
+    },
+    {
+      "bytes": 55,
+      "path": "hypercube/visualization.py",
+      "sha256": "79f5a3430c0d5eaa51e8a4f61155dcf0d9fbf236caaeed27792e7c8a8431c5a7"
+    },
+    {
+      "bytes": 1503,
+      "path": "Makefile",
+      "sha256": "1ae3eb16655c36efc63e6fec9be18f83afe0c1256db37313470b6aedf3b790a0"
+    },
+    {
+      "bytes": 782,
+      "path": "pyproject.toml",
+      "sha256": "200a97289e872c6e27a9e7fbe7ce96afb276254d3eef85cc8390e05a5f8e3a28"
+    },
+    {
+      "bytes": 4847,
+      "path": "README.md",
+      "sha256": "b986280dec1b7721d1dae5289d6a7c0863ae5bd0bc7f38a8a40216b0881eee9d"
+    },
+    {
+      "bytes": 4203,
+      "path": "report.md",
+      "sha256": "70bf78391e7ff85451db52445b5c8b9cf018dd9e92595b7d7b95d3725e8b9892"
+    },
+    {
+      "bytes": 225,
+      "path": "requirements.txt",
+      "sha256": "735126630a569df4dc1687e5fe5a633110c4f6fe11e122c4702fca4db786dcd2"
+    },
+    {
+      "bytes": 5015,
+      "path": "scripts/build_axis_features.py",
+      "sha256": "d2933afa89dcfca3181c412a3228407b06e467f83a620a1f71dc4e48cf27426d"
+    },
+    {
+      "bytes": 6589,
+      "path": "scripts/build_dynamics.py",
+      "sha256": "6fd878efb4c9dda3954e32c84531ab89dcb16cdbeffc3b29550d5f0d34226ce3"
+    },
+    {
+      "bytes": 3911,
+      "path": "scripts/build_point_in_time_panel.py",
+      "sha256": "8b1bad63b9d0f22fe135015dd5827ce991536c39e1d6a6826c1947607db230ff"
+    },
+    {
+      "bytes": 6210,
+      "path": "scripts/build_survival_models.py",
+      "sha256": "f30762a46de1ceb2bf861b7e94dc0ffb60272881583607ffdd62b5a543217e2f"
+    },
+    {
+      "bytes": 6506,
+      "path": "scripts/build_viability_models.py",
+      "sha256": "df7ddd484303671f5a4a2af542a0f70e5b090bd32dffc49d36e3a99ec1505276"
+    },
+    {
+      "bytes": 2946,
+      "path": "scripts/make_synthetic.py",
+      "sha256": "9252c068dd48f7958f35c441490ae6fef14696efaaea1a8e444068f7b00f4097"
+    },
+    {
+      "bytes": 12582,
+      "path": "scripts/print_manifest.py",
+      "sha256": "8bc5a79362d439420ec64f25e3e087dd6ce930b42dd3d959229b772d6f690d9a"
+    },
+    {
+      "bytes": 2378,
+      "path": "scripts/validate_axis_features.py",
+      "sha256": "332445fc045796d9c72f8f11c16a51151a7a812398bc321d42f0808aee277c81"
+    },
+    {
+      "bytes": 4517,
+      "path": "scripts/validate_dynamics.py",
+      "sha256": "dc0f9da983427ccd712c580c316ed9dbe4595e52a33bc6cd2cfa7753be4339c1"
+    },
+    {
+      "bytes": 2410,
+      "path": "scripts/validate_point_in_time_panel.py",
+      "sha256": "7a40c0cce18b6e265b8fc88d0c9fb78a4f4bb9aa87b458c82d15dbb3790fa77d"
+    },
+    {
+      "bytes": 2838,
+      "path": "scripts/validate_raw_inputs.py",
+      "sha256": "57fc0491a033a421ea335c1fd0081d86aee4e1642689c3f7c52ea8368f69364d"
+    },
+    {
+      "bytes": 3227,
+      "path": "scripts/validate_survival_models.py",
+      "sha256": "5b13911b22c4a81c84fd04aca5c888165a5522046ea901feb0423adb07cfb0e0"
+    },
+    {
+      "bytes": 3086,
+      "path": "scripts/validate_viability_models.py",
+      "sha256": "37d48bf83c89a8dee4d448be49c0c8328937a59bdd2a661c246aaf7bac86c756"
+    },
+    {
+      "bytes": 5705,
+      "path": "tests/test_p1_data.py",
+      "sha256": "ed68f0e68b683872b8d325dd8f906c054802f864eee2f119b9957b0bb722e88a"
+    },
+    {
+      "bytes": 8993,
+      "path": "tests/test_p2_panel.py",
+      "sha256": "46f50ece1ce4376fa6641ae4ea00a50f26b25b03d74e5b765b56b79f4279df9b"
+    },
+    {
+      "bytes": 7868,
+      "path": "tests/test_p3_axes.py",
+      "sha256": "50cca1e49a014f8ab34070221ce049d25f5fe9ac0b7470ece2bb9effafde5d09"
+    },
+    {
+      "bytes": 7616,
+      "path": "tests/test_p4_viability.py",
+      "sha256": "acd54eacf55c78378e483b5479cece05cd37b346b4fc9eca12434026e4e78942"
+    },
+    {
+      "bytes": 7878,
+      "path": "tests/test_p5_dynamics.py",
+      "sha256": "49386051e2c47a09b5835db4c7b764b8f58d1a310dd192e75a7dd0afd44c92b9"
+    },
+    {
+      "bytes": 5786,
+      "path": "tests/test_p6_survival.py",
+      "sha256": "0dfb3c92923679c0c721b7da5cd74e07b6574f6e9bf8a6a4d51e4320c20de223"
+    },
+    {
+      "bytes": 3387,
+      "path": "tests/test_smoke.py",
+      "sha256": "002bf6c6b993293a8283811959029185cd6a49474766a16e1de7b9795a0c27d4"
+    },
+    {
+      "bytes": 105308,
+      "path": "uv.lock",
+      "sha256": "6903d34abef50e79d10303192b734f25f4f46635c5d58fc74360823eab50a2d6"
+    }
+  ],
+  "python": {
+    "executable": "${PROJECT_ROOT}\\.venv\\Scripts\\python.exe",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "version": "3.12.10"
+  },
+  "resolved_config": {
+    "audit": {
+      "archive_completed_real_runs": true,
+      "atomic_writes": true,
+      "hash_algorithm": "sha256",
+      "record_input_hashes": true,
+      "record_package_versions": true
+    },
+    "availability": {
+      "fallback_days": 180,
+      "hierarchy": [
+        "verified_sec_filing_timestamp",
+        "verified_earnings_announcement_date",
+        "datadate_plus_180_calendar_days"
+      ],
+      "prohibit_pre_availability_use": true
+    },
+    "axes": {
+      "components": [
+        {
+          "ablation_enabled": true,
+          "enabled": true,
+          "implementation_phase": "P3",
+          "minimum_components": 2,
+          "name": "Demand Strength and Pricing Power",
+          "slug": "demand_strength_pricing_power"
+        },
+        {
+          "ablation_enabled": true,
+          "enabled": true,
+          "implementation_phase": "P3",
+          "minimum_components": 2,
+          "name": "Competitive Defensibility",
+          "slug": "competitive_defensibility"
+        },
+        {
+          "ablation_enabled": true,
+          "enabled": true,
+          "implementation_phase": "P3",
+          "minimum_components": 2,
+          "name": "Innovation Intensity",
+          "slug": "innovation_intensity"
+        },
+        {
+          "ablation_enabled": true,
+          "enabled": true,
+          "implementation_phase": "P3",
+          "minimum_components": 2,
+          "name": "Go-to-Market Efficiency",
+          "slug": "go_to_market_efficiency"
+        },
+        {
+          "ablation_enabled": true,
+          "enabled": true,
+          "implementation_phase": "P3",
+          "minimum_components": 3,
+          "name": "Unit Economics and Profit Quality",
+          "slug": "unit_economics_profit_quality"
+        },
+        {
+          "ablation_enabled": true,
+          "enabled": true,
+          "implementation_phase": "P3",
+          "minimum_components": 3,
+          "name": "Scalability and Capital Efficiency",
+          "slug": "scalability_capital_efficiency"
+        }
+      ],
+      "orientation": "higher_is_more_viable"
+    },
+    "data": {
+      "allow_network": false,
+      "allow_wrds": false,
+      "generate_synthetic": false,
+      "mode": "synthetic",
+      "require_existing_raw": true,
+      "scenario": "null_alpha"
+    },
+    "dynamics": {
+      "cross_section_minimum": 20,
+      "crowding_neighbors": 10,
+      "migration_minimum_train_observations": 1000,
+      "migration_ridge_alpha": 10.0,
+      "primary_model": "combined_axes_logit",
+      "probability_clip": 1e-06,
+      "recovery_minimum_level_spearman": 0.1,
+      "recovery_minimum_surprise_spearman": 0.03,
+      "recovery_minimum_velocity_spearman": 0.05,
+      "recovery_primary_horizon_years": 5,
+      "successful_density_minimum": 100,
+      "successful_density_neighbors": 20,
+      "survival_probability_threshold": 0.95
+    },
+    "innovation": {
+      "fixed_nopat_tax_rate": 0.25,
+      "persistence_years": 3,
+      "primary_missing_policy": "zero_with_indicator",
+      "sensitivity_missing_policy": "contemporaneous_peer_median",
+      "stock_depreciation_rate": 0.2
+    },
+    "panel": {
+      "allowed_link_primaries": [
+        "P",
+        "C"
+      ],
+      "allowed_link_types": [
+        "LC",
+        "LU",
+        "LS"
+      ],
+      "delisting_return_rule": "compound_with_ordinary_return",
+      "fiscal_duplicate_policy": "reject",
+      "max_staleness_months": 18,
+      "minimum_reporting_history": 1,
+      "strict_post_availability_formation": true
+    },
+    "paths": {
+      "artifacts_dir": "artifacts",
+      "figures_dir": "figures",
+      "interim_dir": "data/interim",
+      "processed_dir": "data/processed/synthetic/null_alpha",
+      "raw_dir": "data/raw/synthetic/null_alpha"
+    },
+    "project": {
+      "name": "business-niche-hypercube",
+      "phase": "P6",
+      "python_minimum": "3.11",
+      "run_name": "synthetic_p6",
+      "seed": 20260722,
+      "subtitle": "Corporate Niche Dynamics and Asset Prices"
+    },
+    "standardization": {
+      "anchored_method": "expanding_prior_calendar_years",
+      "minimum_anchor_observations": 100,
+      "minimum_peer_group_size": 20,
+      "peer_fallback_hierarchy": [
+        "sic2",
+        "sic1",
+        "market"
+      ],
+      "relative_method": "median_mad",
+      "score_clip": 5.0,
+      "winsor_lower": 0.01,
+      "winsor_upper": 0.99
+    },
+    "survival": {
+      "calibration": "logistic_risk_score",
+      "causes": [
+        "performance_failure",
+        "merger"
+      ],
+      "features": [
+        "viability_log_odds",
+        "velocity_log_odds",
+        "acceleration_log_odds",
+        "crowding_density",
+        "historical_success_density",
+        "log_market_cap",
+        "book_leverage",
+        "operating_margin"
+      ],
+      "minimum_reporting_history": 3,
+      "minimum_test_events": 5,
+      "minimum_train_events": 20,
+      "minimum_train_intervals": 5000,
+      "outer_folds": [
+        {
+          "end_year": 2014,
+          "start_year": 2010
+        },
+        {
+          "end_year": 2019,
+          "start_year": 2015
+        }
+      ],
+      "ph_diagnostic_alpha": 0.01,
+      "primary_horizon_years": 5,
+      "ties": "breslow",
+      "time_origin_date": "1900-01-01"
+    },
+    "synthetic": {
+      "annual_state_persistence": 0.82,
+      "end_year": 2024,
+      "migration_alpha_monthly": 0.004,
+      "migration_decay_months": 12,
+      "minimum_history_years": 3,
+      "n_firms": 3000,
+      "n_industries": 24,
+      "regime_shift_year": 2000,
+      "start_year": 1975
+    },
+    "universe": {
+      "exchange_codes": [
+        1,
+        2,
+        3
+      ],
+      "include_delisted_firms": true,
+      "minimum_market_cap_millions": 10.0,
+      "minimum_monthly_volume": 100.0,
+      "minimum_price": 1.0,
+      "preserve_prior_eligible_delist_month": true,
+      "require_positive_market_cap": true,
+      "require_positive_price": true,
+      "share_codes": [
+        10,
+        11
+      ]
+    },
+    "viability": {
+      "calibration": "platt",
+      "cell_bins": 3,
+      "horizons_years": [
+        3,
+        5
+      ],
+      "minimum_train_failures": 20,
+      "minimum_train_observations": 500,
+      "minimum_validation_failures": 5,
+      "nonlinear_model": "hist_gradient_boosting",
+      "outer_folds": [
+        {
+          "end_year": 2004,
+          "start_year": 2000
+        },
+        {
+          "end_year": 2009,
+          "start_year": 2005
+        },
+        {
+          "end_year": 2014,
+          "start_year": 2010
+        },
+        {
+          "end_year": 2019,
+          "start_year": 2015
+        }
+      ],
+      "primary_model": "combined_axes_logit",
+      "ridge_c_grid": [
+        0.01,
+        0.1,
+        1.0,
+        10.0
+      ],
+      "tree_l2_regularization": 1.0,
+      "tree_learning_rate": 0.05,
+      "tree_max_iter": 100,
+      "tree_max_leaf_nodes": 15,
+      "tree_min_samples_leaf": 50,
+      "validation_years": 5
+    }
+  },
+  "row_counts": {
+    "data/raw/synthetic/migration_alpha/ccm_link.parquet": 3120,
+    "data/raw/synthetic/migration_alpha/crsp_delist.parquet": 999,
+    "data/raw/synthetic/migration_alpha/crsp_monthly.parquet": 741472,
+    "data/raw/synthetic/migration_alpha/factor_returns.parquet": 600,
+    "data/raw/synthetic/migration_alpha/funda.parquet": 61042,
+    "data/raw/synthetic/migration_alpha/sec_filing_dates.parquet": 51276,
+    "data/raw/synthetic/migration_alpha/synthetic_truth.parquet": 61042,
+    "data/raw/synthetic/null_alpha/ccm_link.parquet": 3104,
+    "data/raw/synthetic/null_alpha/crsp_delist.parquet": 969,
+    "data/raw/synthetic/null_alpha/crsp_monthly.parquet": 752766,
+    "data/raw/synthetic/null_alpha/factor_returns.parquet": 600,
+    "data/raw/synthetic/null_alpha/funda.parquet": 62000,
+    "data/raw/synthetic/null_alpha/sec_filing_dates.parquet": 52084,
+    "data/raw/synthetic/null_alpha/synthetic_truth.parquet": 62000,
+    "data/raw/synthetic/regime_shift/ccm_link.parquet": 3109,
+    "data/raw/synthetic/regime_shift/crsp_delist.parquet": 1016,
+    "data/raw/synthetic/regime_shift/crsp_monthly.parquet": 732642,
+    "data/raw/synthetic/regime_shift/factor_returns.parquet": 600,
+    "data/raw/synthetic/regime_shift/funda.parquet": 60295,
+    "data/raw/synthetic/regime_shift/sec_filing_dates.parquet": 50595,
+    "data/raw/synthetic/regime_shift/synthetic_truth.parquet": 60295
+  },
+  "run_name": "synthetic_p6",
+  "schema_version": 1,
+  "seed": 20260722,
+  "test_windows": [
+    {
+      "end_year": 2014,
+      "start_year": 2010
+    },
+    {
+      "end_year": 2019,
+      "start_year": 2015
+    }
+  ],
+  "training_windows": [
+    {
+      "horizon_years": 3,
+      "policy": "expanding training with horizon purge",
+      "validation_years": 5
+    },
+    {
+      "horizon_years": 5,
+      "policy": "expanding training with horizon purge",
+      "validation_years": 5
+    }
+  ],
+  "warnings": [
+    "P6 inputs and outputs are synthetic and are not empirical evidence.",
+    "P6 estimates cause-specific predictive associations only; no causal, return, portfolio, or clustering test was run.",
+    "GNU Make was not available on the inspected Windows host."
+  ]
+}

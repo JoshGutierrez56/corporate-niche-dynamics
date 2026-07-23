@@ -1,0 +1,85 @@
+{
+  "files": [
+    {
+      "bytes": 20249959,
+      "path": "data/processed/synthetic/migration_alpha/p5/frontier_dynamics.parquet",
+      "sha256": "be76052c5d6c263ab1e89d8805223ef7d158b726627e003f4fd2138ce12f6cd4"
+    },
+    {
+      "bytes": 24626,
+      "path": "hypercube/proxy_redesign.py",
+      "sha256": "5bceec7b4cb0e839533ce9b3d494885a8774cdc13ca69ce8458d6c1b121e13e7"
+    },
+    {
+      "bytes": 2743,
+      "path": "scripts/redesign_migration_proxy.py",
+      "sha256": "635263a6acf154de0f85814d2984f13b57bb8bc16a487c2c7ea19737c2fec2f7"
+    },
+    {
+      "bytes": 2278,
+      "path": "scripts/validate_migration_proxy_redesign.py",
+      "sha256": "10b6ce4b1aa6dfffd13b9a67e7ec0a787787760a639d737a5516e06fd661a3b6"
+    },
+    {
+      "bytes": 2125,
+      "path": "scripts/build_post_closeout_manifest.py",
+      "sha256": "3bc6ce8678cc4f0677c3f7ee20ae281d1d89b3784f5442295578b18eeaf1d19c"
+    },
+    {
+      "bytes": 5335,
+      "path": "tests/test_p13e_proxy_redesign.py",
+      "sha256": "7678bca98142c2c2023859e3f31cb68b1ddd957004dafaa529018840d2264b50"
+    },
+    {
+      "bytes": 2431,
+      "path": "docs/p13f_proxy_redesign_corrected_preregistration.md",
+      "sha256": "f5ce6d17cbadf53c83b093a1269407aea5ebbac276e85509953cad11af6d9779"
+    },
+    {
+      "bytes": 1004,
+      "path": "docs/p13f_proxy_redesign_results.md",
+      "sha256": "d6949a49458c77911c3683930f334a6624dbfd5ff08cd37994eda159311e476d"
+    },
+    {
+      "bytes": 2059167,
+      "path": "artifacts/tables/p13f_proxy_candidates.parquet",
+      "sha256": "9653a74f993fd8c6035078786acae8dcdc213b12951098970dbed029bfde191d"
+    },
+    {
+      "bytes": 5322,
+      "path": "artifacts/tables/p13f_proxy_ar_coefficients.csv",
+      "sha256": "ff81e7201fb827bcc19a4695eb6384bfaee2919b6e37bc540928191181881821"
+    },
+    {
+      "bytes": 815,
+      "path": "artifacts/tables/p13f_proxy_evaluation.csv",
+      "sha256": "544e249daa29385d6dbcd8b42313a78b586905d61da67c26782cbf3195c58f85"
+    },
+    {
+      "bytes": 861,
+      "path": "artifacts/manifests/p13f_proxy_build.json",
+      "sha256": "3276481430bf5cbe14d4eb030c75ef45536789c5eb8565f2cbbc6201cb940b17"
+    },
+    {
+      "bytes": 1742,
+      "path": "artifacts/manifests/p13f_proxy_evaluation.json",
+      "sha256": "dcff1da5455d5a9721174a040736c852fa7886534250f07ff5c078a0743aa592"
+    },
+    {
+      "bytes": 273,
+      "path": "artifacts/manifests/p13f_proxy_validation.json",
+      "sha256": "b6ee91d2d2a5ad78888129e7bb67b17098744ab5fca9955a2e9b473c57a125b9"
+    }
+  ],
+  "frozen_p0_p10_outputs_modified": false,
+  "gate_result": "NO_GO",
+  "generated_at_utc": "2026-07-23T13:05:24.525380+00:00",
+  "new_synthetic_scenario_generated": false,
+  "phase": "P13F",
+  "real_data_run": false,
+  "schema_version": 1,
+  "selected_candidate": "anchored_axis_innovation",
+  "selected_multiplier": null,
+  "status": "PASS",
+  "version": "hypercube-migration-proxy-redesign-v2"
+}

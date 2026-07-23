@@ -1,0 +1,69 @@
+{
+  "aggregate_tables": [
+    "${PROJECT_ROOT}\\artifacts\\tables\\p7_fmb_summary.csv",
+    "${PROJECT_ROOT}\\artifacts\\tables\\p7_portfolio_factor_results.csv",
+    "${PROJECT_ROOT}\\artifacts\\tables\\p7_portfolio_exposures.csv",
+    "${PROJECT_ROOT}\\artifacts\\tables\\p7_subsample_results.csv",
+    "${PROJECT_ROOT}\\artifacts\\tables\\p7_target_attrition.csv"
+  ],
+  "config": "configs\\synthetic.yaml",
+  "costs_applied": false,
+  "phase": "P7",
+  "portfolio_run": true,
+  "reports": [
+    {
+      "construction": {
+        "costs_applied": false,
+        "events": 32781,
+        "fmb_tests": 12,
+        "gross_portfolios": 48,
+        "portfolio_run": true,
+        "return_test_run": true,
+        "scenario": "null_alpha",
+        "synthetic_truth_read": false,
+        "targets": 131124,
+        "valid_targets": 131116
+      },
+      "output_dir": "data\\processed\\synthetic\\null_alpha\\p7",
+      "reused_existing": false,
+      "scenario": "null_alpha",
+      "validation": {
+        "costs_applied": false,
+        "errors": [],
+        "fmb_tests": 12,
+        "gross_portfolios": 48,
+        "portfolio_run": true,
+        "recovery": {
+          "gates": {
+            "absolute_ic_below_frozen_bound": true,
+            "primary_holm_not_significant": true
+          },
+          "primary_fmb_coefficient": 0.0011107587606861,
+          "primary_fmb_holm_p_value": 1.0,
+          "primary_fmb_p_value": 0.7607439425611933,
+          "primary_horizon_months": 6,
+          "primary_signal": "migration_surprise",
+          "primary_spearman_ic": -0.00838561490267066,
+          "rows": 24195,
+          "scenario": "null_alpha",
+          "scientific_status": "PASS",
+          "truth_field_read": "injected_return_alpha"
+        },
+        "return_test_run": true,
+        "rows": {
+          "events": 32781,
+          "paths": 393372,
+          "portfolio_months": 6808,
+          "targets": 131124,
+          "valid_targets": 131116
+        },
+        "scenario": "null_alpha",
+        "status": "PASS",
+        "warnings": []
+      }
+    }
+  ],
+  "return_test_run": true,
+  "schema_version": 1,
+  "status": "PASS"
+}

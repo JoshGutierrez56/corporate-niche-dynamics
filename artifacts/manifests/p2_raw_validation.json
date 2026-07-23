@@ -1,0 +1,462 @@
+{
+  "config": "configs\\synthetic.yaml",
+  "models_fitted": [],
+  "phase": "P1",
+  "reports": [
+    {
+      "checks": {
+        "ccm_permno_coverage": true,
+        "crsp_month_end": true,
+        "delisting_categories_observed": [
+          "merger",
+          "other_unknown",
+          "performance_failure",
+          "voluntary_administrative"
+        ],
+        "factor_month_coverage": true,
+        "primary_keys_unique": true,
+        "required_schemas": true
+      },
+      "errors": [],
+      "models_fitted": [],
+      "raw_dir": "data\\raw\\synthetic\\null_alpha",
+      "scenario": "null_alpha",
+      "status": "PASS",
+      "tables": {
+        "ccm_link.parquet": {
+          "columns": 6,
+          "duplicate_key_rows": 0,
+          "null_counts": {
+            "gvkey": 0,
+            "linkdt": 0,
+            "linkenddt": 2031,
+            "linkprim": 0,
+            "linktype": 0,
+            "lpermno": 0
+          },
+          "rows": 3104
+        },
+        "crsp_delist.parquet": {
+          "columns": 5,
+          "duplicate_key_rows": 0,
+          "null_counts": {
+            "dlret": 0,
+            "dlstcd": 0,
+            "dlstdt": 0,
+            "exit_category": 0,
+            "permno": 0
+          },
+          "rows": 969
+        },
+        "crsp_monthly.parquet": {
+          "columns": 11,
+          "duplicate_key_rows": 0,
+          "null_counts": {
+            "ask": 34008,
+            "bid": 34008,
+            "date": 0,
+            "exchcd": 0,
+            "permno": 0,
+            "prc": 0,
+            "ret": 0,
+            "retx": 0,
+            "shrcd": 0,
+            "shrout": 0,
+            "vol": 0
+          },
+          "rows": 752766
+        },
+        "factor_returns.parquet": {
+          "columns": 8,
+          "duplicate_key_rows": 0,
+          "null_counts": {
+            "cma": 0,
+            "date": 0,
+            "hml": 0,
+            "mkt_excess": 0,
+            "mom": 0,
+            "rf": 0,
+            "rmw": 0,
+            "smb": 0
+          },
+          "rows": 600
+        },
+        "funda.parquet": {
+          "columns": 29,
+          "duplicate_key_rows": 0,
+          "null_counts": {
+            "act": 0,
+            "at": 0,
+            "capx": 0,
+            "ceq": 0,
+            "che": 0,
+            "cogs": 0,
+            "csho": 0,
+            "datadate": 0,
+            "dlc": 0,
+            "dltt": 0,
+            "dp": 0,
+            "fyear": 0,
+            "fyr": 0,
+            "gvkey": 0,
+            "ib": 0,
+            "lct": 0,
+            "naics": 0,
+            "ni": 0,
+            "oiadp": 0,
+            "oibdp": 0,
+            "ppent": 0,
+            "prcc_f": 0,
+            "rdq": 7582,
+            "revt": 0,
+            "sale": 0,
+            "sich": 0,
+            "xad": 38540,
+            "xrd": 13225,
+            "xsga": 0
+          },
+          "rows": 62000
+        },
+        "sec_filing_dates.parquet": {
+          "columns": 4,
+          "duplicate_key_rows": 0,
+          "null_counts": {
+            "datadate": 0,
+            "filing_timestamp": 0,
+            "fyear": 0,
+            "gvkey": 0
+          },
+          "rows": 52084
+        },
+        "synthetic_truth.parquet": {
+          "columns": 16,
+          "duplicate_key_rows": 0,
+          "null_counts": {
+            "availability_date": 0,
+            "availability_source": 0,
+            "datadate": 0,
+            "exit_category": 0,
+            "fyear": 0,
+            "gvkey": 0,
+            "injected_return_alpha": 0,
+            "latent_axis_1": 0,
+            "latent_axis_2": 0,
+            "latent_axis_3": 0,
+            "latent_axis_4": 0,
+            "latent_axis_5": 0,
+            "latent_axis_6": 0,
+            "migration_surprise": 0,
+            "regime_id": 0,
+            "true_viability": 0
+          },
+          "rows": 62000
+        }
+      },
+      "warnings": []
+    },
+    {
+      "checks": {
+        "ccm_permno_coverage": true,
+        "crsp_month_end": true,
+        "delisting_categories_observed": [
+          "merger",
+          "other_unknown",
+          "performance_failure",
+          "voluntary_administrative"
+        ],
+        "factor_month_coverage": true,
+        "primary_keys_unique": true,
+        "required_schemas": true
+      },
+      "errors": [],
+      "models_fitted": [],
+      "raw_dir": "data\\raw\\synthetic\\migration_alpha",
+      "scenario": "migration_alpha",
+      "status": "PASS",
+      "tables": {
+        "ccm_link.parquet": {
+          "columns": 6,
+          "duplicate_key_rows": 0,
+          "null_counts": {
+            "gvkey": 0,
+            "linkdt": 0,
+            "linkenddt": 2001,
+            "linkprim": 0,
+            "linktype": 0,
+            "lpermno": 0
+          },
+          "rows": 3120
+        },
+        "crsp_delist.parquet": {
+          "columns": 5,
+          "duplicate_key_rows": 0,
+          "null_counts": {
+            "dlret": 0,
+            "dlstcd": 0,
+            "dlstdt": 0,
+            "exit_category": 0,
+            "permno": 0
+          },
+          "rows": 999
+        },
+        "crsp_monthly.parquet": {
+          "columns": 11,
+          "duplicate_key_rows": 0,
+          "null_counts": {
+            "ask": 32722,
+            "bid": 32722,
+            "date": 0,
+            "exchcd": 0,
+            "permno": 0,
+            "prc": 0,
+            "ret": 0,
+            "retx": 0,
+            "shrcd": 0,
+            "shrout": 0,
+            "vol": 0
+          },
+          "rows": 741472
+        },
+        "factor_returns.parquet": {
+          "columns": 8,
+          "duplicate_key_rows": 0,
+          "null_counts": {
+            "cma": 0,
+            "date": 0,
+            "hml": 0,
+            "mkt_excess": 0,
+            "mom": 0,
+            "rf": 0,
+            "rmw": 0,
+            "smb": 0
+          },
+          "rows": 600
+        },
+        "funda.parquet": {
+          "columns": 29,
+          "duplicate_key_rows": 0,
+          "null_counts": {
+            "act": 0,
+            "at": 0,
+            "capx": 0,
+            "ceq": 0,
+            "che": 0,
+            "cogs": 0,
+            "csho": 0,
+            "datadate": 0,
+            "dlc": 0,
+            "dltt": 0,
+            "dp": 0,
+            "fyear": 0,
+            "fyr": 0,
+            "gvkey": 0,
+            "ib": 0,
+            "lct": 0,
+            "naics": 0,
+            "ni": 0,
+            "oiadp": 0,
+            "oibdp": 0,
+            "ppent": 0,
+            "prcc_f": 0,
+            "rdq": 7361,
+            "revt": 0,
+            "sale": 0,
+            "sich": 0,
+            "xad": 37683,
+            "xrd": 13034,
+            "xsga": 0
+          },
+          "rows": 61042
+        },
+        "sec_filing_dates.parquet": {
+          "columns": 4,
+          "duplicate_key_rows": 0,
+          "null_counts": {
+            "datadate": 0,
+            "filing_timestamp": 0,
+            "fyear": 0,
+            "gvkey": 0
+          },
+          "rows": 51276
+        },
+        "synthetic_truth.parquet": {
+          "columns": 16,
+          "duplicate_key_rows": 0,
+          "null_counts": {
+            "availability_date": 0,
+            "availability_source": 0,
+            "datadate": 0,
+            "exit_category": 0,
+            "fyear": 0,
+            "gvkey": 0,
+            "injected_return_alpha": 0,
+            "latent_axis_1": 0,
+            "latent_axis_2": 0,
+            "latent_axis_3": 0,
+            "latent_axis_4": 0,
+            "latent_axis_5": 0,
+            "latent_axis_6": 0,
+            "migration_surprise": 0,
+            "regime_id": 0,
+            "true_viability": 0
+          },
+          "rows": 61042
+        }
+      },
+      "warnings": []
+    },
+    {
+      "checks": {
+        "ccm_permno_coverage": true,
+        "crsp_month_end": true,
+        "delisting_categories_observed": [
+          "merger",
+          "other_unknown",
+          "performance_failure",
+          "voluntary_administrative"
+        ],
+        "factor_month_coverage": true,
+        "primary_keys_unique": true,
+        "required_schemas": true
+      },
+      "errors": [],
+      "models_fitted": [],
+      "raw_dir": "data\\raw\\synthetic\\regime_shift",
+      "scenario": "regime_shift",
+      "status": "PASS",
+      "tables": {
+        "ccm_link.parquet": {
+          "columns": 6,
+          "duplicate_key_rows": 0,
+          "null_counts": {
+            "gvkey": 0,
+            "linkdt": 0,
+            "linkenddt": 1984,
+            "linkprim": 0,
+            "linktype": 0,
+            "lpermno": 0
+          },
+          "rows": 3109
+        },
+        "crsp_delist.parquet": {
+          "columns": 5,
+          "duplicate_key_rows": 0,
+          "null_counts": {
+            "dlret": 0,
+            "dlstcd": 0,
+            "dlstdt": 0,
+            "exit_category": 0,
+            "permno": 0
+          },
+          "rows": 1016
+        },
+        "crsp_monthly.parquet": {
+          "columns": 11,
+          "duplicate_key_rows": 0,
+          "null_counts": {
+            "ask": 32150,
+            "bid": 32150,
+            "date": 0,
+            "exchcd": 0,
+            "permno": 0,
+            "prc": 0,
+            "ret": 0,
+            "retx": 0,
+            "shrcd": 0,
+            "shrout": 0,
+            "vol": 0
+          },
+          "rows": 732642
+        },
+        "factor_returns.parquet": {
+          "columns": 8,
+          "duplicate_key_rows": 0,
+          "null_counts": {
+            "cma": 0,
+            "date": 0,
+            "hml": 0,
+            "mkt_excess": 0,
+            "mom": 0,
+            "rf": 0,
+            "rmw": 0,
+            "smb": 0
+          },
+          "rows": 600
+        },
+        "funda.parquet": {
+          "columns": 29,
+          "duplicate_key_rows": 0,
+          "null_counts": {
+            "act": 0,
+            "at": 0,
+            "capx": 0,
+            "ceq": 0,
+            "che": 0,
+            "cogs": 0,
+            "csho": 0,
+            "datadate": 0,
+            "dlc": 0,
+            "dltt": 0,
+            "dp": 0,
+            "fyear": 0,
+            "fyr": 0,
+            "gvkey": 0,
+            "ib": 0,
+            "lct": 0,
+            "naics": 0,
+            "ni": 0,
+            "oiadp": 0,
+            "oibdp": 0,
+            "ppent": 0,
+            "prcc_f": 0,
+            "rdq": 7123,
+            "revt": 0,
+            "sale": 0,
+            "sich": 0,
+            "xad": 37327,
+            "xrd": 13042,
+            "xsga": 0
+          },
+          "rows": 60295
+        },
+        "sec_filing_dates.parquet": {
+          "columns": 4,
+          "duplicate_key_rows": 0,
+          "null_counts": {
+            "datadate": 0,
+            "filing_timestamp": 0,
+            "fyear": 0,
+            "gvkey": 0
+          },
+          "rows": 50595
+        },
+        "synthetic_truth.parquet": {
+          "columns": 16,
+          "duplicate_key_rows": 0,
+          "null_counts": {
+            "availability_date": 0,
+            "availability_source": 0,
+            "datadate": 0,
+            "exit_category": 0,
+            "fyear": 0,
+            "gvkey": 0,
+            "injected_return_alpha": 0,
+            "latent_axis_1": 0,
+            "latent_axis_2": 0,
+            "latent_axis_3": 0,
+            "latent_axis_4": 0,
+            "latent_axis_5": 0,
+            "latent_axis_6": 0,
+            "migration_surprise": 0,
+            "regime_id": 0,
+            "true_viability": 0
+          },
+          "rows": 60295
+        }
+      },
+      "warnings": []
+    }
+  ],
+  "schema_version": 1,
+  "status": "PASS"
+}

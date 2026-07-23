@@ -1,0 +1,240 @@
+{
+  "aggregate_tables": [
+    "${PROJECT_ROOT}\\artifacts\\tables\\p7_fmb_summary.csv",
+    "${PROJECT_ROOT}\\artifacts\\tables\\p7_portfolio_factor_results.csv",
+    "${PROJECT_ROOT}\\artifacts\\tables\\p7_portfolio_exposures.csv",
+    "${PROJECT_ROOT}\\artifacts\\tables\\p7_subsample_results.csv",
+    "${PROJECT_ROOT}\\artifacts\\tables\\p7_target_attrition.csv"
+  ],
+  "config": "configs\\synthetic.yaml",
+  "costs_applied": false,
+  "phase": "P7",
+  "portfolio_run": true,
+  "reports": [
+    {
+      "construction": {
+        "borrow_model_applied": false,
+        "capacity_model_applied": false,
+        "costs_applied": false,
+        "entry_rule": "first monthly return strictly after feature_date",
+        "fmb_hac_rule": "horizon_minus_one",
+        "horizons_months": [
+          1,
+          3,
+          6,
+          12
+        ],
+        "link_diagnostics": {
+          "ambiguous_equal_priority": 0,
+          "duplicate_issuer_month_candidates": 0,
+          "eligible_link_rows": 3104,
+          "input_security_months": 752766,
+          "mapped_security_months": 752766,
+          "missing_delisting_returns": 0,
+          "selected_issuer_months": 752766,
+          "unmapped_security_months": 0
+        },
+        "multiple_testing_method": "holm",
+        "phase": "P7",
+        "portfolio_run": true,
+        "primary_horizon_months": 6,
+        "primary_signal": "migration_surprise",
+        "primary_surface_horizon_years": 5,
+        "return_test_run": true,
+        "scenario": "null_alpha",
+        "schema_version": 1,
+        "synthetic_truth_read": false,
+        "target_rule": "complete path or valid delisting; risk-free after delisting",
+        "version": "hypercube-returns-v1"
+      },
+      "output_dir": "data\\processed\\synthetic\\null_alpha\\p7",
+      "reused_existing": true,
+      "scenario": "null_alpha",
+      "validation": {
+        "costs_applied": false,
+        "errors": [],
+        "fmb_tests": 12,
+        "gross_portfolios": 48,
+        "portfolio_run": true,
+        "recovery": {
+          "gates": {
+            "absolute_ic_below_frozen_bound": true,
+            "primary_holm_not_significant": true
+          },
+          "primary_fmb_coefficient": 0.0011107587606861,
+          "primary_fmb_holm_p_value": 1.0,
+          "primary_fmb_p_value": 0.7607439425611933,
+          "primary_horizon_months": 6,
+          "primary_signal": "migration_surprise",
+          "primary_spearman_ic": -0.00838561490267066,
+          "rows": 24195,
+          "scenario": "null_alpha",
+          "scientific_status": "PASS",
+          "truth_field_read": "injected_return_alpha"
+        },
+        "return_test_run": true,
+        "rows": {
+          "events": 32781,
+          "paths": 393372,
+          "portfolio_months": 6808,
+          "targets": 131124,
+          "valid_targets": 131116
+        },
+        "scenario": "null_alpha",
+        "status": "PASS",
+        "warnings": []
+      }
+    },
+    {
+      "construction": {
+        "borrow_model_applied": false,
+        "capacity_model_applied": false,
+        "costs_applied": false,
+        "entry_rule": "first monthly return strictly after feature_date",
+        "fmb_hac_rule": "horizon_minus_one",
+        "horizons_months": [
+          1,
+          3,
+          6,
+          12
+        ],
+        "link_diagnostics": {
+          "ambiguous_equal_priority": 0,
+          "duplicate_issuer_month_candidates": 0,
+          "eligible_link_rows": 3120,
+          "input_security_months": 741472,
+          "mapped_security_months": 741472,
+          "missing_delisting_returns": 0,
+          "selected_issuer_months": 741472,
+          "unmapped_security_months": 0
+        },
+        "multiple_testing_method": "holm",
+        "phase": "P7",
+        "portfolio_run": true,
+        "primary_horizon_months": 6,
+        "primary_signal": "migration_surprise",
+        "primary_surface_horizon_years": 5,
+        "return_test_run": true,
+        "scenario": "migration_alpha",
+        "schema_version": 1,
+        "synthetic_truth_read": false,
+        "target_rule": "complete path or valid delisting; risk-free after delisting",
+        "version": "hypercube-returns-v1"
+      },
+      "output_dir": "data\\processed\\synthetic\\migration_alpha\\p7",
+      "reused_existing": true,
+      "scenario": "migration_alpha",
+      "validation": {
+        "costs_applied": false,
+        "errors": [],
+        "fmb_tests": 12,
+        "gross_portfolios": 48,
+        "portfolio_run": true,
+        "recovery": {
+          "expected_six_month_fraction_of_total_injection": 0.8175744761936438,
+          "gates": {
+            "oracle_slope_within_frozen_bounds": true,
+            "primary_fmb_coefficient_positive": true,
+            "primary_ic_positive": false
+          },
+          "oracle_injected_alpha_slope": 0.646211724437485,
+          "primary_fmb_coefficient": 0.0046578510721909,
+          "primary_fmb_holm_p_value": 1.0,
+          "primary_fmb_p_value": 0.2885204068795841,
+          "primary_horizon_months": 6,
+          "primary_signal": "migration_surprise",
+          "primary_spearman_ic": -0.018724656410712394,
+          "rows": 24227,
+          "scenario": "migration_alpha",
+          "scientific_status": "FAIL",
+          "truth_field_read": "injected_return_alpha"
+        },
+        "return_test_run": true,
+        "rows": {
+          "events": 32770,
+          "paths": 393240,
+          "portfolio_months": 6772,
+          "targets": 131080,
+          "valid_targets": 131080
+        },
+        "scenario": "migration_alpha",
+        "status": "PASS",
+        "warnings": []
+      }
+    },
+    {
+      "construction": {
+        "borrow_model_applied": false,
+        "capacity_model_applied": false,
+        "costs_applied": false,
+        "entry_rule": "first monthly return strictly after feature_date",
+        "fmb_hac_rule": "horizon_minus_one",
+        "horizons_months": [
+          1,
+          3,
+          6,
+          12
+        ],
+        "link_diagnostics": {
+          "ambiguous_equal_priority": 0,
+          "duplicate_issuer_month_candidates": 0,
+          "eligible_link_rows": 3109,
+          "input_security_months": 732642,
+          "mapped_security_months": 732642,
+          "missing_delisting_returns": 0,
+          "selected_issuer_months": 732642,
+          "unmapped_security_months": 0
+        },
+        "multiple_testing_method": "holm",
+        "phase": "P7",
+        "portfolio_run": true,
+        "primary_horizon_months": 6,
+        "primary_signal": "migration_surprise",
+        "primary_surface_horizon_years": 5,
+        "return_test_run": true,
+        "scenario": "regime_shift",
+        "schema_version": 1,
+        "synthetic_truth_read": false,
+        "target_rule": "complete path or valid delisting; risk-free after delisting",
+        "version": "hypercube-returns-v1"
+      },
+      "output_dir": "data\\processed\\synthetic\\regime_shift\\p7",
+      "reused_existing": true,
+      "scenario": "regime_shift",
+      "validation": {
+        "costs_applied": false,
+        "errors": [],
+        "fmb_tests": 12,
+        "gross_portfolios": 48,
+        "portfolio_run": true,
+        "recovery": {
+          "gates": {},
+          "primary_fmb_coefficient": 0.0014787885922271,
+          "primary_fmb_holm_p_value": 1.0,
+          "primary_fmb_p_value": 0.7565014832241227,
+          "primary_horizon_months": 6,
+          "primary_signal": "migration_surprise",
+          "primary_spearman_ic": 0.036805456722076794,
+          "rows": 23903,
+          "scenario": "regime_shift",
+          "scientific_status": "DESCRIPTIVE_ONLY",
+          "truth_field_read": "injected_return_alpha"
+        },
+        "return_test_run": true,
+        "rows": {
+          "events": 32305,
+          "paths": 387660,
+          "portfolio_months": 6820,
+          "targets": 129220,
+          "valid_targets": 129220
+        },
+        "scenario": "regime_shift",
+        "status": "PASS",
+        "warnings": []
+      }
+    }
+  ],
+  "return_test_run": true,
+  "schema_version": 1,
+  "status": "PASS"
+}

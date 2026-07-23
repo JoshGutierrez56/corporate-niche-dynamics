@@ -1,0 +1,9 @@
+use_case,status,primary_evidence,allowed_claim,prohibited_claim
+strategic_drift_alerts,NOT_SUPPORTED,extreme precision=0.242057; sign accuracy=0.858548,synthetic strategic-change measurement and alert ranking,real-world event prediction or causality
+structural_peer_discovery,NOT_SUPPORTED,Recall@20=0.048378; random lift=4.226x,synthetic latent-neighborhood recovery,validated real-company comparable selection
+competitive_crowding_state,SUPPORTED,latent-density Spearman=0.321503,synthetic local-density measurement,validated competitive threat forecast
+regime_stress_sensing,EXPLORATORY,P20E regime-shift survival AUC lift was positive in 7/8 folds,candidate for a separately frozen evaluation,general survival or distress prediction
+return_prediction,REJECTED,P19E primary net return=-5.16%,negative-result benchmark,alpha or investability
+general_survival_prediction,REJECTED,P20E mean incremental AUC=-0.002732,negative-result benchmark,firm-survival prediction
+economic_archetype_taxonomy,REJECTED,P18E noise/unassigned=94.68%-96.50%,negative-result benchmark,stable economic taxonomy
+synthetic_method_benchmark,SUPPORTED,"signed, independently reproducible phase chain",auditable synthetic research benchmark,real-data validation

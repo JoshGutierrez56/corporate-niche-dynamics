@@ -1,0 +1,1056 @@
+{
+  "build_brief": null,
+  "config_path": "configs/synthetic.yaml",
+  "config_sha256": "878b9e27eac1101ef340f9361e44ee4d3a3d27b7acdb700aecd419419c63d079",
+  "downstream_empirical_phases_started": true,
+  "failed_assumptions": [],
+  "feature_availability_summary": {
+    "hierarchy": [
+      "verified_sec_filing_timestamp",
+      "verified_earnings_announcement_date",
+      "datadate_plus_180_calendar_days"
+    ],
+    "maximum_staleness_months": 18,
+    "status": "p7_point_in_time_targets_and_gross_return_tests_constructed",
+    "strict_post_availability_formation": true
+  },
+  "generated_at_utc": "2026-07-23T03:21:09.690980+00:00",
+  "git_commit": null,
+  "input_data": [
+    {
+      "bytes": 25237,
+      "path": "data/raw/synthetic/migration_alpha/ccm_link.parquet",
+      "rows": 3120,
+      "sha256": "31feea6c77c80ce60aa773d36522105cc1c8e80653774f0b453bbb8df834beea"
+    },
+    {
+      "bytes": 18775,
+      "path": "data/raw/synthetic/migration_alpha/crsp_delist.parquet",
+      "rows": 999,
+      "sha256": "e46fafd97ed0da09202aeabc6174db90e768daf4b4788a58962898b776fcf7d0"
+    },
+    {
+      "bytes": 40826193,
+      "path": "data/raw/synthetic/migration_alpha/crsp_monthly.parquet",
+      "rows": 741472,
+      "sha256": "77f9da9255949f3b3f56b17ed49bf64ae49e6c7ccdb95fcd166d31ce59aa29ed"
+    },
+    {
+      "bytes": 4551,
+      "path": "data/raw/synthetic/migration_alpha/data_manifest.json",
+      "sha256": "048c9509ae725e83ae3d4a9e05a32b241636ac0d0ca34cbcf8185bc4eddf9e42"
+    },
+    {
+      "bytes": 47309,
+      "path": "data/raw/synthetic/migration_alpha/factor_returns.parquet",
+      "rows": 600,
+      "sha256": "4c9b0e089478184de9729f247befaa540d2f73ee5991a2c1629046e6face5dc1"
+    },
+    {
+      "bytes": 12518826,
+      "path": "data/raw/synthetic/migration_alpha/funda.parquet",
+      "rows": 61042,
+      "sha256": "ddab2428c7ca95bc46a9f71b3224e3c61e34c2128507365150c04cd6c56f0cca"
+    },
+    {
+      "bytes": 169199,
+      "path": "data/raw/synthetic/migration_alpha/sec_filing_dates.parquet",
+      "rows": 51276,
+      "sha256": "8666920e185cc09a0e0fd01c34978064cd3ec36df30d94849bc55b0b8577440f"
+    },
+    {
+      "bytes": 1274,
+      "path": "data/raw/synthetic/migration_alpha/synthetic_scenario_metadata.json",
+      "sha256": "bda14e64f3bf7251f5aa3bbee6806db6965d23d712ddc0dba1d3e24320be76e6"
+    },
+    {
+      "bytes": 5448918,
+      "path": "data/raw/synthetic/migration_alpha/synthetic_truth.parquet",
+      "rows": 61042,
+      "sha256": "f2be82543660042717a89aa4432ced31eb5e50c202d09300fc6d1105a9b11ca5"
+    },
+    {
+      "bytes": 24957,
+      "path": "data/raw/synthetic/null_alpha/ccm_link.parquet",
+      "rows": 3104,
+      "sha256": "53a2512bf622f1f4d4758d4de85fbf58062e13b4eb7ea0c21f9dd3e5cf4ac885"
+    },
+    {
+      "bytes": 18244,
+      "path": "data/raw/synthetic/null_alpha/crsp_delist.parquet",
+      "rows": 969,
+      "sha256": "375680aa95dd0890fb6c5f5c79d08fc6a9f36d8f5caf07224118581e6a3cc2a2"
+    },
+    {
+      "bytes": 41408965,
+      "path": "data/raw/synthetic/null_alpha/crsp_monthly.parquet",
+      "rows": 752766,
+      "sha256": "eb6dac80c82d9dd77d3b956861bc26f08fa9607ccb1728c2b71cb5e0f1e732f4"
+    },
+    {
+      "bytes": 4546,
+      "path": "data/raw/synthetic/null_alpha/data_manifest.json",
+      "sha256": "afe3bffb04416e2bf40a71275a48270dd8ac57ec3190736855a7ab5c81b915f7"
+    },
+    {
+      "bytes": 47308,
+      "path": "data/raw/synthetic/null_alpha/factor_returns.parquet",
+      "rows": 600,
+      "sha256": "dcfd53258991b3b456cb92f8c752d208ce76f587cde4fca63ecb6279f06e1b21"
+    },
+    {
+      "bytes": 12711702,
+      "path": "data/raw/synthetic/null_alpha/funda.parquet",
+      "rows": 62000,
+      "sha256": "b199d50728cb066b28cb1d1415d9f4db20436372471382bd7d08fd6aab61f980"
+    },
+    {
+      "bytes": 170925,
+      "path": "data/raw/synthetic/null_alpha/sec_filing_dates.parquet",
+      "rows": 52084,
+      "sha256": "4beb808ceb0ad41c278d60ea58c84449279987d339c97ebdac69a70659e67c41"
+    },
+    {
+      "bytes": 1262,
+      "path": "data/raw/synthetic/null_alpha/synthetic_scenario_metadata.json",
+      "sha256": "860bee4dd85a7d397255c82d4ab8f0aedcca17e49d534ede172f05419c6b5e9f"
+    },
+    {
+      "bytes": 4960624,
+      "path": "data/raw/synthetic/null_alpha/synthetic_truth.parquet",
+      "rows": 62000,
+      "sha256": "f16cb0b73cb7ee787eb51e3a05fd93c43a4b829782083be22cc4a9e441266df4"
+    },
+    {
+      "bytes": 25169,
+      "path": "data/raw/synthetic/regime_shift/ccm_link.parquet",
+      "rows": 3109,
+      "sha256": "297bd6568154d6752a95fee65cddacba0b8d8b247c2ae2ed41d809ddd9c55885"
+    },
+    {
+      "bytes": 18975,
+      "path": "data/raw/synthetic/regime_shift/crsp_delist.parquet",
+      "rows": 1016,
+      "sha256": "37c03432a139d7f1cf8a6d8bdf2ac2eba54d3fa8a6ecf8db52fc81569c2846da"
+    },
+    {
+      "bytes": 40362049,
+      "path": "data/raw/synthetic/regime_shift/crsp_monthly.parquet",
+      "rows": 732642,
+      "sha256": "c83bb9a16a94a3a4a9d685481bf18af07a1861c0d78af21df153f438b4b3ac41"
+    },
+    {
+      "bytes": 4549,
+      "path": "data/raw/synthetic/regime_shift/data_manifest.json",
+      "sha256": "5730affa23ac35fa2a5c63dbaff8ce35fc63ef8dcc4f82f015f2b8e42c4fd0b5"
+    },
+    {
+      "bytes": 47288,
+      "path": "data/raw/synthetic/regime_shift/factor_returns.parquet",
+      "rows": 600,
+      "sha256": "d14c2b0aa409bd040335e393dcfba1cca20b5f6820c24b4710d0a197287752fe"
+    },
+    {
+      "bytes": 12365522,
+      "path": "data/raw/synthetic/regime_shift/funda.parquet",
+      "rows": 60295,
+      "sha256": "19e06442fc902b3868c3eaddb70bb803cfbc0d5b880cc6ec510633505bece1fd"
+    },
+    {
+      "bytes": 167812,
+      "path": "data/raw/synthetic/regime_shift/sec_filing_dates.parquet",
+      "rows": 50595,
+      "sha256": "eb27e520568d56f4d99408923b10fe23f3f5417fa42bceb19aa445d6f32e53ce"
+    },
+    {
+      "bytes": 1264,
+      "path": "data/raw/synthetic/regime_shift/synthetic_scenario_metadata.json",
+      "sha256": "a6038006ecede202b417a4ba541994d9f5c92745bb6ea9f9e8c1a9b0d695aaf9"
+    },
+    {
+      "bytes": 4830069,
+      "path": "data/raw/synthetic/regime_shift/synthetic_truth.parquet",
+      "rows": 60295,
+      "sha256": "c8d55b29f384f0173054db2b97df6882f554427da838a045b0d64d6cd371eb69"
+    }
+  ],
+  "model_hyperparameters": {
+    "dynamics": {
+      "cross_section_minimum": 20,
+      "crowding_neighbors": 10,
+      "migration_minimum_train_observations": 1000,
+      "migration_ridge_alpha": 10.0,
+      "primary_model": "combined_axes_logit",
+      "probability_clip": 1e-06,
+      "recovery_minimum_level_spearman": 0.1,
+      "recovery_minimum_surprise_spearman": 0.03,
+      "recovery_minimum_velocity_spearman": 0.05,
+      "recovery_primary_horizon_years": 5,
+      "successful_density_minimum": 100,
+      "successful_density_neighbors": 20,
+      "survival_probability_threshold": 0.95
+    },
+    "returns": {
+      "controls": [
+        "log_market_cap",
+        "book_to_market",
+        "momentum_12_2",
+        "operating_margin",
+        "asset_growth",
+        "book_leverage",
+        "working_capital_assets",
+        "operating_income_assets",
+        "equity_to_liabilities",
+        "sales_to_assets",
+        "log_dollar_volume_12m",
+        "realized_volatility_12m",
+        "equity_beta_24m"
+      ],
+      "entry_lag_months": 1,
+      "factor_columns": [
+        "mkt_excess",
+        "smb",
+        "hml",
+        "rmw",
+        "cma",
+        "mom"
+      ],
+      "horizons_months": [
+        1,
+        3,
+        6,
+        12
+      ],
+      "industry_neutral_modes": [
+        false,
+        true
+      ],
+      "minimum_cross_section": 30,
+      "minimum_fmb_months": 24,
+      "minimum_industry_group": 10,
+      "missing_delisting_return_policy": "missing_target",
+      "multiple_testing_method": "holm",
+      "overlapping_hac_rule": "horizon_minus_one",
+      "primary_horizon_months": 6,
+      "primary_signal": "migration_surprise",
+      "primary_surface_horizon_years": 5,
+      "quantiles": 5,
+      "require_complete_path_or_delist": true,
+      "signals": [
+        "viability_log_odds",
+        "velocity_log_odds",
+        "migration_surprise"
+      ],
+      "synthetic_migration_min_primary_ic": 0.0,
+      "synthetic_null_max_abs_primary_ic": 0.03,
+      "synthetic_oracle_slope_lower": 0.4,
+      "synthetic_oracle_slope_upper": 1.3,
+      "weighting_schemes": [
+        "equal",
+        "value"
+      ],
+      "winsor_lower": 0.01,
+      "winsor_upper": 0.99
+    },
+    "survival": {
+      "calibration": "logistic_risk_score",
+      "causes": [
+        "performance_failure",
+        "merger"
+      ],
+      "features": [
+        "viability_log_odds",
+        "velocity_log_odds",
+        "acceleration_log_odds",
+        "crowding_density",
+        "historical_success_density",
+        "log_market_cap",
+        "book_leverage",
+        "operating_margin"
+      ],
+      "minimum_reporting_history": 3,
+      "minimum_test_events": 5,
+      "minimum_train_events": 20,
+      "minimum_train_intervals": 5000,
+      "outer_folds": [
+        {
+          "end_year": 2014,
+          "start_year": 2010
+        },
+        {
+          "end_year": 2019,
+          "start_year": 2015
+        }
+      ],
+      "ph_diagnostic_alpha": 0.01,
+      "primary_horizon_years": 5,
+      "ties": "breslow",
+      "time_origin_date": "1900-01-01"
+    },
+    "viability": {
+      "calibration": "platt",
+      "cell_bins": 3,
+      "horizons_years": [
+        3,
+        5
+      ],
+      "minimum_train_failures": 20,
+      "minimum_train_observations": 500,
+      "minimum_validation_failures": 5,
+      "nonlinear_model": "hist_gradient_boosting",
+      "outer_folds": [
+        {
+          "end_year": 2004,
+          "start_year": 2000
+        },
+        {
+          "end_year": 2009,
+          "start_year": 2005
+        },
+        {
+          "end_year": 2014,
+          "start_year": 2010
+        },
+        {
+          "end_year": 2019,
+          "start_year": 2015
+        }
+      ],
+      "primary_model": "combined_axes_logit",
+      "ridge_c_grid": [
+        0.01,
+        0.1,
+        1.0,
+        10.0
+      ],
+      "tree_l2_regularization": 1.0,
+      "tree_learning_rate": 0.05,
+      "tree_max_iter": 100,
+      "tree_max_leaf_nodes": 15,
+      "tree_min_samples_leaf": 50,
+      "validation_years": 5
+    }
+  },
+  "outputs": [
+    "artifacts/manifests/p7_build.json",
+    "artifacts/manifests/p7_validation.json",
+    "artifacts/manifests/p7_manifest.json",
+    "artifacts/tables/p7_*.csv",
+    "data/processed/synthetic/<scenario>/p7/forward_return_targets.parquet",
+    "data/processed/synthetic/<scenario>/p7/fmb_summary.csv",
+    "data/processed/synthetic/<scenario>/p7/portfolio_monthly_returns.csv",
+    "data/processed/synthetic/<scenario>/p7/portfolio_factor_results.csv",
+    "data/processed/synthetic/<scenario>/p7/portfolio_exposures.csv"
+  ],
+  "packages": {
+    "PyYAML": "6.0.2",
+    "joblib": "1.5.1",
+    "numpy": "2.3.1",
+    "pandas": "2.3.1",
+    "pyarrow": "20.0.0",
+    "pydantic": "2.11.7",
+    "pytest": "8.4.1",
+    "scikit-learn": "1.7.1",
+    "scipy": "1.16.0",
+    "statsmodels": "0.14.5"
+  },
+  "phase": "P7",
+  "project": "business-niche-hypercube",
+  "project_files": [
+    {
+      "bytes": 531,
+      "path": ".gitignore",
+      "sha256": "12a0247a2b5ea084e24f6fde3b44ede3fd40107c32fcdc43daa1cf5436ddd095"
+    },
+    {
+      "bytes": 6,
+      "path": ".python-version",
+      "sha256": "9ea280e4c89d3f302c1e8b3e5e7db91c46bec0fe761356ae90f32aaf0dbe0e8b"
+    },
+    {
+      "bytes": 1,
+      "path": "artifacts/models/.gitkeep",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "bytes": 1,
+      "path": "artifacts/tables/.gitkeep",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "bytes": 6153,
+      "path": "configs/base.yaml",
+      "sha256": "fd7723d5f8d86e90725f400c0d64963ab73768a77d2ec20b43bf04a3484689dc"
+    },
+    {
+      "bytes": 278,
+      "path": "configs/real.yaml",
+      "sha256": "985584086a518dd0d5b18d418059f40eae87ce328f40f72f92f9d448a5584218"
+    },
+    {
+      "bytes": 316,
+      "path": "configs/synthetic.yaml",
+      "sha256": "878b9e27eac1101ef340f9361e44ee4d3a3d27b7acdb700aecd419419c63d079"
+    },
+    {
+      "bytes": 1,
+      "path": "data/interim/.gitkeep",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "bytes": 1,
+      "path": "data/processed/.gitkeep",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "bytes": 1,
+      "path": "data/raw/.gitkeep",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "bytes": 11334,
+      "path": "docs/data_dictionary.md",
+      "sha256": "6a8e34918123e77c2db8daa33cff3a9cb42bab9a29b26622dbcce27038007e97"
+    },
+    {
+      "bytes": 12698,
+      "path": "docs/modeling_decisions.md",
+      "sha256": "6a96010abdde2775c728ce11d9c034e8a5cce5f1aba7c0742452b1ba1c5dbb6a"
+    },
+    {
+      "bytes": 9404,
+      "path": "docs/point_in_time_policy.md",
+      "sha256": "4f61df5c8efbfa74c6d6b3df0bc25b838d614a6c9fb20b20fae9d73fe0147abd"
+    },
+    {
+      "bytes": 399,
+      "path": "docs/references.md",
+      "sha256": "392aeb8127e6c592b2bd534f78de2192611cf842c1b21a9d9115227408e85f28"
+    },
+    {
+      "bytes": 5742,
+      "path": "docs/research_spec.md",
+      "sha256": "6d59253b6e8d6c2d649b611d9e88de7cc8560c9138922e324bdc008b5f9f76d6"
+    },
+    {
+      "bytes": 1,
+      "path": "figures/.gitkeep",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "bytes": 73,
+      "path": "hypercube/__init__.py",
+      "sha256": "1c32a5b405d707084795204fac6805e2767054e75668f5b2e6ed6defc2550b5b"
+    },
+    {
+      "bytes": 5374,
+      "path": "hypercube/availability.py",
+      "sha256": "a2ced82ec50b653446bc343b6f3b1ecbe1226d32b41a357b3e9bd5bec7194841"
+    },
+    {
+      "bytes": 43614,
+      "path": "hypercube/axes.py",
+      "sha256": "782be2ca272e06dd53a97df9eda6c85ceb1eb90175e584ca4a8ff6150c850f27"
+    },
+    {
+      "bytes": 57,
+      "path": "hypercube/clustering.py",
+      "sha256": "541bae205e4fb2683ec6f4a737e55d88bc57dced2a0765fc196715104086db39"
+    },
+    {
+      "bytes": 20866,
+      "path": "hypercube/config.py",
+      "sha256": "1f641a11e599c8791224e09e4f95c6b0d15b98781dbd4855bfb5751e9ff1ba23"
+    },
+    {
+      "bytes": 61,
+      "path": "hypercube/costs.py",
+      "sha256": "0f8f668c4ddfc6b4ffcea36faf7745bf24100ffd12e194714e66a06ff774b687"
+    },
+    {
+      "bytes": 39536,
+      "path": "hypercube/data.py",
+      "sha256": "e27ba8d6b34a31d022a45bd1d395eddcfbcf9a8449ebb2ee89ae5385495b620f"
+    },
+    {
+      "bytes": 3830,
+      "path": "hypercube/diagnostics.py",
+      "sha256": "139daddc877efcc2cee0baf3fc0118b318227639fdd5bead7ef434f20bb90607"
+    },
+    {
+      "bytes": 41781,
+      "path": "hypercube/dynamics.py",
+      "sha256": "aef9cdd692b6245488f0311c503ccace86203cbd364f31454738fff9ed05c76a"
+    },
+    {
+      "bytes": 7704,
+      "path": "hypercube/labels.py",
+      "sha256": "9a9b0359004080d783ef163b4c259ea9ed3f071bddd38a859419a5808ce57180"
+    },
+    {
+      "bytes": 58,
+      "path": "hypercube/portfolio.py",
+      "sha256": "0a11030af066a647113d816b08c6f6ffefe9893dda6dc93dc4611acf6dfad98e"
+    },
+    {
+      "bytes": 55475,
+      "path": "hypercube/returns.py",
+      "sha256": "8265ccba8a7bd3d1f9c9b5b94cc283dd1d41d7be7ee8df9d42c350269ed15d78"
+    },
+    {
+      "bytes": 1360,
+      "path": "hypercube/run.py",
+      "sha256": "1f51c4ddc6e4548d1bda2d530e7a1a5fcb48501d88756697607ea7d0aff1df67"
+    },
+    {
+      "bytes": 7715,
+      "path": "hypercube/standardize.py",
+      "sha256": "7cd5d8c97518460f0dd3c846c4512263e177ecab98fb583cb901a36590a76c2f"
+    },
+    {
+      "bytes": 36660,
+      "path": "hypercube/survival.py",
+      "sha256": "d1592327725d04a3e294fe5fd99e4166e352d1137dc1dfbd04b94089cd309965"
+    },
+    {
+      "bytes": 24491,
+      "path": "hypercube/universe.py",
+      "sha256": "3b133705c58dda817039a709831c27a8eb2efa7ec44a0837b5dc208e744a4a27"
+    },
+    {
+      "bytes": 37739,
+      "path": "hypercube/viability.py",
+      "sha256": "6af472c7b4ecddae5fae054eb9a49038aaa6301d9acd27de636874ee72fb15a5"
+    },
+    {
+      "bytes": 55,
+      "path": "hypercube/visualization.py",
+      "sha256": "79f5a3430c0d5eaa51e8a4f61155dcf0d9fbf236caaeed27792e7c8a8431c5a7"
+    },
+    {
+      "bytes": 1674,
+      "path": "Makefile",
+      "sha256": "470c756b8fd0fc3fd84667d72f9a489cad4a4b0f98e47881ce7a358fea3b9a90"
+    },
+    {
+      "bytes": 782,
+      "path": "pyproject.toml",
+      "sha256": "200a97289e872c6e27a9e7fbe7ce96afb276254d3eef85cc8390e05a5f8e3a28"
+    },
+    {
+      "bytes": 5486,
+      "path": "README.md",
+      "sha256": "6e264ac812d18c3f46131ceecbbe517d74bd5bcee1b3831bee7b2846335d0e87"
+    },
+    {
+      "bytes": 5832,
+      "path": "report.md",
+      "sha256": "a7ee65ca72a45d5d505f2bc44f5d47b6a345405104147fff8a9f9c8147f2753d"
+    },
+    {
+      "bytes": 225,
+      "path": "requirements.txt",
+      "sha256": "d56813938c96c7c6324501ae3a671c1da52fb1f8a2534c8d5c50ca6739e95067"
+    },
+    {
+      "bytes": 5015,
+      "path": "scripts/build_axis_features.py",
+      "sha256": "d2933afa89dcfca3181c412a3228407b06e467f83a620a1f71dc4e48cf27426d"
+    },
+    {
+      "bytes": 6589,
+      "path": "scripts/build_dynamics.py",
+      "sha256": "6fd878efb4c9dda3954e32c84531ab89dcb16cdbeffc3b29550d5f0d34226ce3"
+    },
+    {
+      "bytes": 3911,
+      "path": "scripts/build_point_in_time_panel.py",
+      "sha256": "8b1bad63b9d0f22fe135015dd5827ce991536c39e1d6a6826c1947607db230ff"
+    },
+    {
+      "bytes": 5900,
+      "path": "scripts/build_return_tests.py",
+      "sha256": "20d5fcce1847939470324fe3b1dd3526feaf3811e9599c7f98665c88f156877f"
+    },
+    {
+      "bytes": 6210,
+      "path": "scripts/build_survival_models.py",
+      "sha256": "f30762a46de1ceb2bf861b7e94dc0ffb60272881583607ffdd62b5a543217e2f"
+    },
+    {
+      "bytes": 6506,
+      "path": "scripts/build_viability_models.py",
+      "sha256": "df7ddd484303671f5a4a2af542a0f70e5b090bd32dffc49d36e3a99ec1505276"
+    },
+    {
+      "bytes": 2946,
+      "path": "scripts/make_synthetic.py",
+      "sha256": "9252c068dd48f7958f35c441490ae6fef14696efaaea1a8e444068f7b00f4097"
+    },
+    {
+      "bytes": 14288,
+      "path": "scripts/print_manifest.py",
+      "sha256": "4e60942ebe0feb9d445b9e7f101b33283ef0f9edadc77e5a75639d5d04c7f5fb"
+    },
+    {
+      "bytes": 2384,
+      "path": "scripts/validate_axis_features.py",
+      "sha256": "77242c407b901fb54dc6a7441892a4d3209794afa2acf69909a9a20127fdb60c"
+    },
+    {
+      "bytes": 4520,
+      "path": "scripts/validate_dynamics.py",
+      "sha256": "db82787fa6bfb987d9a62a707ea090d548bc1cd7d11779bfbc0a1e37d1067273"
+    },
+    {
+      "bytes": 2416,
+      "path": "scripts/validate_point_in_time_panel.py",
+      "sha256": "407dc302e2b2b83f83d89d88087486504daa0bcfd64854f8d4e57cddd71e7375"
+    },
+    {
+      "bytes": 2838,
+      "path": "scripts/validate_raw_inputs.py",
+      "sha256": "57fc0491a033a421ea335c1fd0081d86aee4e1642689c3f7c52ea8368f69364d"
+    },
+    {
+      "bytes": 3430,
+      "path": "scripts/validate_return_tests.py",
+      "sha256": "4dcd1ebdcecc766f9ce091cce19094b1c5453707bbc1230530bfdb081b38bb43"
+    },
+    {
+      "bytes": 3245,
+      "path": "scripts/validate_survival_models.py",
+      "sha256": "0f6b269adab2c6d9077e42214f68342766d809a1469bbfcbc3135125dd0f2a4c"
+    },
+    {
+      "bytes": 3092,
+      "path": "scripts/validate_viability_models.py",
+      "sha256": "da3079bd9c96c37a5138d70d2cadc503e0542586ac228eeed5741852a1ef980a"
+    },
+    {
+      "bytes": 5705,
+      "path": "tests/test_p1_data.py",
+      "sha256": "ed68f0e68b683872b8d325dd8f906c054802f864eee2f119b9957b0bb722e88a"
+    },
+    {
+      "bytes": 8993,
+      "path": "tests/test_p2_panel.py",
+      "sha256": "46f50ece1ce4376fa6641ae4ea00a50f26b25b03d74e5b765b56b79f4279df9b"
+    },
+    {
+      "bytes": 7868,
+      "path": "tests/test_p3_axes.py",
+      "sha256": "50cca1e49a014f8ab34070221ce049d25f5fe9ac0b7470ece2bb9effafde5d09"
+    },
+    {
+      "bytes": 7616,
+      "path": "tests/test_p4_viability.py",
+      "sha256": "acd54eacf55c78378e483b5479cece05cd37b346b4fc9eca12434026e4e78942"
+    },
+    {
+      "bytes": 7878,
+      "path": "tests/test_p5_dynamics.py",
+      "sha256": "49386051e2c47a09b5835db4c7b764b8f58d1a310dd192e75a7dd0afd44c92b9"
+    },
+    {
+      "bytes": 5786,
+      "path": "tests/test_p6_survival.py",
+      "sha256": "0dfb3c92923679c0c721b7da5cd74e07b6574f6e9bf8a6a4d51e4320c20de223"
+    },
+    {
+      "bytes": 3948,
+      "path": "tests/test_p7_returns.py",
+      "sha256": "bcac010473cd9ed68a6388947fb2bd8c0c7168d42b24fbd57429ec8f7a10a0ba"
+    },
+    {
+      "bytes": 3510,
+      "path": "tests/test_smoke.py",
+      "sha256": "d6657ac8d1a7539d8f2895456e4107537accc7355570cdce4c13902bc7aa5b0f"
+    },
+    {
+      "bytes": 105308,
+      "path": "uv.lock",
+      "sha256": "6903d34abef50e79d10303192b734f25f4f46635c5d58fc74360823eab50a2d6"
+    }
+  ],
+  "python": {
+    "executable": "${PROJECT_ROOT}\\.venv\\Scripts\\python.exe",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "version": "3.12.10"
+  },
+  "resolved_config": {
+    "audit": {
+      "archive_completed_real_runs": true,
+      "atomic_writes": true,
+      "hash_algorithm": "sha256",
+      "record_input_hashes": true,
+      "record_package_versions": true
+    },
+    "availability": {
+      "fallback_days": 180,
+      "hierarchy": [
+        "verified_sec_filing_timestamp",
+        "verified_earnings_announcement_date",
+        "datadate_plus_180_calendar_days"
+      ],
+      "prohibit_pre_availability_use": true
+    },
+    "axes": {
+      "components": [
+        {
+          "ablation_enabled": true,
+          "enabled": true,
+          "implementation_phase": "P3",
+          "minimum_components": 2,
+          "name": "Demand Strength and Pricing Power",
+          "slug": "demand_strength_pricing_power"
+        },
+        {
+          "ablation_enabled": true,
+          "enabled": true,
+          "implementation_phase": "P3",
+          "minimum_components": 2,
+          "name": "Competitive Defensibility",
+          "slug": "competitive_defensibility"
+        },
+        {
+          "ablation_enabled": true,
+          "enabled": true,
+          "implementation_phase": "P3",
+          "minimum_components": 2,
+          "name": "Innovation Intensity",
+          "slug": "innovation_intensity"
+        },
+        {
+          "ablation_enabled": true,
+          "enabled": true,
+          "implementation_phase": "P3",
+          "minimum_components": 2,
+          "name": "Go-to-Market Efficiency",
+          "slug": "go_to_market_efficiency"
+        },
+        {
+          "ablation_enabled": true,
+          "enabled": true,
+          "implementation_phase": "P3",
+          "minimum_components": 3,
+          "name": "Unit Economics and Profit Quality",
+          "slug": "unit_economics_profit_quality"
+        },
+        {
+          "ablation_enabled": true,
+          "enabled": true,
+          "implementation_phase": "P3",
+          "minimum_components": 3,
+          "name": "Scalability and Capital Efficiency",
+          "slug": "scalability_capital_efficiency"
+        }
+      ],
+      "orientation": "higher_is_more_viable"
+    },
+    "data": {
+      "allow_network": false,
+      "allow_wrds": false,
+      "generate_synthetic": false,
+      "mode": "synthetic",
+      "require_existing_raw": true,
+      "scenario": "null_alpha"
+    },
+    "dynamics": {
+      "cross_section_minimum": 20,
+      "crowding_neighbors": 10,
+      "migration_minimum_train_observations": 1000,
+      "migration_ridge_alpha": 10.0,
+      "primary_model": "combined_axes_logit",
+      "probability_clip": 1e-06,
+      "recovery_minimum_level_spearman": 0.1,
+      "recovery_minimum_surprise_spearman": 0.03,
+      "recovery_minimum_velocity_spearman": 0.05,
+      "recovery_primary_horizon_years": 5,
+      "successful_density_minimum": 100,
+      "successful_density_neighbors": 20,
+      "survival_probability_threshold": 0.95
+    },
+    "innovation": {
+      "fixed_nopat_tax_rate": 0.25,
+      "persistence_years": 3,
+      "primary_missing_policy": "zero_with_indicator",
+      "sensitivity_missing_policy": "contemporaneous_peer_median",
+      "stock_depreciation_rate": 0.2
+    },
+    "panel": {
+      "allowed_link_primaries": [
+        "P",
+        "C"
+      ],
+      "allowed_link_types": [
+        "LC",
+        "LU",
+        "LS"
+      ],
+      "delisting_return_rule": "compound_with_ordinary_return",
+      "fiscal_duplicate_policy": "reject",
+      "max_staleness_months": 18,
+      "minimum_reporting_history": 1,
+      "strict_post_availability_formation": true
+    },
+    "paths": {
+      "artifacts_dir": "artifacts",
+      "figures_dir": "figures",
+      "interim_dir": "data/interim",
+      "processed_dir": "data/processed/synthetic/null_alpha",
+      "raw_dir": "data/raw/synthetic/null_alpha"
+    },
+    "project": {
+      "name": "business-niche-hypercube",
+      "phase": "P7",
+      "python_minimum": "3.11",
+      "run_name": "synthetic_p7",
+      "seed": 20260722,
+      "subtitle": "Corporate Niche Dynamics and Asset Prices"
+    },
+    "returns": {
+      "controls": [
+        "log_market_cap",
+        "book_to_market",
+        "momentum_12_2",
+        "operating_margin",
+        "asset_growth",
+        "book_leverage",
+        "working_capital_assets",
+        "operating_income_assets",
+        "equity_to_liabilities",
+        "sales_to_assets",
+        "log_dollar_volume_12m",
+        "realized_volatility_12m",
+        "equity_beta_24m"
+      ],
+      "entry_lag_months": 1,
+      "factor_columns": [
+        "mkt_excess",
+        "smb",
+        "hml",
+        "rmw",
+        "cma",
+        "mom"
+      ],
+      "horizons_months": [
+        1,
+        3,
+        6,
+        12
+      ],
+      "industry_neutral_modes": [
+        false,
+        true
+      ],
+      "minimum_cross_section": 30,
+      "minimum_fmb_months": 24,
+      "minimum_industry_group": 10,
+      "missing_delisting_return_policy": "missing_target",
+      "multiple_testing_method": "holm",
+      "overlapping_hac_rule": "horizon_minus_one",
+      "primary_horizon_months": 6,
+      "primary_signal": "migration_surprise",
+      "primary_surface_horizon_years": 5,
+      "quantiles": 5,
+      "require_complete_path_or_delist": true,
+      "signals": [
+        "viability_log_odds",
+        "velocity_log_odds",
+        "migration_surprise"
+      ],
+      "synthetic_migration_min_primary_ic": 0.0,
+      "synthetic_null_max_abs_primary_ic": 0.03,
+      "synthetic_oracle_slope_lower": 0.4,
+      "synthetic_oracle_slope_upper": 1.3,
+      "weighting_schemes": [
+        "equal",
+        "value"
+      ],
+      "winsor_lower": 0.01,
+      "winsor_upper": 0.99
+    },
+    "standardization": {
+      "anchored_method": "expanding_prior_calendar_years",
+      "minimum_anchor_observations": 100,
+      "minimum_peer_group_size": 20,
+      "peer_fallback_hierarchy": [
+        "sic2",
+        "sic1",
+        "market"
+      ],
+      "relative_method": "median_mad",
+      "score_clip": 5.0,
+      "winsor_lower": 0.01,
+      "winsor_upper": 0.99
+    },
+    "survival": {
+      "calibration": "logistic_risk_score",
+      "causes": [
+        "performance_failure",
+        "merger"
+      ],
+      "features": [
+        "viability_log_odds",
+        "velocity_log_odds",
+        "acceleration_log_odds",
+        "crowding_density",
+        "historical_success_density",
+        "log_market_cap",
+        "book_leverage",
+        "operating_margin"
+      ],
+      "minimum_reporting_history": 3,
+      "minimum_test_events": 5,
+      "minimum_train_events": 20,
+      "minimum_train_intervals": 5000,
+      "outer_folds": [
+        {
+          "end_year": 2014,
+          "start_year": 2010
+        },
+        {
+          "end_year": 2019,
+          "start_year": 2015
+        }
+      ],
+      "ph_diagnostic_alpha": 0.01,
+      "primary_horizon_years": 5,
+      "ties": "breslow",
+      "time_origin_date": "1900-01-01"
+    },
+    "synthetic": {
+      "annual_state_persistence": 0.82,
+      "end_year": 2024,
+      "migration_alpha_monthly": 0.004,
+      "migration_decay_months": 12,
+      "minimum_history_years": 3,
+      "n_firms": 3000,
+      "n_industries": 24,
+      "regime_shift_year": 2000,
+      "start_year": 1975
+    },
+    "universe": {
+      "exchange_codes": [
+        1,
+        2,
+        3
+      ],
+      "include_delisted_firms": true,
+      "minimum_market_cap_millions": 10.0,
+      "minimum_monthly_volume": 100.0,
+      "minimum_price": 1.0,
+      "preserve_prior_eligible_delist_month": true,
+      "require_positive_market_cap": true,
+      "require_positive_price": true,
+      "share_codes": [
+        10,
+        11
+      ]
+    },
+    "viability": {
+      "calibration": "platt",
+      "cell_bins": 3,
+      "horizons_years": [
+        3,
+        5
+      ],
+      "minimum_train_failures": 20,
+      "minimum_train_observations": 500,
+      "minimum_validation_failures": 5,
+      "nonlinear_model": "hist_gradient_boosting",
+      "outer_folds": [
+        {
+          "end_year": 2004,
+          "start_year": 2000
+        },
+        {
+          "end_year": 2009,
+          "start_year": 2005
+        },
+        {
+          "end_year": 2014,
+          "start_year": 2010
+        },
+        {
+          "end_year": 2019,
+          "start_year": 2015
+        }
+      ],
+      "primary_model": "combined_axes_logit",
+      "ridge_c_grid": [
+        0.01,
+        0.1,
+        1.0,
+        10.0
+      ],
+      "tree_l2_regularization": 1.0,
+      "tree_learning_rate": 0.05,
+      "tree_max_iter": 100,
+      "tree_max_leaf_nodes": 15,
+      "tree_min_samples_leaf": 50,
+      "validation_years": 5
+    }
+  },
+  "row_counts": {
+    "data/raw/synthetic/migration_alpha/ccm_link.parquet": 3120,
+    "data/raw/synthetic/migration_alpha/crsp_delist.parquet": 999,
+    "data/raw/synthetic/migration_alpha/crsp_monthly.parquet": 741472,
+    "data/raw/synthetic/migration_alpha/factor_returns.parquet": 600,
+    "data/raw/synthetic/migration_alpha/funda.parquet": 61042,
+    "data/raw/synthetic/migration_alpha/sec_filing_dates.parquet": 51276,
+    "data/raw/synthetic/migration_alpha/synthetic_truth.parquet": 61042,
+    "data/raw/synthetic/null_alpha/ccm_link.parquet": 3104,
+    "data/raw/synthetic/null_alpha/crsp_delist.parquet": 969,
+    "data/raw/synthetic/null_alpha/crsp_monthly.parquet": 752766,
+    "data/raw/synthetic/null_alpha/factor_returns.parquet": 600,
+    "data/raw/synthetic/null_alpha/funda.parquet": 62000,
+    "data/raw/synthetic/null_alpha/sec_filing_dates.parquet": 52084,
+    "data/raw/synthetic/null_alpha/synthetic_truth.parquet": 62000,
+    "data/raw/synthetic/regime_shift/ccm_link.parquet": 3109,
+    "data/raw/synthetic/regime_shift/crsp_delist.parquet": 1016,
+    "data/raw/synthetic/regime_shift/crsp_monthly.parquet": 732642,
+    "data/raw/synthetic/regime_shift/factor_returns.parquet": 600,
+    "data/raw/synthetic/regime_shift/funda.parquet": 60295,
+    "data/raw/synthetic/regime_shift/sec_filing_dates.parquet": 50595,
+    "data/raw/synthetic/regime_shift/synthetic_truth.parquet": 60295
+  },
+  "run_name": "synthetic_p7",
+  "schema_version": 1,
+  "seed": 20260722,
+  "test_windows": [
+    {
+      "end_year": 2004,
+      "start_year": 2000
+    },
+    {
+      "end_year": 2009,
+      "start_year": 2005
+    },
+    {
+      "end_year": 2014,
+      "start_year": 2010
+    },
+    {
+      "end_year": 2019,
+      "start_year": 2015
+    }
+  ],
+  "training_windows": [
+    {
+      "horizons_months": [
+        1,
+        3,
+        6,
+        12
+      ],
+      "policy": "P5 OOS features; independent formation-month cross-sections"
+    }
+  ],
+  "warnings": [
+    "P7 inputs and outputs are synthetic and are not empirical evidence.",
+    "P7 reports gross synthetic return tests only; no costs, borrow, capacity, net-performance, clustering, or real-data test was run.",
+    "GNU Make was not available on the inspected Windows host."
+  ]
+}

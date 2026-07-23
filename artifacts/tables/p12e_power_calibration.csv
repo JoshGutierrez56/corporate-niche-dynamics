@@ -1,0 +1,7 @@
+multiplier,replicates,seed_start,oracle_detection_rate,observable_detection_rate,null_observable_false_positive_rate,median_oracle_rank_ic,median_observable_rank_ic,median_oracle_slope,median_observable_slope,passes_oracle_detection,passes_observable_detection,passes_null_control,passes_oracle_ic,passes_observable_ic,passes_all_calibration_gates
+1.0,100,12000,0.24,0.0,0.0,0.0087768531098338,-0.018737337316770575,0.6827600418241425,-0.02068873564155073,False,False,True,False,False,False
+2.0,100,12000,0.78,0.0,0.0,0.01896930174242415,-0.016682406004377984,0.750167259008893,-0.016292052765957445,False,False,True,False,False,False
+4.0,100,12000,1.0,0.0,0.0,0.0394897759702513,-0.0123683496633178,0.7838708676012678,-0.0073403541538039595,True,False,True,False,False,False
+6.0,100,12000,1.0,0.01,0.0,0.05988180142482759,-0.008219283335229036,0.7951054037987273,0.0013819642582396552,True,False,True,True,False,False
+8.0,100,12000,1.0,0.05,0.0,0.08003480985207007,-0.004061692589250158,0.8007226718974562,0.009861016624009265,True,False,True,True,False,False
+10.0,100,12000,1.0,0.32,0.0,0.09998320853185025,9.455433662955522e-05,0.8040930327566933,0.01834006898977887,True,False,True,True,False,False

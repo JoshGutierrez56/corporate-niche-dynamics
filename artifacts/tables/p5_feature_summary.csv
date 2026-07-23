@@ -1,0 +1,4 @@
+acceleration_rows,clustering_run,crowding_coverage,frontier_crossings,historical_success_density_coverage,horizon_rows,migration_surprise_rows,model_vintage_boundary_rows,portfolio_run,return_test_run,rows,scenario,synthetic_truth_read,velocity_rows
+37070,False,0.9235227723376346,"{'-1': 64, '0': 50819, '1': 65}",0.9239193435221622,"{'3': 32781, '5': 32781}",48394,9606,False,False,65562,null_alpha,False,50948
+37162,False,0.9241074153188892,"{'-1': 927, '0': 49258, '1': 793}",0.9246261824839792,"{'3': 32770, '5': 32770}",48454,9622,False,False,65540,migration_alpha,False,50978
+36602,False,0.9212196254449776,"{'-1': 443, '0': 49514, '1': 281}",0.9218077696950936,"{'3': 32305, '5': 32305}",47806,9450,False,False,64610,regime_shift,False,50238

@@ -1,0 +1,609 @@
+{
+  "aggregate_tables": [
+    "${PROJECT_ROOT}\\artifacts\\tables\\p3_component_missingness.csv",
+    "${PROJECT_ROOT}\\artifacts\\tables\\p3_component_correlations.csv",
+    "${PROJECT_ROOT}\\artifacts\\tables\\p3_axis_correlations.csv",
+    "${PROJECT_ROOT}\\artifacts\\tables\\p3_component_vif.csv",
+    "${PROJECT_ROOT}\\artifacts\\tables\\p3_ablation_catalog.csv"
+  ],
+  "config": "configs\\synthetic.yaml",
+  "models_fitted": [],
+  "phase": "P3",
+  "reports": [
+    {
+      "construction": {
+        "duplicate_event_keys": 0,
+        "models_fitted": [],
+        "nonfinite_axis_values": 0,
+        "nonfinite_component_values": 0,
+        "phase": "P3",
+        "population": {
+          "accounting_rows_not_in_feature_population": 2079,
+          "duplicate_security_rows_removed": 0,
+          "feature_events": 59921,
+          "panel_rows": 705450,
+          "peer_snapshot_rows": 705450
+        },
+        "pre_availability_violations": 0,
+        "rd_missing_treatment_counts": {
+          "market": 10,
+          "observed": 47139,
+          "sic1": 127,
+          "sic2": 12642,
+          "unavailable": 3
+        },
+        "relative_fallback_counts": {
+          "advertising_intensity": {
+            "market": 47,
+            "sic1": 1393,
+            "sic2": 21217,
+            "unavailable": 37264
+          },
+          "asset_lightness": {
+            "market": 55,
+            "sic1": 433,
+            "sic2": 59432,
+            "unavailable": 1
+          },
+          "asset_turnover": {
+            "market": 44,
+            "sic1": 421,
+            "sic2": 56457,
+            "unavailable": 2999
+          },
+          "capex_intensity": {
+            "market": 55,
+            "sic1": 433,
+            "sic2": 59432,
+            "unavailable": 1
+          },
+          "capitalized_rnd_stock_assets": {
+            "market": 55,
+            "sic1": 433,
+            "sic2": 59432,
+            "unavailable": 1
+          },
+          "cash_adjusted_roic": {
+            "market": 44,
+            "sic1": 421,
+            "sic2": 56457,
+            "unavailable": 2999
+          },
+          "cash_conversion_lag_assets": {
+            "market": 44,
+            "sic1": 421,
+            "sic2": 56457,
+            "unavailable": 2999
+          },
+          "gross_margin": {
+            "market": 55,
+            "sic1": 433,
+            "sic2": 59432,
+            "unavailable": 1
+          },
+          "gross_margin_volatility_3y": {
+            "market": 48,
+            "sic1": 457,
+            "sic2": 53464,
+            "unavailable": 5952
+          },
+          "gross_profit_lag_sga": {
+            "market": 44,
+            "sic1": 421,
+            "sic2": 56457,
+            "unavailable": 2999
+          },
+          "gross_profitability_lag_assets": {
+            "market": 44,
+            "sic1": 421,
+            "sic2": 56457,
+            "unavailable": 2999
+          },
+          "incremental_operating_margin": {
+            "market": 25,
+            "sic1": 434,
+            "sic2": 53742,
+            "unavailable": 5720
+          },
+          "industry_sales_hhi": {
+            "market": 59920,
+            "unavailable": 1
+          },
+          "log_active_firm_count": {
+            "market": 59920,
+            "unavailable": 1
+          },
+          "operating_margin": {
+            "market": 55,
+            "sic1": 433,
+            "sic2": 59432,
+            "unavailable": 1
+          },
+          "rd_intensity_observed": {
+            "market": 25,
+            "sic1": 553,
+            "sic2": 46543,
+            "unavailable": 12800
+          },
+          "rd_intensity_peer_imputed": {
+            "market": 35,
+            "sic1": 433,
+            "sic2": 59432,
+            "unavailable": 21
+          },
+          "rd_intensity_zero": {
+            "market": 55,
+            "sic1": 433,
+            "sic2": 59432,
+            "unavailable": 1
+          },
+          "rd_missing_indicator": {
+            "market": 55,
+            "sic1": 433,
+            "sic2": 59432,
+            "unavailable": 1
+          },
+          "revenue_cagr_3y": {
+            "market": 44,
+            "sic1": 516,
+            "sic2": 50541,
+            "unavailable": 8820
+          },
+          "revenue_change_lag_sga": {
+            "market": 44,
+            "sic1": 421,
+            "sic2": 56457,
+            "unavailable": 2999
+          },
+          "rnd_positive_share_3y": {
+            "market": 48,
+            "sic1": 457,
+            "sic2": 53464,
+            "unavailable": 5952
+          },
+          "sga_intensity": {
+            "market": 55,
+            "sic1": 433,
+            "sic2": 59432,
+            "unavailable": 1
+          }
+        },
+        "rows": {
+          "accounting_input": 62000,
+          "axis_scores": 59921,
+          "component_features": 59921,
+          "panel_input": 705450
+        },
+        "scenario": "null_alpha",
+        "status": "PASS",
+        "synthetic_truth_read": false
+      },
+      "models_fitted": [],
+      "output_dir": "data\\processed\\synthetic\\null_alpha\\p3",
+      "p2_dir": "data\\processed\\synthetic\\null_alpha",
+      "scenario": "null_alpha",
+      "validation": {
+        "errors": [],
+        "models_fitted": [],
+        "nonmissing_axes": {
+          "anchored_competitive_defensibility": 59718,
+          "anchored_competitive_defensibility_hhi_reversed": 59718,
+          "anchored_demand_strength_pricing_power": 53769,
+          "anchored_go_to_market_efficiency": 56721,
+          "anchored_innovation_intensity": 59718,
+          "anchored_innovation_intensity_peer_imputed": 59718,
+          "anchored_scalability_capital_efficiency": 56721,
+          "anchored_unit_economics_profit_quality": 56721,
+          "relative_competitive_defensibility": 59920,
+          "relative_competitive_defensibility_hhi_reversed": 59920,
+          "relative_demand_strength_pricing_power": 53969,
+          "relative_go_to_market_efficiency": 56922,
+          "relative_innovation_intensity": 59920,
+          "relative_innovation_intensity_peer_imputed": 59900,
+          "relative_scalability_capital_efficiency": 56922,
+          "relative_unit_economics_profit_quality": 56922
+        },
+        "rows": {
+          "axis_scores": 59921,
+          "component_features": 59921
+        },
+        "status": "PASS",
+        "warnings": []
+      }
+    },
+    {
+      "construction": {
+        "duplicate_event_keys": 0,
+        "models_fitted": [],
+        "nonfinite_axis_values": 0,
+        "nonfinite_component_values": 0,
+        "phase": "P3",
+        "population": {
+          "accounting_rows_not_in_feature_population": 2140,
+          "duplicate_security_rows_removed": 0,
+          "feature_events": 58902,
+          "panel_rows": 692892,
+          "peer_snapshot_rows": 692892
+        },
+        "pre_availability_violations": 0,
+        "rd_missing_treatment_counts": {
+          "market": 8,
+          "observed": 46327,
+          "sic1": 207,
+          "sic2": 12356,
+          "unavailable": 4
+        },
+        "relative_fallback_counts": {
+          "advertising_intensity": {
+            "market": 72,
+            "sic1": 1452,
+            "sic2": 21020,
+            "unavailable": 36358
+          },
+          "asset_lightness": {
+            "market": 42,
+            "sic1": 570,
+            "sic2": 58290
+          },
+          "asset_turnover": {
+            "market": 25,
+            "sic1": 589,
+            "sic2": 55286,
+            "unavailable": 3002
+          },
+          "capex_intensity": {
+            "market": 42,
+            "sic1": 570,
+            "sic2": 58290
+          },
+          "capitalized_rnd_stock_assets": {
+            "market": 42,
+            "sic1": 570,
+            "sic2": 58290
+          },
+          "cash_adjusted_roic": {
+            "market": 25,
+            "sic1": 589,
+            "sic2": 55286,
+            "unavailable": 3002
+          },
+          "cash_conversion_lag_assets": {
+            "market": 25,
+            "sic1": 589,
+            "sic2": 55286,
+            "unavailable": 3002
+          },
+          "gross_margin": {
+            "market": 42,
+            "sic1": 570,
+            "sic2": 58290
+          },
+          "gross_margin_volatility_3y": {
+            "market": 42,
+            "sic1": 615,
+            "sic2": 52294,
+            "unavailable": 5951
+          },
+          "gross_profit_lag_sga": {
+            "market": 25,
+            "sic1": 589,
+            "sic2": 55286,
+            "unavailable": 3002
+          },
+          "gross_profitability_lag_assets": {
+            "market": 25,
+            "sic1": 589,
+            "sic2": 55286,
+            "unavailable": 3002
+          },
+          "incremental_operating_margin": {
+            "market": 25,
+            "sic1": 663,
+            "sic2": 52498,
+            "unavailable": 5716
+          },
+          "industry_sales_hhi": {
+            "market": 58902
+          },
+          "log_active_firm_count": {
+            "market": 58902
+          },
+          "operating_margin": {
+            "market": 42,
+            "sic1": 570,
+            "sic2": 58290
+          },
+          "rd_intensity_observed": {
+            "market": 25,
+            "sic1": 693,
+            "sic2": 45591,
+            "unavailable": 12593
+          },
+          "rd_intensity_peer_imputed": {
+            "market": 20,
+            "sic1": 570,
+            "sic2": 58290,
+            "unavailable": 22
+          },
+          "rd_intensity_zero": {
+            "market": 42,
+            "sic1": 570,
+            "sic2": 58290
+          },
+          "rd_missing_indicator": {
+            "market": 42,
+            "sic1": 570,
+            "sic2": 58290
+          },
+          "revenue_cagr_3y": {
+            "market": 18,
+            "sic1": 615,
+            "sic2": 49465,
+            "unavailable": 8804
+          },
+          "revenue_change_lag_sga": {
+            "market": 25,
+            "sic1": 589,
+            "sic2": 55286,
+            "unavailable": 3002
+          },
+          "rnd_positive_share_3y": {
+            "market": 42,
+            "sic1": 615,
+            "sic2": 52294,
+            "unavailable": 5951
+          },
+          "sga_intensity": {
+            "market": 42,
+            "sic1": 570,
+            "sic2": 58290
+          }
+        },
+        "rows": {
+          "accounting_input": 61042,
+          "axis_scores": 58902,
+          "component_features": 58902,
+          "panel_input": 692892
+        },
+        "scenario": "migration_alpha",
+        "status": "PASS",
+        "synthetic_truth_read": false
+      },
+      "models_fitted": [],
+      "output_dir": "data\\processed\\synthetic\\migration_alpha\\p3",
+      "p2_dir": "data\\processed\\synthetic\\migration_alpha",
+      "scenario": "migration_alpha",
+      "validation": {
+        "errors": [],
+        "models_fitted": [],
+        "nonmissing_axes": {
+          "anchored_competitive_defensibility": 58718,
+          "anchored_competitive_defensibility_hhi_reversed": 58718,
+          "anchored_demand_strength_pricing_power": 52776,
+          "anchored_go_to_market_efficiency": 55721,
+          "anchored_innovation_intensity": 58718,
+          "anchored_innovation_intensity_peer_imputed": 58718,
+          "anchored_scalability_capital_efficiency": 55721,
+          "anchored_unit_economics_profit_quality": 55721,
+          "relative_competitive_defensibility": 58902,
+          "relative_competitive_defensibility_hhi_reversed": 58902,
+          "relative_demand_strength_pricing_power": 52951,
+          "relative_go_to_market_efficiency": 55900,
+          "relative_innovation_intensity": 58902,
+          "relative_innovation_intensity_peer_imputed": 58880,
+          "relative_scalability_capital_efficiency": 55900,
+          "relative_unit_economics_profit_quality": 55900
+        },
+        "rows": {
+          "axis_scores": 58902,
+          "component_features": 58902
+        },
+        "status": "PASS",
+        "warnings": []
+      }
+    },
+    {
+      "construction": {
+        "duplicate_event_keys": 0,
+        "models_fitted": [],
+        "nonfinite_axis_values": 0,
+        "nonfinite_component_values": 0,
+        "phase": "P3",
+        "population": {
+          "accounting_rows_not_in_feature_population": 2074,
+          "duplicate_security_rows_removed": 0,
+          "feature_events": 58221,
+          "panel_rows": 684635,
+          "peer_snapshot_rows": 684635
+        },
+        "pre_availability_violations": 0,
+        "rd_missing_treatment_counts": {
+          "market": 12,
+          "observed": 45641,
+          "sic1": 244,
+          "sic2": 12323,
+          "unavailable": 1
+        },
+        "relative_fallback_counts": {
+          "advertising_intensity": {
+            "market": 51,
+            "sic1": 1366,
+            "sic2": 20816,
+            "unavailable": 35988
+          },
+          "asset_lightness": {
+            "market": 29,
+            "sic1": 520,
+            "sic2": 57670,
+            "unavailable": 2
+          },
+          "asset_turnover": {
+            "market": 24,
+            "sic1": 548,
+            "sic2": 54634,
+            "unavailable": 3015
+          },
+          "capex_intensity": {
+            "market": 29,
+            "sic1": 520,
+            "sic2": 57670,
+            "unavailable": 2
+          },
+          "capitalized_rnd_stock_assets": {
+            "market": 29,
+            "sic1": 520,
+            "sic2": 57670,
+            "unavailable": 2
+          },
+          "cash_adjusted_roic": {
+            "market": 24,
+            "sic1": 548,
+            "sic2": 54634,
+            "unavailable": 3015
+          },
+          "cash_conversion_lag_assets": {
+            "market": 24,
+            "sic1": 548,
+            "sic2": 54634,
+            "unavailable": 3015
+          },
+          "gross_margin": {
+            "market": 29,
+            "sic1": 520,
+            "sic2": 57670,
+            "unavailable": 2
+          },
+          "gross_margin_volatility_3y": {
+            "market": 46,
+            "sic1": 567,
+            "sic2": 51659,
+            "unavailable": 5949
+          },
+          "gross_profit_lag_sga": {
+            "market": 24,
+            "sic1": 548,
+            "sic2": 54634,
+            "unavailable": 3015
+          },
+          "gross_profitability_lag_assets": {
+            "market": 24,
+            "sic1": 548,
+            "sic2": 54634,
+            "unavailable": 3015
+          },
+          "incremental_operating_margin": {
+            "market": 21,
+            "sic1": 584,
+            "sic2": 51848,
+            "unavailable": 5768
+          },
+          "industry_sales_hhi": {
+            "market": 58219,
+            "unavailable": 2
+          },
+          "log_active_firm_count": {
+            "market": 58219,
+            "unavailable": 2
+          },
+          "operating_margin": {
+            "market": 29,
+            "sic1": 520,
+            "sic2": 57670,
+            "unavailable": 2
+          },
+          "rd_intensity_observed": {
+            "market": 42,
+            "sic1": 722,
+            "sic2": 44876,
+            "unavailable": 12581
+          },
+          "rd_intensity_peer_imputed": {
+            "market": 29,
+            "sic1": 520,
+            "sic2": 57670,
+            "unavailable": 2
+          },
+          "rd_intensity_zero": {
+            "market": 29,
+            "sic1": 520,
+            "sic2": 57670,
+            "unavailable": 2
+          },
+          "rd_missing_indicator": {
+            "market": 29,
+            "sic1": 520,
+            "sic2": 57670,
+            "unavailable": 2
+          },
+          "revenue_cagr_3y": {
+            "market": 46,
+            "sic1": 555,
+            "sic2": 48839,
+            "unavailable": 8781
+          },
+          "revenue_change_lag_sga": {
+            "market": 24,
+            "sic1": 548,
+            "sic2": 54634,
+            "unavailable": 3015
+          },
+          "rnd_positive_share_3y": {
+            "market": 46,
+            "sic1": 567,
+            "sic2": 51659,
+            "unavailable": 5949
+          },
+          "sga_intensity": {
+            "market": 29,
+            "sic1": 520,
+            "sic2": 57670,
+            "unavailable": 2
+          }
+        },
+        "rows": {
+          "accounting_input": 60295,
+          "axis_scores": 58221,
+          "component_features": 58221,
+          "panel_input": 684635
+        },
+        "scenario": "regime_shift",
+        "status": "PASS",
+        "synthetic_truth_read": false
+      },
+      "models_fitted": [],
+      "output_dir": "data\\processed\\synthetic\\regime_shift\\p3",
+      "p2_dir": "data\\processed\\synthetic\\regime_shift",
+      "scenario": "regime_shift",
+      "validation": {
+        "errors": [],
+        "models_fitted": [],
+        "nonmissing_axes": {
+          "anchored_competitive_defensibility": 58042,
+          "anchored_competitive_defensibility_hhi_reversed": 58042,
+          "anchored_demand_strength_pricing_power": 52102,
+          "anchored_go_to_market_efficiency": 55047,
+          "anchored_innovation_intensity": 58042,
+          "anchored_innovation_intensity_peer_imputed": 58042,
+          "anchored_scalability_capital_efficiency": 55047,
+          "anchored_unit_economics_profit_quality": 55047,
+          "relative_competitive_defensibility": 58219,
+          "relative_competitive_defensibility_hhi_reversed": 58219,
+          "relative_demand_strength_pricing_power": 52272,
+          "relative_go_to_market_efficiency": 55206,
+          "relative_innovation_intensity": 58219,
+          "relative_innovation_intensity_peer_imputed": 58219,
+          "relative_scalability_capital_efficiency": 55206,
+          "relative_unit_economics_profit_quality": 55206
+        },
+        "rows": {
+          "axis_scores": 58221,
+          "component_features": 58221
+        },
+        "status": "PASS",
+        "warnings": []
+      }
+    }
+  ],
+  "schema_version": 1,
+  "status": "PASS"
+}

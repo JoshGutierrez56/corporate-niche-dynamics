@@ -1,0 +1,199 @@
+{
+  "files": [
+    {
+      "bytes": 11420,
+      "path": "hypercube/canary.py",
+      "scope": "main",
+      "sha256": "a57c612ec923f2cc9694eddef25ca1526bd9aa4097f13ac5aa954d4b2b0ab7e7"
+    },
+    {
+      "bytes": 24626,
+      "path": "hypercube/proxy_redesign.py",
+      "scope": "main",
+      "sha256": "5bceec7b4cb0e839533ce9b3d494885a8774cdc13ca69ce8458d6c1b121e13e7"
+    },
+    {
+      "bytes": 3785,
+      "path": "scripts/evaluate_isolated_canary.py",
+      "scope": "main",
+      "sha256": "dac2ebd9fc26a625a86c8f16af1d7133dc1287578dff338b4bc7b6ffba4a0007"
+    },
+    {
+      "bytes": 2205,
+      "path": "scripts/validate_isolated_canary.py",
+      "scope": "main",
+      "sha256": "2eb22794842b57e3c0a36cf599fe887a0a6cbff1634105e617eb1afca614bffe"
+    },
+    {
+      "bytes": 3726,
+      "path": "scripts/build_canary_manifest.py",
+      "scope": "main",
+      "sha256": "c6b2a988ddc8d567b5ddddacf7b518227b4e952a9c8c1e0d7d718da418b05813"
+    },
+    {
+      "bytes": 2366,
+      "path": "tests/test_p16e_canary.py",
+      "scope": "main",
+      "sha256": "946cdd8a414b173387d6618da27f16ffc0301a597283c52ec5e57d04134f4454"
+    },
+    {
+      "bytes": 1733,
+      "path": "docs/p16e_isolated_canary_preregistration.md",
+      "scope": "main",
+      "sha256": "66658ce22adaf66829f2bb725211b4b7ffe1b3aa25323a83dcb844d606db54b9"
+    },
+    {
+      "bytes": 1687,
+      "path": "docs/p16e_isolated_canary_results.md",
+      "scope": "main",
+      "sha256": "325adc0526f58f31365099a6d17a14bfcb14a33f8e268d4d6ad3fe619928b002"
+    },
+    {
+      "bytes": 2058748,
+      "path": "artifacts/tables/p16e_migration_proxy_candidates.parquet",
+      "scope": "main",
+      "sha256": "ea36bfa46ec3ecd277e2646c051271b8091a53876208a66ccb771e5fbbb7612b"
+    },
+    {
+      "bytes": 2055618,
+      "path": "artifacts/tables/p16e_null_proxy_candidates.parquet",
+      "scope": "main",
+      "sha256": "8cfca6f1068431d4e079be86c4430777dc36bc360cc66be8a18073ee7fe9697b"
+    },
+    {
+      "bytes": 678,
+      "path": "artifacts/tables/p16e_canary_metrics.csv",
+      "scope": "main",
+      "sha256": "aa029c03a4d13bffd0cc8525d57ba736aa8582ecad359f7819b24e70e599e7c3"
+    },
+    {
+      "bytes": 2224,
+      "path": "artifacts/manifests/p16e_proxy_build.json",
+      "scope": "main",
+      "sha256": "4b405ed263466ec11053dac1ec2e5fc1f3c529673db18354fad683e03b7feb7c"
+    },
+    {
+      "bytes": 2473,
+      "path": "artifacts/manifests/p16e_canary_evaluation.json",
+      "scope": "main",
+      "sha256": "e33276c52ecf3490bfbac0499e5c1568df809e01958e34b5db316708e435e3e4"
+    },
+    {
+      "bytes": 254,
+      "path": "artifacts/manifests/p16e_canary_validation.json",
+      "scope": "main",
+      "sha256": "ce169852030916a92c92ab87cf43a5f8f67b4ede6a68ea21f26f89273ffe9980"
+    },
+    {
+      "bytes": 7311,
+      "path": "configs/base.yaml",
+      "scope": "isolated_canary",
+      "sha256": "55406b8b6efde4198a9e579f35b6f4b48d888bcd14befabaad92daec032a98a3"
+    },
+    {
+      "bytes": 11919,
+      "path": "scripts/run_full_pipeline.py",
+      "scope": "isolated_canary",
+      "sha256": "6e06781d1572f8fc1db940660d98c857dda8e2b88af8c00c600e296cc6c647bd"
+    },
+    {
+      "bytes": 1791,
+      "path": "artifacts/manifests/full_pipeline_receipt.json",
+      "scope": "isolated_canary",
+      "sha256": "09f8ac6a78e1931835f1112c3819bef8c0543a6e463826ada50803e07d51cae6"
+    },
+    {
+      "bytes": 11617,
+      "path": "artifacts/manifests/p1_validation.json",
+      "scope": "isolated_canary",
+      "sha256": "bee5b14a8b88ac04336007c3fa23fb5e5e9b4bf51dcc7b59c1f94e807b06abaf"
+    },
+    {
+      "bytes": 1794,
+      "path": "artifacts/manifests/p2_validation.json",
+      "scope": "isolated_canary",
+      "sha256": "c0ab26babab77857b8ceeb5661ca8a316a91705f958135e8f54fd991e08901f1"
+    },
+    {
+      "bytes": 3812,
+      "path": "artifacts/manifests/p3_validation.json",
+      "scope": "isolated_canary",
+      "sha256": "53a3a42dff4c8f4cd6ab7ee982dbca6b4fae8b9aa6d785aaf1d12946c0503d55"
+    },
+    {
+      "bytes": 2025,
+      "path": "artifacts/manifests/p4_validation.json",
+      "scope": "isolated_canary",
+      "sha256": "77a530d16dd6b327fbc19cca07ad4f3493551fd2a7817c135c79d82934b21d57"
+    },
+    {
+      "bytes": 3687,
+      "path": "artifacts/manifests/p5_validation.json",
+      "scope": "isolated_canary",
+      "sha256": "cb6bc3f0f1da7bf8257aae8f1a296cf8bac73faf7dd6ee17aeb4b231a8cb18a2"
+    },
+    {
+      "bytes": 2020,
+      "path": "artifacts/manifests/p6_validation.json",
+      "scope": "isolated_canary",
+      "sha256": "f76a7a4141f20b197799ccfd2e91fdfe45ba163924bb804180a973b6d8122ed7"
+    },
+    {
+      "bytes": 3508,
+      "path": "artifacts/manifests/p7_validation.json",
+      "scope": "isolated_canary",
+      "sha256": "a862bbe7532462a77b4d326c98a5f5a31c0dbfff8c5ec996f0c67d5cf28f682f"
+    },
+    {
+      "bytes": 41720,
+      "path": "artifacts/manifests/p7_manifest.json",
+      "scope": "isolated_canary",
+      "sha256": "bc172558bf6f040b1403d835f3e1c7a2eff7f70730bc7ea0d06890ff5deb2707"
+    },
+    {
+      "bytes": 4551,
+      "path": "data/raw/synthetic/migration_alpha/data_manifest.json",
+      "scope": "isolated_canary",
+      "sha256": "5d0198b08aa0702da051171f242829088a6d91d920c2e892c643f4564a763e65"
+    },
+    {
+      "bytes": 1274,
+      "path": "data/raw/synthetic/migration_alpha/synthetic_scenario_metadata.json",
+      "scope": "isolated_canary",
+      "sha256": "354d35c91a5034857753d0351c1011d2ba08eb3191afc2b2e62e461cc0b2d85d"
+    },
+    {
+      "bytes": 20167594,
+      "path": "data/processed/synthetic/migration_alpha/p5/frontier_dynamics.parquet",
+      "scope": "isolated_canary",
+      "sha256": "7c9d63149b7ca2d1e82eff03dad5501a288e0e84d41ace5cb520badbb44ea146"
+    },
+    {
+      "bytes": 10930295,
+      "path": "data/processed/synthetic/migration_alpha/p7/forward_return_targets.parquet",
+      "scope": "isolated_canary",
+      "sha256": "cf1f84795e57437969f23ef058f192689d11da0172d71a80f3adbd1d56bbd38c"
+    },
+    {
+      "bytes": 9081062,
+      "path": "data/processed/synthetic/null_alpha/p7/forward_return_targets.parquet",
+      "scope": "isolated_canary",
+      "sha256": "a7c2106a7eb1328df8e035afb198688fde584d09bb1c49586dd9e4f846809d7e"
+    }
+  ],
+  "frozen_p0_p10_outputs_modified": false,
+  "gate_result": "PASS",
+  "generated_at_utc": "2026-07-23T13:31:00.682254+00:00",
+  "isolated_canary_root": "${HYPERCUBE_CANARY_ROOT}",
+  "migration_alpha_monthly": 0.024,
+  "new_synthetic_scenario_generated": true,
+  "p1_p7_validated": true,
+  "p8_p10_run": false,
+  "phase": "P16E",
+  "real_data_run": false,
+  "schema_version": 1,
+  "selected_candidate": "anchored_axis_innovation",
+  "selected_multiplier": 6.0,
+  "status": "PASS",
+  "version": "hypercube-isolated-six-x-canary-v1"
+}

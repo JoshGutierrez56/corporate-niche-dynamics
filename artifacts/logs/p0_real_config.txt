@@ -1,0 +1,1 @@
+﻿{"config": "configs\\real.yaml", "data_mode": "real", "phase": "P0", "run_name": "real_p0", "seed": 20260722, "status": "P0_CONFIG_VALID"}

@@ -1,0 +1,60 @@
+{
+  "benchmark_overall_spearman": 0.20582656748819336,
+  "calibration_years": [
+    2002,
+    2012
+  ],
+  "eligible_rows": 22933,
+  "firms": 2317,
+  "frozen_p0_p10_outputs_modified": false,
+  "gates": {
+    "block_stability": true,
+    "coverage": true,
+    "improvement": true,
+    "overall_spearman": true,
+    "period_stability": true
+  },
+  "generated_at_utc": "2026-07-23T12:58:14.558357+00:00",
+  "held_out_years": [
+    2013,
+    2018
+  ],
+  "injected_alpha_read": false,
+  "interpretation": "LOCKED_PROXY_QUALIFIED_ON_P7_ELIGIBILITY_SAMPLE",
+  "new_synthetic_scenario_generated": false,
+  "phase": "P14F",
+  "primary_horizon_months": 6,
+  "real_data_run": false,
+  "return_values_read": false,
+  "schema_version": 1,
+  "selected_candidate": "anchored_axis_innovation",
+  "selected_metrics": {
+    "calibration_spearman": 0.46545717461774794,
+    "candidate": "anchored_axis_innovation",
+    "coverage_vs_benchmark": 0.9631971394933065,
+    "eligible_rows": 22089,
+    "held_out_2013_2015_spearman": 0.48035121103969936,
+    "held_out_2016_2018_spearman": 0.440306097878241,
+    "held_out_spearman": 0.45604598084096265,
+    "is_benchmark": false,
+    "overall_improvement_vs_benchmark": 0.25592100777011395,
+    "overall_spearman": 0.46174757525830734
+  },
+  "status": "GO",
+  "stop_before_new_synthetic_generation": true,
+  "target_columns_read": [
+    "gvkey",
+    "datadate",
+    "fyear",
+    "horizon_months",
+    "target_valid"
+  ],
+  "thresholds": {
+    "minimum_block_spearman": 0.2,
+    "minimum_coverage_ratio": 0.95,
+    "minimum_improvement": 0.1,
+    "minimum_overall_spearman": 0.35,
+    "minimum_period_spearman": 0.3
+  },
+  "version": "hypercube-p7-eligibility-proxy-audit-v2"
+}

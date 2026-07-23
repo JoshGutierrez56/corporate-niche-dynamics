@@ -1,0 +1,17 @@
+{
+  "analytical_model_fit": false,
+  "claim_rows": 9,
+  "embedding_alive_at_validation": true,
+  "embedding_alive_during_closeout": true,
+  "embedding_pid": 5600,
+  "errors": [],
+  "existing_manifests_unchanged": true,
+  "p10_archives_byte_identical": true,
+  "phase": "P19E",
+  "postcloseout_manifest_records_checked": 89,
+  "real_data_run": false,
+  "schema_version": 1,
+  "status": "PASS",
+  "synthetic_truth_read": false,
+  "tests_passed": 83
+}

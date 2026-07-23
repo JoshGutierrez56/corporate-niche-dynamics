@@ -1,0 +1,306 @@
+{
+  "contract": {
+    "canonical_code": [
+      {
+        "isolated_sha256": "51078767703d82e65c0a5fd4711f19fb62c2e934aa8d59cb359d75e2e7fc83c4",
+        "main_sha256": "51078767703d82e65c0a5fd4711f19fb62c2e934aa8d59cb359d75e2e7fc83c4",
+        "match": true,
+        "path": "hypercube/clustering.py"
+      },
+      {
+        "isolated_sha256": "4745411d471e86b790acea16910823e654c6b22e17c8eb6e077c2d2cb62835a4",
+        "main_sha256": "4745411d471e86b790acea16910823e654c6b22e17c8eb6e077c2d2cb62835a4",
+        "match": true,
+        "path": "scripts/build_archetypes.py"
+      },
+      {
+        "isolated_sha256": "b81e2a7630309d9aa6e1e18837ee4f985f6e895acb95526d968c4d41565d770f",
+        "main_sha256": "b81e2a7630309d9aa6e1e18837ee4f985f6e895acb95526d968c4d41565d770f",
+        "match": true,
+        "path": "scripts/validate_archetypes.py"
+      }
+    ],
+    "config": {
+      "bytes": 7270,
+      "path": "artifacts\\checkpoints\\full_pipeline_configs\\p9.yaml",
+      "sha256": "21487ca11e069f8df644727e1c5d8ce0c961de22a554d93e48e18ab25448fbf3"
+    },
+    "frozen_contract": {
+      "assignment_radius_quantile": 0.95,
+      "maximum_training_rows": 25000,
+      "minimum_cluster_size": 200,
+      "minimum_samples": 10,
+      "phase": "P9",
+      "representation": "anchored",
+      "stability_repetitions": 5,
+      "stability_sample_fraction": 0.8,
+      "training_end_year": 2004
+    }
+  },
+  "frozen_main_manifests_unchanged": true,
+  "generated_at_utc": "2026-07-23T14:11:56.471378+00:00",
+  "input_manifests": [
+    {
+      "bytes": 18308,
+      "path": "artifacts\\manifests\\p3_build.json",
+      "sha256": "2927b86faafcc26c058d65a1663ef33843d2a2fd476218c365ff92acb93b0b14"
+    },
+    {
+      "bytes": 13859,
+      "path": "artifacts\\manifests\\p4_build.json",
+      "sha256": "2f81ae58d7e5b9e05a81d54965d5abe83aa2954ab828e9cda2a0b3a876d4aabd"
+    },
+    {
+      "bytes": 6411,
+      "path": "artifacts\\manifests\\p5_build.json",
+      "sha256": "68260825884842e15195e01fbccee13c4f08c0a0436f12f1f8c003905981a3a0"
+    },
+    {
+      "bytes": 5758,
+      "path": "artifacts\\manifests\\p7_build.json",
+      "sha256": "9ab9002c3fcaaa192000022d9a456aeed82b54657e25a18698c284b06166b8da"
+    },
+    {
+      "bytes": 41720,
+      "path": "artifacts\\manifests\\p7_manifest.json",
+      "sha256": "bc172558bf6f040b1403d835f3e1c7a2eff7f70730bc7ea0d06890ff5deb2707"
+    }
+  ],
+  "isolated_canary": true,
+  "isolated_outputs": [
+    {
+      "bytes": 4293,
+      "path": "data\\processed\\synthetic\\null_alpha\\p9\\p9_manifest.json",
+      "sha256": "52fe61e5faf120ce02ac4b4c906d6f8bc6b05a8a8d5f507586c98150cd925294"
+    },
+    {
+      "bytes": 428,
+      "path": "data\\processed\\synthetic\\null_alpha\\p9\\clustering_metadata.json",
+      "sha256": "ebbfcb72afebb1ae27db03c48d03084031e57b9b2735315dc266af9bb1b16833"
+    },
+    {
+      "bytes": 4368,
+      "path": "data\\processed\\synthetic\\migration_alpha\\p9\\p9_manifest.json",
+      "sha256": "3a630867053e235bb2688d85e51416e1fca77cf58bd6d320c63226b8e6deb68c"
+    },
+    {
+      "bytes": 433,
+      "path": "data\\processed\\synthetic\\migration_alpha\\p9\\clustering_metadata.json",
+      "sha256": "48395110268905e5d6435c39551b1f8c12226d31f97903264b948c3a1767e8c6"
+    },
+    {
+      "bytes": 4323,
+      "path": "data\\processed\\synthetic\\regime_shift\\p9\\p9_manifest.json",
+      "sha256": "8b936680ab8409d9ee4241ab75f08abe3ec05ddebfcb63278857a0efc26c2b02"
+    },
+    {
+      "bytes": 430,
+      "path": "data\\processed\\synthetic\\regime_shift\\p9\\clustering_metadata.json",
+      "sha256": "6fbe82885eebe2a646ea480ac4cb54a075146a76d12da0e4515a0ed816c9a0f9"
+    }
+  ],
+  "isolated_reports": [
+    {
+      "bytes": 4444,
+      "path": "artifacts\\manifests\\p18e_p9_build.json",
+      "sha256": "d6b3294725c6ffcbb9ae639d926fc2e9d18cc50e12f75b010761b2d624da4a94"
+    },
+    {
+      "bytes": 1800,
+      "path": "artifacts\\manifests\\p18e_p9_validation.json",
+      "sha256": "c7dbc4d313db3bdaa9d07b9097ec850c63f46fb793349294abeb71feab7bc0c0"
+    }
+  ],
+  "main_manifest_hashes_after": {
+    "full_pipeline_receipt.json": "d28d83cd5cb9d3b47badd47c09e32016063e2974f7079eafecac057ddb58c235",
+    "p0_manifest.json": "3bc60220bff2ddde206a06baa6f9272aee5f4eac8eb81688aea9bc949facf2fd",
+    "p10_build.json": "0918dfd7ff35639df5e25b0d93db27b227c909b15b817c0a037c679777f4b5c4",
+    "p10_manifest.json": "3a63e96ab129c539f49ad5e2f83e8b70123896ba27c35d651deb4e44a9a260e3",
+    "p10_reproducibility_patch.json": "e52d2c230d4a2d1c1c9bf996ea1d2a5c4e7116f482e7c7e0414f4cc405bd480b",
+    "p10_validation.json": "e258771c4ab86a2101ac7375cf5940096bc82d5de0250965e26975d6db5d8ea9",
+    "p10_visualization.json": "00ad0b466909b0c6157ddd937a0385474321416cb365043f0e308270fe15ffca",
+    "p11e_alpha_power_diagnostic.json": "467a0140648d6079bc84d9ae113faeb7d134e61ffb4ba2947bc52c8f92068d84",
+    "p11e_alpha_power_validation.json": "b5771ebb713a16f0fb9160ea6383c911d2c97082edac58bec61f7697ca57f53c",
+    "p11e_manifest.json": "e407c0e1e513a6a5e94438cea1b8acab3b75a366e4be80a7264b277f7f356016",
+    "p12e_manifest.json": "ee8b60b063a0f9b37183da4e2da233e6d8d32c5c9f5353054c47167b85d3fb6c",
+    "p12e_power_calibration.json": "c355a64c301e6d0c75ec692af3242f2cc874e86b16f375d46794f6fb30e4209f",
+    "p12e_power_calibration_validation.json": "a23970f5e57c7181aefbde38071f4900470a1322b3d0f3b9c0960ecaa8f48fb8",
+    "p13f_manifest.json": "fef7df9e6b148e94bfbe0c8abc6b75cd7bc04edbdb651dbaeb6f96701d15e76c",
+    "p13f_proxy_build.json": "3276481430bf5cbe14d4eb030c75ef45536789c5eb8565f2cbbc6201cb940b17",
+    "p13f_proxy_evaluation.json": "dcff1da5455d5a9721174a040736c852fa7886534250f07ff5c078a0743aa592",
+    "p13f_proxy_validation.json": "b6ee91d2d2a5ad78888129e7bb67b17098744ab5fca9955a2e9b473c57a125b9",
+    "p14f_manifest.json": "74b55a22f4c95db1d968e1fbcab37e80e2ec082b612bdfe4e7e05ee25653f71d",
+    "p14f_p7_eligibility_audit.json": "54f9a247d74caeba5e0e6b3127f7dc5600e8263a9ccb4484b9139e3ea757ccdf",
+    "p14f_p7_eligibility_validation.json": "b2167490c09153cf9ee93b217834bebb8be19b17469454ab6c41f3b784eb2e1e",
+    "p15e_locked_proxy_power.json": "2bed94a3d237a79ce7b13ff8d07a4018ca1cce8077177606b92615eabc371605",
+    "p15e_locked_proxy_power_validation.json": "51097f354c9b47b0273b3f9382b85c726d642e7c7e655681d7ab766644953f88",
+    "p15e_manifest.json": "671af098e1aeb864dec0f04023afad8a98b245551ce818a4b78c290ba957f69d",
+    "p16e_canary_evaluation.json": "e33276c52ecf3490bfbac0499e5c1568df809e01958e34b5db316708e435e3e4",
+    "p16e_canary_validation.json": "ce169852030916a92c92ab87cf43a5f8f67b4ede6a68ea21f26f89273ffe9980",
+    "p16e_manifest.json": "972afcc198ee640bfd6709d7ea5b0885edaa32d2a7482b158c4b6fb96a7d65ea",
+    "p16e_proxy_build.json": "4b405ed263466ec11053dac1ec2e5fc1f3c529673db18354fad683e03b7feb7c",
+    "p17e_cost_canary.json": "7faf9d2f9366b8d05d6308bf927a8e65cba34ebb778df5994da1763dd40c35eb",
+    "p17e_cost_canary_validation.json": "e0b9b01748f7618fee0643b3c952d1fb07403e3583f67a1415a272a6b226913d",
+    "p17e_manifest.json": "e75dd2403f30e1eeec7d6a51541beca70830c34c1635718cf8bb4b97c04dd049",
+    "p1_manifest.json": "fbe1b6f26a721e287e3bdb531c52ddab4d8c7b2193878116afc1fbbde1a204f9",
+    "p1_validation.json": "7eda6a2a733578fdb15f01ed7ca2c7ba7d35156a9c510afc278f7ff999d2971a",
+    "p2_build.json": "5ed956698ab936e54d3ebfb048f9f122af1e66223b31af4700c46b886d1a05f3",
+    "p2_manifest.json": "00503c4520496f500983472d2c516c5c151f18b36663c5aafbe448a45b0a8519",
+    "p2_raw_validation.json": "aec8a8e3deb9b44b4e6861796c74939acc6516331f8c6e3541a0dbdf26f7c649",
+    "p2_validation.json": "f64871a53b4d8b1970bd8fdd1592967c42dbcf14aa271c30d8325e5d1bf7c864",
+    "p3_build.json": "584a461468c49ddfbb3d2b99b5226ad6f4cf2eb6c5009d5c0110cb6dcd4eb1e6",
+    "p3_manifest.json": "adf0d489b5fba6d829e5dd38f0dbc68816e299a026eea59d4f0c523429bcc693",
+    "p3_validation.json": "c4c8bfb0d0043b7adcf2dcdbbf5ad81d1c6610b792187f5dd0701652c6342359",
+    "p4_build.json": "152ff06156aa64301161cbf18d7ca9da17fbbfe0be0e2331c276e9f143fac90b",
+    "p4_manifest.json": "46070b86c2197cebb5fe4dd9f6badd76eb45816cf5e9df86e5f488b63db704c2",
+    "p4_validation.json": "3fca97984d9d5b732b961bd1b204ab9bff6187bedd95f856f2bcd7cfbd1bed3c",
+    "p5_build.json": "96f00dcda203736c0937adae413c1e12707f4b151db51f0244327a6d6110fc38",
+    "p5_build_migration_alpha.json": "6deba76b6ca3c321df8cb6e4c9b8c03a5c3353fbad4e821eba08630e62cb58b1",
+    "p5_build_null_alpha.json": "126edcbc909a530ede4b32b9a4277b595aa9979de8e2054d4fef899f6e4eb2e7",
+    "p5_build_regime_shift.json": "b17b0d052a61d073926b4be3911979f592c38f7cb696fa4647e34586f9e7be31",
+    "p5_manifest.json": "29410b0714a37af1e5632847b6507fc06024e8b305912dc11a996365946e7a12",
+    "p5_validation.json": "47369a08ee8679129c2d5a2b3d222e6eab2bb15bf1aba78d740f1dd962fbc71e",
+    "p6_build.json": "d331bd420ca239525d5f18399b853498dcf61907a711f956b4490b6f60f4367f",
+    "p6_build_migration_alpha.json": "d108893ad0639ea3fd90aa1bb02884d021ce6c4748adb16abed7dd7eb6d459cd",
+    "p6_build_null_alpha.json": "2df4ee8320875357ff42480ce953174990349e37b95a97798100de1ab196b26e",
+    "p6_build_regime_shift.json": "0094ce4b6323df43d82920ef9608ea04f93f226ea1a78555623b142a315db0ce",
+    "p6_manifest.json": "0bf5916e4712aa5155b30cc282cdb8d3eef29f30707e0aec3b93cb1c4dc2edfa",
+    "p6_validation.json": "8f8cde6062b67e3a3189d06111ecf6bb30389454b16d2b46a48df61fc21bf01f",
+    "p7_build.json": "342bd855778c6dd0cb9589fa4fb0a894c0717ca72466a8cf3f580eca30395004",
+    "p7_build_migration_alpha.json": "1480015ad47dce063ff8fe27c76bf9cfb74bb9d1eebca977559711f4d817611d",
+    "p7_build_null_alpha.json": "dd409d7c3ac74e608c8c5d05d31c676edaabeda959ed209b7355556c8291850a",
+    "p7_build_regime_shift.json": "fcce8ae4c077efef18da0b7d15a7f04d1201d50554a77e50f11fe2a7df2ba9d0",
+    "p7_manifest.json": "e974961403c988e4ca58eb980bd3c14d2e664c87620814df7dd0fc94c3f8247d",
+    "p7_validation.json": "3118eb7357572fabc20e1107c26bb885f706f73d42bc8ae7154a6e1a1d400cc1",
+    "p8_build.json": "5c321a235f9fe78e756d1065aebec1175f7c9f50921b97c29fea7e37019e2075",
+    "p8_manifest.json": "95f53c994ace61a211d91131ec8cef834212992cabc0b3a074a80df3db198d1f",
+    "p8_null_canary.json": "7c9a2cfd8ae65cfaf8444a1aba10bf18f22e3722fc9eb49c5d6e8826ddb3cd71",
+    "p8_validation.json": "8e3276c664bace2d3bd0eb0c137ce32314fbc00de5e7e73c5d36c73b52f62931",
+    "p9_build.json": "417cdcdc25d7c30703c67d5592621c629ad5843f7c4243c02b06a79931ed23d3",
+    "p9_manifest.json": "3e16eb1acb7630dda1a9e3945ef787fc70be8f32d97cd3ae7fa776dcf167b132",
+    "p9_null_canary.json": "2c019513282d20d53c706823dea4cdde45e42a1989c4361576b12fc72a61c961",
+    "p9_validation.json": "29f5c78d8e2ac06a960939c9478f75548b7e0d772af4ace9e5d35e3e2345a284"
+  },
+  "main_manifest_hashes_before": {
+    "full_pipeline_receipt.json": "d28d83cd5cb9d3b47badd47c09e32016063e2974f7079eafecac057ddb58c235",
+    "p0_manifest.json": "3bc60220bff2ddde206a06baa6f9272aee5f4eac8eb81688aea9bc949facf2fd",
+    "p10_build.json": "0918dfd7ff35639df5e25b0d93db27b227c909b15b817c0a037c679777f4b5c4",
+    "p10_manifest.json": "3a63e96ab129c539f49ad5e2f83e8b70123896ba27c35d651deb4e44a9a260e3",
+    "p10_reproducibility_patch.json": "e52d2c230d4a2d1c1c9bf996ea1d2a5c4e7116f482e7c7e0414f4cc405bd480b",
+    "p10_validation.json": "e258771c4ab86a2101ac7375cf5940096bc82d5de0250965e26975d6db5d8ea9",
+    "p10_visualization.json": "00ad0b466909b0c6157ddd937a0385474321416cb365043f0e308270fe15ffca",
+    "p11e_alpha_power_diagnostic.json": "467a0140648d6079bc84d9ae113faeb7d134e61ffb4ba2947bc52c8f92068d84",
+    "p11e_alpha_power_validation.json": "b5771ebb713a16f0fb9160ea6383c911d2c97082edac58bec61f7697ca57f53c",
+    "p11e_manifest.json": "e407c0e1e513a6a5e94438cea1b8acab3b75a366e4be80a7264b277f7f356016",
+    "p12e_manifest.json": "ee8b60b063a0f9b37183da4e2da233e6d8d32c5c9f5353054c47167b85d3fb6c",
+    "p12e_power_calibration.json": "c355a64c301e6d0c75ec692af3242f2cc874e86b16f375d46794f6fb30e4209f",
+    "p12e_power_calibration_validation.json": "a23970f5e57c7181aefbde38071f4900470a1322b3d0f3b9c0960ecaa8f48fb8",
+    "p13f_manifest.json": "fef7df9e6b148e94bfbe0c8abc6b75cd7bc04edbdb651dbaeb6f96701d15e76c",
+    "p13f_proxy_build.json": "3276481430bf5cbe14d4eb030c75ef45536789c5eb8565f2cbbc6201cb940b17",
+    "p13f_proxy_evaluation.json": "dcff1da5455d5a9721174a040736c852fa7886534250f07ff5c078a0743aa592",
+    "p13f_proxy_validation.json": "b6ee91d2d2a5ad78888129e7bb67b17098744ab5fca9955a2e9b473c57a125b9",
+    "p14f_manifest.json": "74b55a22f4c95db1d968e1fbcab37e80e2ec082b612bdfe4e7e05ee25653f71d",
+    "p14f_p7_eligibility_audit.json": "54f9a247d74caeba5e0e6b3127f7dc5600e8263a9ccb4484b9139e3ea757ccdf",
+    "p14f_p7_eligibility_validation.json": "b2167490c09153cf9ee93b217834bebb8be19b17469454ab6c41f3b784eb2e1e",
+    "p15e_locked_proxy_power.json": "2bed94a3d237a79ce7b13ff8d07a4018ca1cce8077177606b92615eabc371605",
+    "p15e_locked_proxy_power_validation.json": "51097f354c9b47b0273b3f9382b85c726d642e7c7e655681d7ab766644953f88",
+    "p15e_manifest.json": "671af098e1aeb864dec0f04023afad8a98b245551ce818a4b78c290ba957f69d",
+    "p16e_canary_evaluation.json": "e33276c52ecf3490bfbac0499e5c1568df809e01958e34b5db316708e435e3e4",
+    "p16e_canary_validation.json": "ce169852030916a92c92ab87cf43a5f8f67b4ede6a68ea21f26f89273ffe9980",
+    "p16e_manifest.json": "972afcc198ee640bfd6709d7ea5b0885edaa32d2a7482b158c4b6fb96a7d65ea",
+    "p16e_proxy_build.json": "4b405ed263466ec11053dac1ec2e5fc1f3c529673db18354fad683e03b7feb7c",
+    "p17e_cost_canary.json": "7faf9d2f9366b8d05d6308bf927a8e65cba34ebb778df5994da1763dd40c35eb",
+    "p17e_cost_canary_validation.json": "e0b9b01748f7618fee0643b3c952d1fb07403e3583f67a1415a272a6b226913d",
+    "p17e_manifest.json": "e75dd2403f30e1eeec7d6a51541beca70830c34c1635718cf8bb4b97c04dd049",
+    "p1_manifest.json": "fbe1b6f26a721e287e3bdb531c52ddab4d8c7b2193878116afc1fbbde1a204f9",
+    "p1_validation.json": "7eda6a2a733578fdb15f01ed7ca2c7ba7d35156a9c510afc278f7ff999d2971a",
+    "p2_build.json": "5ed956698ab936e54d3ebfb048f9f122af1e66223b31af4700c46b886d1a05f3",
+    "p2_manifest.json": "00503c4520496f500983472d2c516c5c151f18b36663c5aafbe448a45b0a8519",
+    "p2_raw_validation.json": "aec8a8e3deb9b44b4e6861796c74939acc6516331f8c6e3541a0dbdf26f7c649",
+    "p2_validation.json": "f64871a53b4d8b1970bd8fdd1592967c42dbcf14aa271c30d8325e5d1bf7c864",
+    "p3_build.json": "584a461468c49ddfbb3d2b99b5226ad6f4cf2eb6c5009d5c0110cb6dcd4eb1e6",
+    "p3_manifest.json": "adf0d489b5fba6d829e5dd38f0dbc68816e299a026eea59d4f0c523429bcc693",
+    "p3_validation.json": "c4c8bfb0d0043b7adcf2dcdbbf5ad81d1c6610b792187f5dd0701652c6342359",
+    "p4_build.json": "152ff06156aa64301161cbf18d7ca9da17fbbfe0be0e2331c276e9f143fac90b",
+    "p4_manifest.json": "46070b86c2197cebb5fe4dd9f6badd76eb45816cf5e9df86e5f488b63db704c2",
+    "p4_validation.json": "3fca97984d9d5b732b961bd1b204ab9bff6187bedd95f856f2bcd7cfbd1bed3c",
+    "p5_build.json": "96f00dcda203736c0937adae413c1e12707f4b151db51f0244327a6d6110fc38",
+    "p5_build_migration_alpha.json": "6deba76b6ca3c321df8cb6e4c9b8c03a5c3353fbad4e821eba08630e62cb58b1",
+    "p5_build_null_alpha.json": "126edcbc909a530ede4b32b9a4277b595aa9979de8e2054d4fef899f6e4eb2e7",
+    "p5_build_regime_shift.json": "b17b0d052a61d073926b4be3911979f592c38f7cb696fa4647e34586f9e7be31",
+    "p5_manifest.json": "29410b0714a37af1e5632847b6507fc06024e8b305912dc11a996365946e7a12",
+    "p5_validation.json": "47369a08ee8679129c2d5a2b3d222e6eab2bb15bf1aba78d740f1dd962fbc71e",
+    "p6_build.json": "d331bd420ca239525d5f18399b853498dcf61907a711f956b4490b6f60f4367f",
+    "p6_build_migration_alpha.json": "d108893ad0639ea3fd90aa1bb02884d021ce6c4748adb16abed7dd7eb6d459cd",
+    "p6_build_null_alpha.json": "2df4ee8320875357ff42480ce953174990349e37b95a97798100de1ab196b26e",
+    "p6_build_regime_shift.json": "0094ce4b6323df43d82920ef9608ea04f93f226ea1a78555623b142a315db0ce",
+    "p6_manifest.json": "0bf5916e4712aa5155b30cc282cdb8d3eef29f30707e0aec3b93cb1c4dc2edfa",
+    "p6_validation.json": "8f8cde6062b67e3a3189d06111ecf6bb30389454b16d2b46a48df61fc21bf01f",
+    "p7_build.json": "342bd855778c6dd0cb9589fa4fb0a894c0717ca72466a8cf3f580eca30395004",
+    "p7_build_migration_alpha.json": "1480015ad47dce063ff8fe27c76bf9cfb74bb9d1eebca977559711f4d817611d",
+    "p7_build_null_alpha.json": "dd409d7c3ac74e608c8c5d05d31c676edaabeda959ed209b7355556c8291850a",
+    "p7_build_regime_shift.json": "fcce8ae4c077efef18da0b7d15a7f04d1201d50554a77e50f11fe2a7df2ba9d0",
+    "p7_manifest.json": "e974961403c988e4ca58eb980bd3c14d2e664c87620814df7dd0fc94c3f8247d",
+    "p7_validation.json": "3118eb7357572fabc20e1107c26bb885f706f73d42bc8ae7154a6e1a1d400cc1",
+    "p8_build.json": "5c321a235f9fe78e756d1065aebec1175f7c9f50921b97c29fea7e37019e2075",
+    "p8_manifest.json": "95f53c994ace61a211d91131ec8cef834212992cabc0b3a074a80df3db198d1f",
+    "p8_null_canary.json": "7c9a2cfd8ae65cfaf8444a1aba10bf18f22e3722fc9eb49c5d6e8826ddb3cd71",
+    "p8_validation.json": "8e3276c664bace2d3bd0eb0c137ce32314fbc00de5e7e73c5d36c73b52f62931",
+    "p9_build.json": "417cdcdc25d7c30703c67d5592621c629ad5843f7c4243c02b06a79931ed23d3",
+    "p9_manifest.json": "3e16eb1acb7630dda1a9e3945ef787fc70be8f32d97cd3ae7fa776dcf167b132",
+    "p9_null_canary.json": "2c019513282d20d53c706823dea4cdde45e42a1989c4361576b12fc72a61c961",
+    "p9_validation.json": "29f5c78d8e2ac06a960939c9478f75548b7e0d772af4ace9e5d35e3e2345a284"
+  },
+  "p10_run": false,
+  "performance_selection_applied": false,
+  "phase": "P18E",
+  "real_data_run": false,
+  "return_models_refit": false,
+  "scenario_summaries": [
+    {
+      "assignment_rows": 59921,
+      "cluster_count": 2,
+      "fit_rows": 25000,
+      "mean_stability_ari": -0.0015814913007736499,
+      "noise_or_unassigned_rate": 0.9467632382637139,
+      "scenario": "null_alpha",
+      "stability_repetitions": 5,
+      "successful_stability_refits": 4,
+      "validation_status": "PASS",
+      "validation_warning": "Archetype stability is weak; interpret clusters cautiously."
+    },
+    {
+      "assignment_rows": 58894,
+      "cluster_count": 2,
+      "fit_rows": 24275,
+      "mean_stability_ari": -0.00046740671518957506,
+      "noise_or_unassigned_rate": 0.9649879444425579,
+      "scenario": "migration_alpha",
+      "stability_repetitions": 5,
+      "successful_stability_refits": 4,
+      "validation_status": "PASS",
+      "validation_warning": "Archetype stability is weak; interpret clusters cautiously."
+    },
+    {
+      "assignment_rows": 58221,
+      "cluster_count": 2,
+      "fit_rows": 23892,
+      "mean_stability_ari": NaN,
+      "noise_or_unassigned_rate": 0.9544150735988732,
+      "scenario": "regime_shift",
+      "stability_repetitions": 5,
+      "successful_stability_refits": 0,
+      "validation_status": "PASS",
+      "validation_warning": "Every bounded stability refit failed to recover two clusters."
+    }
+  ],
+  "scenarios": [
+    "null_alpha",
+    "migration_alpha",
+    "regime_shift"
+  ],
+  "schema_version": 1,
+  "status": "PASS",
+  "synthetic_truth_read": false,
+  "version": "hypercube-isolated-descriptive-archetype-canary-v1"
+}

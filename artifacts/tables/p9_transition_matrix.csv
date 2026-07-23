@@ -1,0 +1,44 @@
+scenario,sample_role,prior_archetype,archetype,transitions,transition_probability
+null_alpha,out_of_sample,Archetype A,Archetype A,317,0.1651902032308494
+null_alpha,out_of_sample,Archetype A,Archetype B,5,0.0026055237102657
+null_alpha,out_of_sample,Archetype A,Noise / Unassigned,1597,0.8322042730588849
+null_alpha,out_of_sample,Archetype B,Archetype A,20,0.0743494423791821
+null_alpha,out_of_sample,Archetype B,Archetype B,4,0.0148698884758364
+null_alpha,out_of_sample,Archetype B,Noise / Unassigned,245,0.9107806691449816
+null_alpha,out_of_sample,Noise / Unassigned,Archetype A,1404,0.0448476330415894
+null_alpha,out_of_sample,Noise / Unassigned,Archetype B,21,0.0006707979301092
+null_alpha,out_of_sample,Noise / Unassigned,Noise / Unassigned,29881,0.9544815690283012
+null_alpha,training_period,Archetype A,Archetype A,85,0.1398026315789473
+null_alpha,training_period,Archetype A,Noise / Unassigned,523,0.8601973684210527
+null_alpha,training_period,Archetype B,Noise / Unassigned,247,1.0
+null_alpha,training_period,Noise / Unassigned,Archetype A,12,0.0005316321105794
+null_alpha,training_period,Noise / Unassigned,Archetype B,1,4.430267588162325e-05
+null_alpha,training_period,Noise / Unassigned,Noise / Unassigned,22559,0.9994240652135388
+migration_alpha,out_of_sample,Archetype A,Archetype A,11,0.0375426621160409
+migration_alpha,out_of_sample,Archetype A,Noise / Unassigned,282,0.962457337883959
+migration_alpha,out_of_sample,Archetype B,Archetype A,2,0.0136986301369863
+migration_alpha,out_of_sample,Archetype B,Archetype B,1,0.0068493150684931
+migration_alpha,out_of_sample,Archetype B,Noise / Unassigned,143,0.9794520547945206
+migration_alpha,out_of_sample,Archetype C,Noise / Unassigned,26,1.0
+migration_alpha,out_of_sample,Noise / Unassigned,Archetype A,115,0.0034809456064412
+migration_alpha,out_of_sample,Noise / Unassigned,Archetype B,2,6.0538184459848047e-05
+migration_alpha,out_of_sample,Noise / Unassigned,Noise / Unassigned,32920,0.9964585162090988
+migration_alpha,training_period,Archetype A,Noise / Unassigned,226,1.0
+migration_alpha,training_period,Archetype B,Noise / Unassigned,219,1.0
+migration_alpha,training_period,Archetype C,Archetype A,4,0.0189573459715639
+migration_alpha,training_period,Archetype C,Archetype C,59,0.2796208530805687
+migration_alpha,training_period,Archetype C,Noise / Unassigned,148,0.7014218009478673
+migration_alpha,training_period,Noise / Unassigned,Noise / Unassigned,21744,1.0
+regime_shift,out_of_sample,Archetype A,Archetype A,163,0.1177745664739884
+regime_shift,out_of_sample,Archetype A,Archetype B,13,0.009393063583815
+regime_shift,out_of_sample,Archetype A,Noise / Unassigned,1208,0.8728323699421965
+regime_shift,out_of_sample,Archetype B,Archetype A,9,0.0320284697508896
+regime_shift,out_of_sample,Archetype B,Archetype B,7,0.0249110320284697
+regime_shift,out_of_sample,Archetype B,Noise / Unassigned,265,0.9430604982206404
+regime_shift,out_of_sample,Noise / Unassigned,Archetype A,891,0.0282632831086439
+regime_shift,out_of_sample,Noise / Unassigned,Archetype B,12,0.0003806502775574
+regime_shift,out_of_sample,Noise / Unassigned,Noise / Unassigned,30622,0.9713560666137986
+regime_shift,training_period,Archetype A,Archetype A,80,0.1255886970172684
+regime_shift,training_period,Archetype A,Noise / Unassigned,557,0.8744113029827315
+regime_shift,training_period,Archetype B,Noise / Unassigned,246,1.0
+regime_shift,training_period,Noise / Unassigned,Noise / Unassigned,21148,1.0

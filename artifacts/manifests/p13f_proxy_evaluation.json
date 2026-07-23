@@ -1,0 +1,60 @@
+{
+  "benchmark_held_out_spearman": 0.4578387289609068,
+  "calibration_years": [
+    2002,
+    2012
+  ],
+  "candidate_artifact_sha256": "9653a74f993fd8c6035078786acae8dcdc213b12951098970dbed029bfde191d",
+  "frozen_p0_p10_outputs_modified": false,
+  "gates": {
+    "block_stability": true,
+    "coverage": true,
+    "held_out_spearman": true,
+    "improvement": false
+  },
+  "generated_at_utc": "2026-07-23T12:53:34.676160+00:00",
+  "held_out_blocks": [
+    [
+      2013,
+      2015
+    ],
+    [
+      2016,
+      2018
+    ]
+  ],
+  "held_out_years": [
+    2013,
+    2018
+  ],
+  "interpretation": "NO_PROXY_PASSED_ALL_HELD_OUT_GATES",
+  "new_synthetic_scenario_generated": false,
+  "phase": "P13F",
+  "real_data_run": false,
+  "return_outcomes_read": false,
+  "schema_version": 1,
+  "selected_candidate": "anchored_axis_innovation",
+  "selected_metrics": {
+    "calibration_rows": 16212,
+    "calibration_spearman": 0.46948674757939757,
+    "candidate": "anchored_axis_innovation",
+    "held_out_2013_2015_spearman": 0.46082433038024573,
+    "held_out_2016_2018_spearman": 0.440306097878241,
+    "held_out_coverage_vs_benchmark": 1.1535922543734185,
+    "held_out_improvement_vs_benchmark": -0.007465673461295785,
+    "held_out_rows": 10485,
+    "held_out_spearman": 0.45037305549961104,
+    "is_benchmark": false
+  },
+  "selection_rule": "highest calibration Spearman; alphabetical tie break",
+  "status": "NO_GO",
+  "stop_before_new_synthetic_generation": true,
+  "synthetic_truth_read_during_candidate_construction": false,
+  "thresholds": {
+    "minimum_block_spearman": 0.2,
+    "minimum_coverage_ratio": 0.95,
+    "minimum_holdout_spearman": 0.35,
+    "minimum_improvement": 0.1
+  },
+  "version": "hypercube-migration-proxy-redesign-v2"
+}

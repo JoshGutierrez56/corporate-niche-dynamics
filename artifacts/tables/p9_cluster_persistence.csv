@@ -1,0 +1,21 @@
+scenario,sample_role,archetype,transitions,persistence_rate,median_gap_days
+null_alpha,out_of_sample,Archetype A,1919,0.1651902032308494,365.0
+null_alpha,out_of_sample,Archetype B,269,0.0148698884758364,365.0
+null_alpha,out_of_sample,Noise / Unassigned,31306,0.9544815690283012,365.0
+null_alpha,training_period,Archetype A,608,0.1398026315789473,365.0
+null_alpha,training_period,Archetype B,247,0.0,365.0
+null_alpha,training_period,Noise / Unassigned,22572,0.9994240652135388,365.0
+migration_alpha,out_of_sample,Archetype A,293,0.0375426621160409,365.0
+migration_alpha,out_of_sample,Archetype B,146,0.0068493150684931,365.0
+migration_alpha,out_of_sample,Archetype C,26,0.0,365.0
+migration_alpha,out_of_sample,Noise / Unassigned,33037,0.9964585162090988,365.0
+migration_alpha,training_period,Archetype A,226,0.0,365.0
+migration_alpha,training_period,Archetype B,219,0.0,365.0
+migration_alpha,training_period,Archetype C,211,0.2796208530805687,365.0
+migration_alpha,training_period,Noise / Unassigned,21744,1.0,365.0
+regime_shift,out_of_sample,Archetype A,1384,0.1177745664739884,365.0
+regime_shift,out_of_sample,Archetype B,281,0.0249110320284697,365.0
+regime_shift,out_of_sample,Noise / Unassigned,31525,0.9713560666137986,365.0
+regime_shift,training_period,Archetype A,637,0.1255886970172684,365.0
+regime_shift,training_period,Archetype B,246,0.0,365.0
+regime_shift,training_period,Noise / Unassigned,21148,1.0,365.0

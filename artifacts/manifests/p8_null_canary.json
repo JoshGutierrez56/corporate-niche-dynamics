@@ -1,0 +1,56 @@
+{
+  "aggregate_tables": [
+    "${PROJECT_ROOT}\\artifacts\\tables\\p8_cost_aware_summary.csv",
+    "${PROJECT_ROOT}\\artifacts\\tables\\p8_capacity_diagnostics.csv",
+    "${PROJECT_ROOT}\\artifacts\\tables\\p8_cost_waterfall.csv",
+    "${PROJECT_ROOT}\\artifacts\\tables\\p8_delayed_execution_sensitivity.csv"
+  ],
+  "borrow_applied": true,
+  "capacity_applied": true,
+  "config": "configs\\synthetic.yaml",
+  "costs_applied": true,
+  "phase": "P8",
+  "reports": [
+    {
+      "construction": {
+        "capacity_assignments": 131378,
+        "costs_applied": true,
+        "executed_positions": 1568428,
+        "monthly_scenario_rows": 11736,
+        "portfolio_summaries": 72,
+        "scenario": "null_alpha",
+        "scientific_status": "NULL_OR_NEGATIVE_AFTER_COSTS",
+        "synthetic_truth_read": false
+      },
+      "output_dir": "data\\processed\\synthetic\\null_alpha\\p8",
+      "reused_existing": false,
+      "scenario": "null_alpha",
+      "validation": {
+        "costs_applied": true,
+        "errors": [],
+        "primary_result": {
+          "annualized_gross_capacity_return": 0.007283719749901333,
+          "annualized_net_return": -0.0627164782268221,
+          "annualized_net_sharpe": -1.0962972526625354,
+          "average_capacity_fill_ratio": 0.6079461049109793,
+          "average_turnover": 0.41448217634051665,
+          "net_maximum_drawdown": -0.5701315829862146
+        },
+        "rows": {
+          "capacity_assignments": 131378,
+          "executed_positions": 1568428,
+          "monthly_scenario_rows": 11736,
+          "portfolio_summaries": 72
+        },
+        "scenario": "null_alpha",
+        "scientific_status": "NULL_OR_NEGATIVE_AFTER_COSTS",
+        "status": "PASS",
+        "synthetic_truth_read": false,
+        "warnings": []
+      }
+    }
+  ],
+  "return_test_rerun": false,
+  "schema_version": 1,
+  "status": "PASS"
+}

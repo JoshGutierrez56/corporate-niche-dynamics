@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "phase": "P10_POST_CLOSEOUT",
+  "generated_at_utc": "2026-07-23T12:26:50Z",
+  "status": "PASS",
+  "frozen_result_tables_modified": false,
+  "scientific_status": "SIGNAL_RECOVERY_FAILED",
+  "implementation_status": "NEGATIVE_AFTER_COSTS",
+  "archetype_status": "UNSTABLE_MOSTLY_NOISE",
+  "real_data_run": false,
+  "primary_repository_tests": {
+    "passed": 64,
+    "failed": 0
+  },
+  "cold_reproduction": {
+    "analytical_phases_p1_p10_passed": true,
+    "historical_full_pipeline_receipt_status": "FAIL",
+    "historical_failure_reason": "Empty P0 output directories omitted by the copy workflow",
+    "omitted_directories_observed": [
+      "data/interim",
+      "artifacts/models"
+    ],
+    "post_restore_tests_passed": 63,
+    "post_restore_tests_failed": 0,
+    "substantive_compact_artifact_hash_matches": 58,
+    "normalized_figure_registry_match": true
+  },
+  "patch": {
+    "script": "scripts/run_full_pipeline.py",
+    "test": "tests/test_full_pipeline_scaffold.py",
+    "behavior": "Restore the complete P0 output-directory contract before phase execution"
+  },
+  "documentation": "docs/p10_reproducibility_followup_2026-07-23.md"
+}
